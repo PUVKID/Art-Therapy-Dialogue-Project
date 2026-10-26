@@ -1,8 +1,12 @@
 <div align="center">
 
-# Art-Therapy-Dialogue-Project
+# 그림 객체 탐지와 미술치료 대화 프로토타입
 
-## 🎨 그림 객체 탐지와 미술치료 대화 프로토타입
+**Art-Therapy-Dialogue-Project**
+
+**기술 분류:** 컴퓨터 비전·자연어 처리 › 검출·언어 모델 연결 › 그림 대화 원고·평가 시각화
+
+
 
 ### YOLO 탐지 요약 · GPT-4o-mini 대화 · PDF 리포트
 
@@ -15,7 +19,33 @@
 
 [빠른 시작](#quick-start) · [저장소 구성](#repository-structure) · [평가 데이터](#data-settings)
 
+[예시 이미지](#preview)
+
 </div>
+
+<a name="preview"></a>
+
+## 🖼️ 예시로 보기
+
+<p align="center"><img src="assets/previews/paper-architecture.png" width="384" alt="논문 그림 · Art-Therapy-Dialogue-Project" /></p>
+
+**논문 그림** — 공개 원고 3쪽 그림 1: 그림 입력·객체 탐지·대화·PDF 리포트를 연결한 연구 구조입니다.
+
+[근거 파일 보기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf)
+
+
+
+<a name="input-processing-output"></a>
+
+## 🔄 입력·처리·출력
+
+| 단계 | 이 프로젝트에서 다루는 내용 |
+| :--- | :--- |
+| 입력 | 그림 이미지·텍스트 질문·코드의 점수 배열 |
+| 처리 | YOLO 탐지 요약·LLM 대화·PDF, 점수 기술통계 |
+| 출력 | 대화 앱·논문·평가 그래프 |
+
+
 
 ---
 
