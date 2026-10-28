@@ -1,20 +1,13 @@
 <div align="center">
 
 <a name="그림-객체-탐지와-미술치료-대화-프로토타입"></a>
-
-# 🔬 그림 객체 탐지와 미술치료 대화 프로토타입
-
-**Art-Therapy-Dialogue-Project**
-
-**기술 분류:** 컴퓨터 비전·자연어 처리 › 검출·언어 모델 연결 › 그림 대화 원고·평가 시각화
-
-
 <a name="yolo-탐지-요약--gpt-4o-mini-대화--pdf-리포트"></a>
 
-### 🧩 YOLO 탐지 요약 · GPT-4o-mini 대화 · PDF 리포트
+# 🗨️ Art Therapy Dialogue Project
 
-그림에서 객체 탐지 여부를 확인하고, 요약 텍스트를 대화형 메시지와 PDF로 연결하는 연구입니다.<br>
-최종 논문에서 연구 설계와 한계를 읽고, 앱과 평가 그래프 노트북에서 각 기능이 어떻게 구성되는지 살펴볼 수 있습니다.
+그림 탐지 요약으로 대화를 구성하고 평가 결과를 시각화한 프로토타입입니다.
+
+**기술 분류:** 컴퓨터 비전·자연어 처리 › 검출·언어 모델 연결 › 그림 대화 원고·평가 시각화
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Gradio](https://img.shields.io/badge/UI-Gradio-F97316?style=flat-square)
@@ -25,6 +18,25 @@
 [예시 이미지](#preview)
 
 </div>
+
+<a name="overview"></a>
+
+## 🗺️ 한눈에 보는 구성
+
+<p align="center"><img src="assets/overview.png" width="960" alt="프로젝트의 입력·처리·출력을 정리한 설명도" /></p>
+보관한 프로젝트 자료의 흐름을 정리한 설명도입니다.
+
+## ✨ 보관 자료에서 살펴볼 점
+
+객체 탐지·대화 연계 설계와 탐지 지표·사용자 평가를 정리한 8쪽 원고입니다.
+
+같은 자료로 학습·검증한 mAP50 약 0.92와 mAP50-95 약 0.78은 독립 임상 성능이 아닙니다. 공개 앱의 그림 분석과 텍스트 질문은 별도 호출입니다. 학회 양식만으로 게재 완료를 뜻하지 않습니다.
+
+- 5쪽은 mAP50 약 0.92와 mAP50-95 약 0.78을 보고합니다. 동일 자료의 학습·검증이라는 조건을 함께 읽어야 합니다.
+- 6쪽의 대화 설계와 평가를 앱의 실제 두 호출 경로와 구분합니다. 4차 노트북은 이 연구의 평가 도표를 구성하는 별도 자료입니다.
+
+**자료별 안내:** [기본 앱](docs/versions/base.md) · [4차](docs/versions/first.md) · [최종 원고](docs/versions/latest.md) · [전체 기록](docs/VERSIONS.md)
+
 
 <a name="preview"></a>
 
