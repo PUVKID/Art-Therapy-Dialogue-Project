@@ -9,22 +9,17 @@
 
 **기술 분류:** 컴퓨터 비전·자연어 처리 › 검출·언어 모델 연결 › 그림 대화 원고·평가 시각화
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Gradio](https://img.shields.io/badge/UI-Gradio-F97316?style=flat-square)
-![Matplotlib](https://img.shields.io/badge/Charts-Matplotlib-2563EB?style=flat-square)
+`Python`
+`Gradio`
+`Matplotlib`
 
 [빠른 시작](#quick-start) · [저장소 구성](#repository-structure) · [평가 데이터](#data-settings)
 
-[예시 이미지](#preview)
+[핵심 구성](#input-processing-output)
 
 </div>
 
 <a name="overview"></a>
-
-## 🗺️ 한눈에 보는 구성
-
-<p align="center"><img src="assets/overview.png" width="960" alt="프로젝트의 입력·처리·출력을 정리한 설명도" /></p>
-보관한 프로젝트 자료의 흐름을 정리한 설명도입니다.
 
 ## ✨ 보관 자료에서 살펴볼 점
 
@@ -37,17 +32,18 @@
 
 **자료별 안내:** [기본 앱](docs/versions/base.md) · [4차](docs/versions/first.md) · [최종 원고](docs/versions/latest.md) · [전체 기록](docs/VERSIONS.md)
 
-
 <a name="preview"></a>
 
-## 🖼️ 예시로 보기
+<details>
+<summary>📎 논문 도표와 출처</summary>
 
-<p align="center"><img src="assets/previews/paper-architecture.png" width="384" alt="논문 그림 · Art-Therapy-Dialogue-Project" /></p>
+[📊 원고 도표 보기](assets/previews/paper-architecture.png)
 
 **논문 그림** — 공개 원고 3쪽 그림 1: 그림 입력·객체 탐지·대화·PDF 리포트를 연결한 연구 구조입니다.
 
 [근거 파일 보기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf)
 
+</details>
 
 <a name="input-processing-output"></a>
 
@@ -55,9 +51,9 @@
 
 | 단계 | 이 프로젝트에서 다루는 내용 |
 | :--- | :--- |
-| 입력 | 그림 이미지·텍스트 질문·코드의 점수 배열 |
-| 처리 | YOLO 탐지 요약·LLM 대화·PDF, 점수 기술통계 |
-| 출력 | 대화 앱·논문·평가 그래프 |
+| 📥 입력 | 그림 이미지·텍스트 질문·코드의 점수 배열 |
+| ⚙️ 처리 | YOLO 탐지 요약·LLM 대화·PDF, 점수 기술통계 |
+| 📤 출력 | 대화 앱·논문·평가 그래프 |
 
 
 ---
