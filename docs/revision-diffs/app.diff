@@ -1,0 +1,373 @@
+# 비교 대상 없음 -> 그림 자료 · 기본 앱
+# 공백·주석·개행을 무시하지 않습니다. PDF 추출 텍스트는 배치·글꼴 비교를 대신하지 않습니다. 바이너리는 크기·SHA-256으로 비교합니다. ipynb의 바이너리 이미지 출력만 크기·SHA·원문 링크로 표시하며 코드·Markdown·수치·설정·그 밖의 JSON 텍스트는 전체 비교합니다.
+# 현재 그림 자료/app.ipynb 8196 25549c1d0f12e0d8a000d9b1185a575e4acc7a596522e79a3964c00e2f16e9d3
+# 현재 그림 자료/그림 1.png 63869 0a562e57a4cf3df48b12530ea02befbd245e854f855f4ccf2e08dc80424fef3a
+# 현재 그림 자료/그림 2.png 324481 182eef375de5b5be3fd2056ba7a7be797cbdbb4a26207c05dce09b19d9ea0958
+# 현재 그림 자료/그림 3.png 50719 550b5d3b61833be5239b0027eef409d7bc103e122767cb01861741f852d15209
+# 현재 그림 자료/미술치료 논문 그림 1.drawio 8310 0f0190e3df762ca02c17353022ab592577f9d170409b59b3bad71ec2f153afc4
+# 현재 그림 자료/미술치료 논문 그림 3.drawio 7609 efa11289474acf761f9c26baa4beb3f87e40e7e5dcf8836661a4655727c85cf4
+--- /dev/null
++++ 그림 자료/app.ipynb
+@@ -0,0 +1,216 @@
++{
++ "cells": [
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "25ed1b78",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "# 필요 라이브러리 설치\n",
++    "!pip install gradio ultralytics fpdf2 openai opencv-python-headless"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "68519152",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "import os\n",
++    "from pathlib import Path\n",
++    "from datetime import datetime\n",
++    "import cv2\n",
++    "import gradio as gr\n",
++    "from ultralytics import YOLO\n",
++    "from fpdf import FPDF\n",
++    "from openai import OpenAI"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "29e0779b",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "# ────────────────────────────\n",
++    "# 설정\n",
++    "# ────────────────────────────\n",
++    "import os\n",
++    "OPENAI_API_KEY = os.getenv(\n",
++    "    \"OPENAI_API_KEY\",\n",
++    "    os.environ[\"OPENAI_API_KEY\"]\n",
++    ")\n",
++    "YOLO_MODEL_PATH = r\"D:\\2025\\심화캡스톤\\drawing_yolo_run\\v8_finetune\\weights\\last.pt\"\n",
++    "PROJECT_DIR = Path(r\"D:\\2025\\심화캡스톤\")\n",
++    "INPUT_DIR = PROJECT_DIR / \"input\"\n",
++    "RESULT_DIR = PROJECT_DIR / \"result\"\n",
++    "RESULT_DIR.mkdir(exist_ok=True)\n",
++    "\n",
++    "TEMP_IMG_PATH = INPUT_DIR / \"temp.jpg\"\n",
++    "PDF_OUTPUT_PATH = RESULT_DIR / \"report.pdf\"\n",
++    "FONT_PATH = Path(r\"C:\\Windows\\Fonts\\malgun.ttf\")"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "18dc7e04",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "# ────────────────────────────\n",
++    "# 초기화\n",
++    "# ────────────────────────────\n",
++    "client = OpenAI(api_key=OPENAI_API_KEY)\n",
++    "model = YOLO(YOLO_MODEL_PATH)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "c5e3fd49",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "# ────────────────────────────\n",
++    "# Helper: PDF 리포트 생성\n",
++    "# ────────────────────────────\n",
++    "def build_pdf(summary: str, interpretation: str):\n",
++    "    pdf = FPDF(unit=\"mm\", format=\"A4\")\n",
++    "    pdf.set_auto_page_break(auto=True, margin=15)\n",
++    "    pdf.add_font(\"Malgun\", \"\", str(FONT_PATH))\n",
++    "\n",
++    "    pdf.add_page()\n",
++    "    pdf.set_font(\"Malgun\", size=14)\n",
++    "    pdf.cell(0, 10, \"그림 분석 리포트\", ln=True, align=\"C\")\n",
++    "    pdf.ln(6)\n",
++    "\n",
++    "    pdf.set_font(\"Malgun\", size=11)\n",
++    "    pdf.multi_cell(0, 6, summary)\n",
++    "    pdf.ln(4)\n",
++    "\n",
++    "    pdf.set_font(\"Malgun\", size=12)\n",
++    "    pdf.cell(0, 8, \"GPT 해석\", ln=True)\n",
++    "    pdf.set_font(\"Malgun\", size=11)\n",
++    "    pdf.multi_cell(0, 6, interpretation)\n",
++    "    pdf.ln(4)\n",
++    "\n",
++    "    # 원본 그림 삽입\n",
++    "    pdf.image(str(TEMP_IMG_PATH), x=10, w=90)\n",
++    "    pdf.output(str(PDF_OUTPUT_PATH))"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "46204f50",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "# ────────────────────────────\n",
++    "# 분석 + GPT 상담 메시지\n",
++    "# ────────────────────────────\n",
++    "def analyze_and_suggest(image):\n",
++    "    # 1) 입력 저장 (RGB->BGR 변환)\n",
++    "    cv2.imwrite(str(TEMP_IMG_PATH), cv2.cvtColor(image, cv2.COLOR_RGB2BGR))\n",
++    "\n",
++    "    # 2) YOLO 추론\n",
++    "    results = model(str(TEMP_IMG_PATH), conf=0.05, imgsz=640)\n",
++    "\n",
++    "    # 3) 탐지 성공/실패 요약 + 타임스탬프\n",
++    "    now = datetime.now().strftime(\"%Y-%m-%d %H:%M\")\n",
++    "    has_det = len(results[0].boxes.data) > 0\n",
++    "    status = \"탐지 결과: 성공\" if has_det else \"탐지 결과: 실패\"\n",
++    "    analysis_summary = f\"[분석 시각] {now}\\n\\n{status}\"\n",
++    "\n",
++    "    # 4) GPT 해석 (gpt-4o-mini 사용)\n",
++    "    prompt = (\n",
++    "        \"당신은 따뜻하고 다정한 미술치료 상담사입니다.\\n\\n\"\n",
++    "        \"다음은 그림 분석 요약입니다:\\n\\n\"\n",
++    "        f\"{analysis_summary}\\n\\n\"\n",
++    "        \"그림 분석을 더 구체적으로 해주고 그림 분석을 최대한 사람에게 공감을 해주는 식으로 해줘.\"\n",
++    "        \"이 결과를 바탕으로 내담자에게 건넬 수 있는 부드럽고 공감 어린 질문이나 코멘트를 10~15 문장으로 작성해주세요.\"\n",
++    "    )\n",
++    "    try:\n",
++    "        resp = client.chat.completions.create(\n",
++    "            model=\"gpt-4o-mini\",\n",
++    "            messages=[\n",
++    "                {\"role\": \"system\", \"content\": \"당신은 따뜻하고 다정한 미술치료 상담사입니다.\"},\n",
++    "                {\"role\": \"user\", \"content\": prompt}\n",
++    "            ]\n",
++    "        )\n",
++    "        auto_msg = resp.choices[0].message.content\n",
++    "    except Exception as e:\n",
++    "        auto_msg = f\"GPT 호출 오류: {e}\"\n",
++    "\n",
++    "    # 5) PDF 작성\n",
++    "    build_pdf(analysis_summary, auto_msg)\n",
++    "\n",
++    "    # 6) 결과 반환 (원본 RGB 이미지)\n",
++    "    return image, str(PDF_OUTPUT_PATH), auto_msg"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "18343d5b",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "# ────────────────────────────\n",
++    "# 추가 GPT 상담\n",
++    "# ────────────────────────────\n",
++    "def ask_gpt(user_input):\n",
++    "    try:\n",
++    "        resp = client.chat.completions.create(\n",
++    "            model=\"gpt-4o-mini\",\n",
++    "            messages=[\n",
++    "                {\"role\": \"system\", \"content\": \"당신은 따뜻하고 다정한 미술치료 상담사입니다.\"},\n",
++    "                {\"role\": \"user\", \"content\": user_input}\n",
++    "            ]\n",
++    "        )\n",
++    "        return resp.choices[0].message.content\n",
++    "    except Exception as e:\n",
++    "        return f\"GPT 호출 오류: {e}\" "
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "d98fb27a",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "# ────────────────────────────\n",
++    "# Gradio UI 실행\n",
++    "# ────────────────────────────\n",
++    "with gr.Blocks(title=\"그림 심리 분석 & 상담 챗봇\") as demo:\n",
++    "    gr.Markdown(\"## 🎨 그림 심리 분석 & 상담 챗봇\")\n",
++    "\n",
++    "    with gr.Row():\n",
++    "        with gr.Column():\n",
++    "            img_in = gr.Image(type=\"numpy\", label=\"그림 업로드\")\n",
++    "            btn = gr.Button(\"분석 및 상담 메시지 생성\")\n",
++    "            res_img = gr.Image(type=\"numpy\", label=\"분석 결과\")\n",
++    "            res_pdf = gr.File(label=\"PDF 리포트 다운로드\")\n",
++    "            res_msg = gr.Textbox(label=\"AI 자동 상담 메시지\")\n",
++    "\n",
++    "        with gr.Column():\n",
++    "            chat_in = gr.Textbox(lines=2, placeholder=\"상담 내용을 입력하세요\")\n",
++    "            chat_out = gr.Textbox(label=\"GPT 상담 결과\")\n",
++    "            chat_btn = gr.Button(\"상담하기\")\n",
++    "\n",
++    "    btn.click(analyze_and_suggest, inputs=img_in, outputs=[res_img, res_pdf, res_msg])\n",
++    "    chat_btn.click(ask_gpt, inputs=chat_in, outputs=chat_out)\n",
++    "\n",
++    "demo.launch()"
++   ]
++  }
++ ],
++ "metadata": {},
++ "nbformat": 4,
++ "nbformat_minor": 5
++}
+Binary files /dev/null and 그림 자료/그림 1.png differ
+Binary files /dev/null and 그림 자료/그림 2.png differ
+Binary files /dev/null and 그림 자료/그림 3.png differ
+--- /dev/null
++++ 그림 자료/미술치료 논문 그림 1.drawio
+@@ -0,0 +1,70 @@
++<mxfile host="app.diagrams.net">
++  <diagram name="페이지-1" id="02gvdag3FVOd2TPFVGfn">
++    <mxGraphModel dx="1426" dy="1288" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
++      <root>
++        <mxCell id="0" />
++        <mxCell id="1" parent="0" />
++        <mxCell id="SL_6hm9mEax60UBV8hSA-5" edge="1" parent="1" source="spRwfffBcYJK-SBZ-oN2-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="A2Rj1c-wWx18dHyTlpq0-3">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="SL_6hm9mEax60UBV8hSA-6" edge="1" parent="1" source="spRwfffBcYJK-SBZ-oN2-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="spRwfffBcYJK-SBZ-oN2-17">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="spRwfffBcYJK-SBZ-oN2-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;인터페이스&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Gradio Web Platform&lt;/font&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="158" x="242" y="520" as="geometry" />
++        </mxCell>
++        <mxCell id="spRwfffBcYJK-SBZ-oN2-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;상담 내용&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Text&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Input&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="360" y="640" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-25" edge="1" parent="1" source="spRwfffBcYJK-SBZ-oN2-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="A2Rj1c-wWx18dHyTlpq0-14">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="spRwfffBcYJK-SBZ-oN2-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;공감형 상담 피드백&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="322" x="160" y="1120" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-13" edge="1" parent="1" source="spRwfffBcYJK-SBZ-oN2-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="spRwfffBcYJK-SBZ-oN2-18">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="spRwfffBcYJK-SBZ-oN2-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPT-4o-mini&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;객체 정보 + 사용자 입력&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;기반&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;공감형 심리 해석&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="322" x="160" y="1000" as="geometry" />
++        </mxCell>
++        <mxCell id="SL_6hm9mEax60UBV8hSA-2" edge="1" parent="1" source="A2Rj1c-wWx18dHyTlpq0-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="spRwfffBcYJK-SBZ-oN2-16">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;사용자&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;그림 및&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;상담 내용 입력&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="158" x="40" y="520" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-7" edge="1" parent="1" source="A2Rj1c-wWx18dHyTlpq0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="A2Rj1c-wWx18dHyTlpq0-6">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;그림&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Image Input&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="160" y="640" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-9" edge="1" parent="1" source="A2Rj1c-wWx18dHyTlpq0-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="A2Rj1c-wWx18dHyTlpq0-8">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;YOLOv8&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Object Detection&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="160" y="760" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;검출 객체&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Detected Objects&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="160" y="880" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-16" edge="1" parent="1" source="A2Rj1c-wWx18dHyTlpq0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="A2Rj1c-wWx18dHyTlpq0-15">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;보고서 생성 (FPDF)&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;그림 분석 및 상담 결과 PDF 생성&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="322" x="160" y="1200" as="geometry" />
++        </mxCell>
++        <mxCell id="A2Rj1c-wWx18dHyTlpq0-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PDF 보고서 출력&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="322" x="160" y="1320" as="geometry" />
++        </mxCell>
++        <mxCell id="SL_6hm9mEax60UBV8hSA-7" edge="1" parent="1" source="A2Rj1c-wWx18dHyTlpq0-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.189;entryY=0.063;entryDx=0;entryDy=0;entryPerimeter=0;" target="spRwfffBcYJK-SBZ-oN2-19">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="SL_6hm9mEax60UBV8hSA-8" edge="1" parent="1" source="spRwfffBcYJK-SBZ-oN2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.809;entryY=0.019;entryDx=0;entryDy=0;entryPerimeter=0;" target="spRwfffBcYJK-SBZ-oN2-19">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++      </root>
++    </mxGraphModel>
++  </diagram>
++</mxfile>
+--- /dev/null
++++ 그림 자료/미술치료 논문 그림 3.drawio
+@@ -0,0 +1,67 @@
++<mxfile host="app.diagrams.net">
++  <diagram name="페이지-1" id="o1BvEpDSDJBJyjX5vFhx">
++    <mxGraphModel dx="1216" dy="1134" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
++      <root>
++        <mxCell id="0" />
++        <mxCell id="1" parent="0" />
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-4" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-2">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;프로그램 실행&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="120" y="160" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-2" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="0sY1wBu5RD6wzpjFFAkf-6">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;그림 업로드&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="320" y="160" as="geometry" />
++        </mxCell>
++        <mxCell id="828QhkScE0mZ0iXsImuo-1" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-8">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp;YOLOv8&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;객체 검출&lt;/b&gt;&lt;/font&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="520" y="160" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-8" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="We8JtGfPTy6WRy6Apemt-6">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;검출 객체 정보&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="720" y="160" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-15" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="We8JtGfPTy6WRy6Apemt-13">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;사용자 상담 내용 입력&lt;/font&gt;&lt;/b&gt;" vertex="1">
++          <mxGeometry height="40" width="360" x="520" y="560" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;상담 결과 출력&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;피드백 및 PDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="120" y="360" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-3" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-12">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PDF 보고서 생성&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;FPDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="320" y="360" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-5" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-13">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPT-4o-mini&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;객체 정보와 사용자 입력 기반&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;공감형 상담 생성&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="360" x="516" y="360" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Detected Objects&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="160" x="720" y="280" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;User Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="200" x="600" y="480" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-14" edge="1" parent="1" source="We8JtGfPTy6WRy6Apemt-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.787;entryY=-0.028;entryDx=0;entryDy=0;entryPerimeter=0;" target="0sY1wBu5RD6wzpjFFAkf-14">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-17" edge="1" parent="1" source="We8JtGfPTy6WRy6Apemt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.511;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="0sY1wBu5RD6wzpjFFAkf-14">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++      </root>
++    </mxGraphModel>
++  </diagram>
++</mxfile>

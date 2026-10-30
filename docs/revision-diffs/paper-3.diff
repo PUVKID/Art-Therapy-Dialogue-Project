@@ -1,0 +1,600 @@
+# 2차 원고 -> 3차 원고
+# 공백·주석·개행을 무시하지 않습니다. PDF 추출 텍스트는 배치·글꼴 비교를 대신하지 않습니다. 바이너리는 크기·SHA-256으로 비교합니다. ipynb의 바이너리 이미지 출력만 크기·SHA·원문 링크로 표시하며 코드·Markdown·수치·설정·그 밖의 JSON 텍스트는 전체 비교합니다.
+# 이전 논문/2차/원문_논문.pdf 377013 b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616
+# 이전 논문/2차/원문_논문.hwp 727040 c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb
+# 이전 논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp 715264 f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8
+# 이전 논문/2차/관련문서/2차_투고신청서.hwp 37376 782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635
+# 이전 논문/2차/관련문서/심사답변서 1.hwp 89600 3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e
+# 이전 논문/2차/관련문서/심사답변서 2.hwp 84480 7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da
+# 이전 논문/2차/관련문서/심사답변서 3.hwp 82944 8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21
+# 현재 논문/3차/원문_논문.pdf 435587 daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1
+# 현재 자료/3차/미술치료 논문 그림 3.drawio 7582 bbc9a5a511daf7a12e274ecbfe48426062bd7294b400838da6637e057c69aeaf
+# 현재 자료/3차/미술치료 논문 그림 3.png 58274 3b63b1cea0ebd0111635e89a4a5831c8d673cca978e13ff5b1a33d6d53e8f85e
+# 현재 논문/3차/원문_논문.hwp 941056 2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836
+# 현재 논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp 736256 51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30
+# 현재 논문/3차/관련문서/3차_투고신청서.hwp 37888 89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8
+Binary files 논문/2차/관련문서/2차_투고신청서.hwp and /dev/null differ
+Binary files /dev/null and 논문/3차/관련문서/3차_투고신청서.hwp differ
+--- /dev/null
++++ 자료/3차/미술치료 논문 그림 3.drawio
+@@ -0,0 +1,71 @@
++<mxfile host="app.diagrams.net">
++  <diagram name="페이지-1" id="o1BvEpDSDJBJyjX5vFhx">
++    <mxGraphModel dx="1212" dy="1102" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
++      <root>
++        <mxCell id="0" />
++        <mxCell id="1" parent="0" />
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-1" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-2">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;프로그램 실행&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="520" y="40" as="geometry" />
++        </mxCell>
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-2" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-6">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;그림 업로드&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="520" y="160" as="geometry" />
++        </mxCell>
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-3" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-8">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp;YOLOv8&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;객체 검출&lt;/b&gt;&lt;/font&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="480" y="280" as="geometry" />
++        </mxCell>
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-5" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-14">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;검출 객체 정보&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="480" y="400" as="geometry" />
++        </mxCell>
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-11" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-14">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;사용자 상담&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;내용 입력&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="120" x="840" y="560" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;상담 결과 출력&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;피드백 및 PDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="480" y="800" as="geometry" />
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-3" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-12">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PDF 보고서 생성&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;FPDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="480" y="680" as="geometry" />
++        </mxCell>
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-14" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-13">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="0sY1wBu5RD6wzpjFFAkf-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPT-4o-mini&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;객체 정보와 사용자 입력 기반&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;공감형 상담 생성&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="320" x="440" y="560" as="geometry" />
++        </mxCell>
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-15" edge="1" parent="1" source="We8JtGfPTy6WRy6Apemt-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
++          <mxGeometry relative="1" as="geometry">
++            <mxPoint x="600" y="520" as="targetPoint" />
++          </mxGeometry>
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Detected Objects&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="160" x="400" y="500" as="geometry" />
++        </mxCell>
++        <mxCell id="ad0YNEWfdTvF7yqJi8ol-12" edge="1" parent="1" source="We8JtGfPTy6WRy6Apemt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
++          <mxGeometry relative="1" as="geometry">
++            <mxPoint x="800" y="600" as="targetPoint" />
++          </mxGeometry>
++        </mxCell>
++        <mxCell id="We8JtGfPTy6WRy6Apemt-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;User Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="160" x="720" y="640" as="geometry" />
++        </mxCell>
++      </root>
++    </mxGraphModel>
++  </diagram>
++</mxfile>
+Binary files /dev/null and 자료/3차/미술치료 논문 그림 3.png differ
+Binary files 논문/2차/관련문서/심사답변서 1.hwp and /dev/null differ
+Binary files 논문/2차/관련문서/심사답변서 2.hwp and /dev/null differ
+Binary files 논문/2차/관련문서/심사답변서 3.hwp and /dev/null differ
+Binary files 논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp and 논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp differ
+Binary files 논문/2차/원문_논문.hwp and 논문/3차/원문_논문.hwp differ
+--- 논문/2차/원문_논문.pdf
++++ 논문/3차/원문_논문.pdf
+@@ -7,120 +7,132 @@
+ ž Corresponding Author: Namgi Kim 
+  Dept. of Computer Science, Kyonggi University, Suwon, Korea 
+  Tel.: +82-31-249-9662, Email: ngkim@kyonggi.ac.kr
+-생성형 인공지능을 활용한 우울증 환자 대상 상호작용 기반 
+-미술치료 모델 구현
++객체 검출과 생성형 언어모델을 결합한 상호작용 기반 그림 
++심리분석 시스템의 설계 및 구현
+ 곽윤석*,김남기**
+-Implementation of An Interactive Art Therapy Model using
+-Generative AI for Depression Treatment
++Interactive Drawing-based Psychological Analysis Using Object
++Detection and Generative Language Models
+ Yunsuk Kwak* and Namgi Kim**
+ 본 연구는 2026년 경기대학교 대학원 연구원장학생 장학금 지원에 의하여 수행되었음. 이 논문은 
+ 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원-학·석사연계ICT핵심인재양성사업의 지원을 
+ 받아 수행된 연구임(ITTP-2024-00436954). 또한 이 논문은 2024년도 정부(교육부)의 재원으로 
+ 한국연구재단의 지원을 받아 수행된 기초연구사업임(No. RS-2020-NR049579)
+ 요  약
+-본 연구는 생성형 AI를 활용하여 우울증 환자의 감정 표현 및 심리 회복을 지원하는 상호작용 기반 미술치
+-료 모델을 구현한다. 제안한 시스템은 YOLOv8을 이용하여 그림의 주요 객체를 검출하고, 검출된 객체 정보와 
+-사용자 입력을 GPT-4o-mini에 함께 반영하여 공감형 상담 피드백을 생성한다. 실험 결과, 객체 검출 모델은 m
+-AP50 약 0.92를 달성하였으며 사용자 평가에서도 긍정적인 결과를 보였다. 제안된 모델은 미술 표현 과정에 AI 
+-피드백을 통합함으로써 환자의 자기 이해를 증진시키고, 기존 텍스트 중심 상담을 보완하는 디지털 기반의 미
+-술치료 방식을 제시한다.
++본 연구는 그림을 통한 비언어적 감정 표현을 분석하고 공감형 피드백을 제공하는 상호작용 기반 심리분석 
++시스템을 제안한다. 제안한 시스템은 YOLOv8로 그림 속 주요 객체를 검출하고, 검출된 객체 정보와 사용자 
++입력을 GPT-4o-mini에 반영하여 개인화된 상담 피드백을 생성한다. 객체 검출 모델은 33개 클래스, 총 330,000
++장의 합성 데이터로 학습하였으며, 단일 객체 기준 mAP50 약 0.92를 달성하였다. 성인 32명을 대상으로 한 시
++뮬레이션 평가에서 감정 적절성 4.6점, 언어 자연성 4.8점, 공감성 4.5점(5점 척도)의 결과를 얻었으며, 상담 내
++용을 자동 문서화하는 PDF 보고서 기능도 통합하였다. 이는 비언어적 표현을 반영한 디지털 심리분석 및 미술
++치료 지원의 가능성을 제시한다.
+ Abstract
+-This study implements an interactive art therapy model using generative AI to support emotional expression and ps
+-ychological recovery in patients with depression. The proposed system detects key objects in drawings using YOLOv8 
+-and generates empathetic feedback based on the detected objects and user input through GPT-4o-mini. Experimental r
+-esults showed that the object detection model achieved an mAP50 of approximately 0.92 with positive user evaluation
+-s. The proposed model enhances patients' self-understanding and presents a digital art therapy approach that compleme
+-nts conventional text-based counseling.
++This study proposes an interactive psychological analysis system that interprets non-verbal emotional expression thr
++ough drawings and provides empathetic feedback. The proposed system detects key objects in drawings using YOLOv
++8, and generates personalized counseling feedback by combining the detected object information with user input throu
++gh GPT-4o-mini. The object detection model was trained on a synthetic dataset of 33 classes and 330,000 images, ac
++hieving a single-object mAP50 of approximately 0.92. In a simulation-based evaluation with 32 adult users, the syste
++m achieved average scores of 4.6, 4.8, and 4.5 for emotional appropriateness, language naturalness, and empathy, resp
++ectively. These results demonstrate the feasibility of a digital psychological analysis and art therapy support approach.
+ Key words
+-generative AI, art therapy, depression, empathetic feedback, YOLOv8, GPT-4o-mini
++generative AI, art therapy, emotional expression, empathetic feedback, YOLOv8, GPT-4o-mini
+ 
+ === 2쪽 ===
+-2 생성형인공지능을활용한우울증환자대상상호작용기반미술치료모델구현
++2 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
+ I. 서  론
+-우울증은 전 세계적으로 높은 유병률을 보이는 
+-정신 질환으로, 정서적 고통, 인지 저하, 수면 장애 
+-등 다양한 증상을 유발한다[1]. 현재 주요 치료 방
+-법으로 약물 치료와 언어 중심의 심리상담이 활용
+-되고 있으나, 자신의 감정을 언어로 표현하는 데 
+-어려움을 겪는 환자에게는 치료 효과가 제한적이라
+-는 한계가 있다. 미술치료는 그림과 같은 시각적 
+-표현을 통해 감정을 비언어적으로 표현하고 정서 
+-회복을 지원하는 치료 기법으로, 최근 우울증 환자
+-의 감정 표현과 심리적 안정에 긍정적인 효과가 보
+-고되고 있다[2].
++현대 사회에서 정신 건강 문제는 정서적 고통, 
++인지 저하, 대인관계 어려움 등 다양한 형태로 나
++타나며, 이를 조기에 파악하고 지원하는 것이 중요
++한 과제로 대두되고 있다[1]. 현재 주요 심리 지원 
++방법으로 약물 치료와 언어 중심의 심리상담이 활
++용되고 있으나, 자신의 감정을 언어로 명확히 표현
++하는 데 어려움을 겪는 사람들에게는 기존 방식의 
++효과가 제한적일 수 있다는 한계가 지적된다. 미술
++치료는 그림과 같은 시각적 표현을 통해 감정을 비
++언어적으로 드러내고 정서적 안정을 지원하는 기법
++으로, 다양한 정서적 어려움을 겪는 사람들의 감정 
++표현과 심리적 안정에 긍정적인 효과가 보고되고 
++있다[2].
+ 최근에는 생성형 인공지능(Generative AI)을 활용
+-한 디지털 심리치료 기술이 주목받고 있다[3][4]. 생
+-성형 AI는 사용자 입력을 기반으로 개인화된 피드
+-백을 제공할 수 있어 기존의 규칙 기반 상담 시스
+-템보다 유연한 상호작용이 가능하다[6].
+-본 연구에서는 생성형 인공지능을 활용한 상호작
+-용 기반 미술치료 모델을 구현하였다. 제안한 시스
+-템은 YOLOv8[5]을 이용하여 그림에서 주요 객체를 
+-검출하고, GPT-4o-mini[6]를 활용하여 그림과 사용
+-자 입력을 반영한 공감형 상담 피드백을 생성한다. 
+-또한 그림 분석, 생성형 AI 기반 상담, PDF 보고서 
+-생성을 하나의 시스템으로 통합하여 디지털 미술치
+-료의 활용 가능성을 제시하였다.
+-본 연구의 주요 기여는 다음과 같다. 첫째, 그림 
+-기반 객체 검출과 생성형 인공지능을 결합한 상호
+-작용 기반 미술치료 시스템을 구현하였다. 둘째, 그
+-림 분석 결과를 바탕으로 공감형 상담 피드백 생성 
+-방식을 제안하였다. 셋째, 상담 결과를 자동으로 문
+-서화하여 디지털 미술치료 환경을 구현하였다.
++한 디지털 심리 지원 기술이 주목받고 있다[3][4]. 
++본 연구에서는 객체 검출 모델인 YOLOv8[5]을 이
++용하여 그림에서 주요 객체를 검출하고, 검출된 객
++체 정보와 사용자 입력을 생성형 언어모델인 GPT-
++4o-mini[6]에 반영함으로써 개인화된 상호작용이 가
++능한 상담 피드백 생성 방식을 제안한다.
++이러한 접근을 바탕으로 그림 기반 객체 검출과 
++생성형 인공지능을 결합한 상호작용 기반 심리분석 
++시스템을 구현하였으며, 주요 기여는 다음과 같다. 
++첫째, 객체 검출 결과를 반영한 공감형 상담 피드
++백 생성 방식을 제안하였다. 둘째, 그림 분석·생성
++형 AI 상담·PDF 보고서 생성을 하나의 시스템으로 
++통합하여 디지털 심리분석 및 미술치료 지원 도구
++로서의 활용 가능성을 제시하였다.
+ II. 선행 연구
+-미술치료는 그림과 같은 시각적 표현을 통해 내
+-면의 감정을 표현하고 심리 상태를 탐색하는 대표
+-적인 비언어적 치료 기법이다. 최근 연구에서는 미
+-술치료가 우울증 환자의 감정 표현과 정서 회복에 
+-긍정적인 효과를 보이며, 자기 이해와 심리적 안정
+-감을 향상시키는 데 도움이 되는 것으로 보고되었
+-다[2].
+-한편, 최근 디지털 치료기법에서는 챗봇 기반 심
+-리상담[3], 가상현실 기반 노출치료[4], 감정 분석 
+-인공지능 등 다양한 형태의 인공지능 활용 사례가 
+-증가하고 있다. 그러나 대부분의 연구는 텍스트 기
+-반 상담이나 규칙 기반 피드백에 초점을 두고 있어 
+-사용자의 그림과 같은 비언어적 표현을 반영한 맞
+-춤형 상담에는 한계가 있다.
+-본 연구에서는 이러한 한계를 극복하기 위해 객
+-체 검출 모델인 YOLOv8[5]과 생성형 인공지능인 G
+-PT-4o-mini[6]를 결합한 상호작용 기반 미술치료 모
+-델을 제안한다. YOLOv8은 사용자가 그린 그림에서 
+-사람, 나무, 집, 태양 등 주요 객체를 검출하여 시
+-각적 특징을 추출하고, GPT-4o-mini는 객체 정보와 
+-사용자 입력을 함께 반영하여 공감적이고 개인화된 
+-심리 피드백을 생성한다.
++본 장에서는 미술치료의 효과와 한계, 이를 인공
++지능으로 분석하려는 기존 연구들을 살펴보고, 본 
++연구가 갖는 차별점을 제시한다.
++특히 미술치료는 서론에서 언급한 정서적 효과 
++중에서도 우울증 환자의 감정 표현과 정서 회복에 
++긍정적인 영향을 미치는 것으로 보고되었다[2].
++투사적 그림 검사를 인공지능으로 분석하려는 시
++도도 활발히 이루어지고 있다. 대표적으로 집-나무-
++사람 검사(House-Tree-Person, HTP)는 그림을 통해 
++무의식적 정서와 성격 특성을 파악하는 투사 기법
++으로, 채점과 해석이 검사자의 주관적 경험에 크게 
++의존한다는 한계가 지적되어 왔다[7]. 이를 보완하
++기 위해 나무 그림의 특징 기반 자살 사고 탐지[8], 
++해석 가능한 분류 모델 설계[9], 멀티모달 대형언어
++모델과 다중 에이전트 협업 기반 HTP 평가 프레임
++워크[10] 등 딥러닝 기반 자동 분석 연구가 다수 제
++안되었으나, 대부분 그림 전체의 전역적 특징 분류
++나 요소 존재 유무 판별에 초점을 두고 있어, 개별 
++객체의 위치·크기 정보를 실시간 검출해 생성형 
++언어모델 입력으로 직접 연계하는 본 연구의 접근
++과는 차이가 있다.
++한편, 상담 피드백의 품질을 높이기 위해 프롬프
++트 파이프라인도 개선하였는데 특히 GPT 계열 대
++형 언어모델을 활용한 공감형 상담 연구가 활발하
++다. ChatGPT가 의료 상담 맥락에서 부분적으로 공
++감 반응을 생성할 수 있음을 확인한 체계적 문헌고
++찰[11]과 국내 한국인 사용자 대상 ChatGPT-4.0 기
++반 정신건강 챗봇 평가 연구[12]가 대표적이다.
++그러나 이러한 연구들은 대부분 텍스트 기반 대
++화만을 입력으로 활용하여, 그림과 같은 비언어적 
++표현을 반영한 맞춤형 상담에는 한계가 있다.
++이처럼 기존 HTP 분석 연구와 GPT 기반 상담 
++챗봇 연구가 각각 그림 또는 텍스트 입력만을 다루
++는 것과 달리, 본 연구는 객체 검출로 얻은 그림 
++속 요소 정보와 사용자의 텍스트 입력을 함께 GPT
++-4o-mini에 반영하고, 이를 PDF 보고서 자동화까지 
++하나의 시스템으로 통합했다는 점에서 차별화된다. 
++구체적인 모듈 구성과 동작 방식은 III장에서 설명
++한다.
+ III. 제안하는 시스템
+-본 연구의 상호작용 기반 미술치료 시스템은 그
+-림 1과 같이 인터페이스, 객체 검출, 심리 해석 및 
+-보고서 생성의 네 가지 모듈로 구성된다. 각 모듈
+-은 사용자 입력부터 상담 결과 생성까지 순차적으
+-로 동작한다.
++본 연구의 상호작용 기반 심리분석 시스템은 그
++림 1과 같이 인터페이스, 객체 검출, 심리 해석, 보
++고서 생성의 네 가지 모듈로 구성되며, 사용자 입
++력부터 상담 결과 생성까지 순차적으로 동작한다.
+ 인터페이스 모듈은 Gradio 기반 웹 플랫폼으로 
+-구현하였으며, 사용자가 그림과 상담 내용을 입력하
+-면 이를 객체 검출 및 심리 해석 모듈로 전달한다.
+-객체 검출 모듈은 YOLOv8[5]을 이용하여 그림의 
+-주요 객체를 검출하고 객체의 종류와 위치 정보를 
+-추출한다. 검출된 객체 정보와 사용자 입력은 GPT-
+-4o-mini에 전달되어 공감형 상담 피드백 생성에 활
+-용된다. 객체 정보는 그림의 시각적 특징을 반영하
+-고, 사용자 입력은 현재의 감정과 상황을 보완하는 
+-정보로 활용된다.
+-심리 해석 모듈은 GPT-4o-mini를 이용하여 객체 
+-검출 결과와 사용자 입력을 기반으로 공감형 상담 
+-피드백을 생성한다. 프롬프트는 의료적 진단이나 치
+-료를 단정적으로 제시하지 않도록 설계하였으며, 공
+-감과 정서적 지지를 중심으로 응답을 생성하도록 
+ 
+ === 3쪽 ===
+ Journal of KIIT. Vol. 23, No. 0, pp. 00-00, 00 00, 2025. pISSN 1598-8619, eISSN 2093-7571 3
+-구성하였다. 생성된 결과는 전문적인 의료 진단을 
+-대체하지 않는 참고 정보로 활용하도록 하였다.
+-보고서 생성 모듈은 FPDF 라이브러리를 이용하
+-여 그림 분석 결과와 상담 내용을 PDF 보고서로 
+-생성하며, 상담 결과를 기록하고 치료 과정의 참고 
+-자료로 활용할 수 있다.
+-     
++구현하여 사용자로부터 그림과 상담 내용을 입력받
++는다. 객체 검출 모듈은 YOLOv8[5]을 이용해 그림 
++속 주요 객체의 종류와 위치 정보를 추출하며, 이 
++정보는 사용자 입력(현재의 감정과 상황)과 함께 G
++PT-4o-mini에 전달된다. 심리 해석 모듈은 GPT-4o-
++mini를 이용하여 두 정보를 기반으로 공감형 상담 
++피드백을 생성하는데, 프롬프트는 의료적 진단이나 
++치료를 단정적으로 제시하지 않고 공감과 정서적 
++지지를 중심으로 응답하도록 설계하였으며, 시스템
++에 입력된 그림과 상담 내용은 공감형 피드백 생성
++을 위해 GPT-4o-mini API로 외부 전송되므로, 실제 
++서비스 적용 시에는 개인정보 및 민감정보 처리에 
++대한 별도의 보호 조치가 필요하다. 
++보고서 생성 모듈은 FPDF 라이브러리로 분석 결
++과와 상담 내용을 PDF 보고서로 문서화하여 치료 
++과정의 참고 자료로 활용할 수 있게 한다.
++ 
+ 그림1. 제안하는시스템모듈흐름도
+ Fig. 1. Flowchart of proposed system modules
+ 제안하는 시스템을 구현하기 위해 객체 검출 모
+@@ -131,17 +143,12 @@
+ 치하고 색상을 무작위로 변경하였으며, 데이터 라벨
+ 링은 YOLO 포맷(class, x_center, y_center, width, h
+ eight)을 사용하였다.
+-모델 학습은 Ultralytics YOLOv8[5]을 기반으로 5
+-0에폭씩 총 100단계(총 5,000에폭)로 수행하였으며, 
+-resume=True 옵션을 이용해 연속 학습하였다. 학습 
+-결과 box_loss ≈ 0.38, cls_loss ≈ 0.28, dfl_loss ≈ 
+-0.81, mAP50 ≈ 0.92, mAP50-95 ≈ 0.78의 성능을 
+-달성하였다. 학습된 모델은 그림에서 주요 객체를 
+-검출하고, 결과를 GPT-4o-mini에 전달하여 공감형 
+-상담 피드백을 생성한다.
+-그림 2는 구현된 사용자 인터페이스를 나타낸다. 
+-사용자는 그림과 상담 내용을 입력한 후 분석 결과
+-를 확인하고, PDF 보고서를 생성할 수 있다.
++그림 2는 Gradio 기반으로 구현된 사용자 인터페
++이스 화면을 나타낸다. 사용자는 상단의 업로드 영
++역에 그림을 올리고 그 아래 입력창에 상담 내용을 
++작성한 뒤 '상담하기' 버튼을 누르며, 이에 따라 생
++성된 공감형 상담 피드백은 하단의 결과 창에 표시
++된다.
+ 그림 3은 제안한 시스템의 구현 흐름도이다. 사
+ 용자가 그림과 상담 내용을 입력하면 YOLOv8이 그
+ 림의 주요 객체를 검출하고, 검출 객체 정보와 사
+@@ -152,27 +159,88 @@
+    
+ 그림2. 사용자인터페이스화면
+ Fig. 2. User interface view
++
++=== 4쪽 ===
++4 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
+ 그림3. 제안하는시스템의구현흐름도
+ Fig. 3. Implementation flowchart of proposed system
+ IV. 실 험
+-본 시스템은 시뮬레이션 기반의 모의 미술치료 
+-환경에서 성능을 검증하였다. 사용자는 불안, 고독, 
+-회복 등 다양한 감정을 주제로 그림을 제출하였으
+-며, 시스템은 이에 대한 공감형 상담 피드백을 생
+-성하였다.
+-
+-=== 4쪽 ===
+-4 생성형인공지능을활용한우울증환자대상상호작용기반미술치료모델구현
+-객체 검출 모델은 단일 객체 기준으로 mAP50 ≈ 
+-0.92, mAP50-95 ≈ 0.78의 성능을 달성하여 주요 
+-객체를 안정적으로 검출하였다.
++본 심리분석 시스템은 실제 임상 환경에 앞서 시
++스템의 전반적인 동작 가능성을 확인하기 위해 모
++의 미술치료 환경에서 성능을 검증하였다. 사용자는 
++불안, 고독, 회복 등 일상적으로 경험할 수 있는 다
++양한 감정을 주제로 그림을 자유롭게 그려 제출하
++였으며, 별도의 진단적 지침이나 구조화된 과제 없
++이 각자의 방식으로 감정을 표현하도록 하였다. 시
++스템은 사용자가 제출한 그림과 함께 입력한 상담 
++내용을 바탕으로 공감형 상담 피드백을 생성하였으
++며, 이 과정에서 객체 검출 결과와 텍스트 입력이 
++결합되어 상담 결과에 반영되는지를 함께 확인하였
++다.
++객체 검출 모델 학습에는 III장에서 기술한 데이
++터셋을 사용하였다. 본 실험에서는 별도의 held-out 
++검증 세트 대신 학습(train) 세트를 검증에 활용하였
++는데, 이는 초기 개발 단계에서 파이프라인 전반의 
++동작 여부를 빠르게 확인하기 위한 목적에서 채택
++한 방식이다. 다만 이러한 방식은 모델이 이미 학
++습한 데이터를 다시 평가에 사용한다는 점에서, 본
++문에 제시된 mAP50 ≈ 0.92, mAP50-95 ≈ 0.78은 
++미학습 데이터에 대한 일반화 성능이 아니라 학습 
++데이터에 대한 모델의 적합(fit) 성능을 나타내는 수
++치로 해석되어야 한다. 미학습 데이터에 대한 실질
++적인 일반화 성능은 별도의 독립적인 검증 세트를 
++구성하여 후속 연구에서 확인할 예정이다.
++학습은 YOLOv8n을 사전 가중치(pretrained weig
++ht)로 하여 50에폭씩 총 100단계에 걸쳐 총 5,000에
++폭 규모로 다단계 resume 방식의 누적 학습을 진행
++하였다. 이는 대규모 합성 데이터셋(330,000장)을 한 
++번에 학습하기보다 단계적으로 나누어 학습 경과를 
++점검하며 진행하기 위한 방식이었다. 학습 안정성을 
++확보하기 위해 SGD 옵티마이저와 cosine learning r
++ate 스케줄링, warm-up 구간을 적용하였으며, 학습 
++결과 box_loss ≈ 0.38, cls_loss ≈ 0.28, dfl_loss ≈ 
++0.81, mAP50 ≈ 0.92, mAP50-95 ≈ 0.78의 성능을 
++달성하여 단일 객체 기준으로 주요 객체를 안정적
++으로 검출하였다. 
++다만 33개 클래스 전체의 개별 성능에는 편차가 
++있었다. 사람·집·나무와 같이 형태와 윤곽이 뚜렷
++한 클래스는 검출 정확도가 높았던 반면, 그림자(sh
++adow)나 지면선(ground_line)처럼 경계가 모호하고 
++다른 객체와 시각적으로 혼동되기 쉬운 클래스는 
++상대적으로 낮은 검출 성능을 보였다. 이는 해당 
++클래스들이 뚜렷한 윤곽선 대신 명암이나 배치 맥
++락으로만 구분되는 특성상, 합성 데이터 생성 과정
++에서 다른 클래스와의 시각적 차별성이 충분히 확
++보되지 못했기 때문으로 판단된다.
++아울러, 상담 피드백의 품질을 높이기 위해 프롬
++프트 파이프라인도 지속적으로 개선하였다. 초기 구
++현에서는 객체 탐지 성공 여부만을 GPT-4o-mini 프
++롬프트에 반영하였는데, 이 경우 피드백이 그림 속 
++구체적인 요소를 언급하지 못하고 원론적인 수준에 
++머무르는 한계가 있었다. 이를 보완하기 위해 이후 
++YOLOv8이 검출한 객체의 클래스명 목록을 텍스트
++로 변환하여 프롬프트에 직접 포함시키고, 사용자의 
++상담 입력과 함께 단일 요청으로 결합하도록 개선
++
++=== 5쪽 ===
++Journal of KIIT. Vol. 23, No. 0, pp. 00-00, 00 00, 2025. pISSN 1598-8619, eISSN 2093-7571 5
++하였다.
+ 상담 피드백의 품질 평가는 총 32명의 성인 사용
+-자를 대상으로 5점 Likert 척도를 이용하여 감정 적
+-절성, 언어 자연성 및 공감성을 평가하였다. 평균 
+-점수는 감정 적절성 4.6점, 언어 자연성 4.8점, 공감
+-성 4.5점으로 나타났다. 표 1과 그림 4는 각각 사용
+-자 평가 결과와 GPT-4o-mini가 생성한 그림 분석 
+-리포트의 예를 나타낸다.
++자를 대상으로 진행하였다. 각 참가자는 시스템을 
++통해 그림을 제출하고 상담 피드백을 받은 뒤, 5점 
++Likert 척도를 이용하여 감정 적절성(생성된 피드백
++이 그림과 입력 내용의 감정에 부합하는 정도), 언
++어 자연성(문장이 자연스럽고 사람이 작성한 것처
++럼 느껴지는 정도), 공감성(위로와 정서적 지지가 
++느껴지는 정도)의 세 항목을 평가하였다. 평가 결과 
++평균 점수는 감정 적절성 4.6점, 언어 자연성 4.8점, 
++공감성 4.5점으로 나타나 세 항목 모두 5점 만점에 
++근접한 높은 점수를 보였다. 그림 4와 표 1은 각각 
++GPT-4o-mini가 생성한 그림 분석 리포트의 예와 사
++용자 평가 결과를 나타낸다.
++그림4. GPT-4o-mini가생성한그림분석리포트예
++Fig. 4. Example of picture analysis report generated by
++GPT-4o-mini
+ 표1. 사용자평가결과
+ Table 1. User evaluation results
+ 평가항목
+@@ -187,50 +255,113 @@
+ 공감성
+ 공감수준
+ 4.5
+-그림4. GPT-4o-mini가생성한그림분석리포트예
+-Fig. 4. Example of picture analysis report generated by
+-GPT-4o-mini
+ V. 결 론
+-본 연구에서는 생성형 인공지능을 활용한 상호작
+-용 기반 미술치료 시스템을 구현하였다. 제안한 시
+-스템은 YOLOv8 기반 객체 검출과 GPT-4o-mini 기
+-반 공감형 상담 피드백을 결합하여 사용자의 비언
+-어적 감정 표현을 지원하고, 상담 결과를 PDF 보고
+-서로 생성하는 디지털 미술치료 환경을 구현하였다.
+-객체 검출 모델은 33개 클래스, 총 330,000장의 
+-합성 데이터를 이용하여 학습하였으며, 객체 검출 
+-성능과 사용자 평가를 통해 그림 기반 객체 정보와 
+-생성형 AI를 결합한 상담 시스템의 디지털 미술치
+-료 적용 가능성을 제시하였다.
++본 연구에서는 YOLOv8 기반 객체 검출과 GPT-4
++o-mini 기반 공감형 상담 피드백을 결합한 상호작
++용 기반 심리분석 시스템을 구현하였다. 객체 검출 
++결과와 사용자의 상담 입력을 단일 프롬프트로 결
++합함으로써, 탐지 성공 여부만을 반영하는 수준을 
++넘어 그림 속 구체적 요소에 기반한 공감형 피드백
++을 생성하고 이를 PDF 보고서로 자동 문서화할 수 
++있도록 파이프라인을 개선하였으며, 이를 통해 디지
++털 미술치료 적용 가능성을 제시하였다.
++다만 본 연구는 시뮬레이션 기반의 단일 세션 평
++가에 머물러 있어 실제 임상 환경에서의 효과와 반
++복 사용에 따른 피드백 품질의 일관성은 확인하지 
++못했으며, 일부 클래스의 검출 성능 편차로 그림 
++요소 전반에 대한 균일한 해석에도 한계가 있다. 
++또한 객체 검출 모델은 하나의 객체를 중앙에 배치
++한 합성 이미지로 학습되어, 여러 객체가 함께 그
++려지는 실제 그림에서도 동일한 성능이 유지되는지
++는 별도의 검증이 필요하다.
+ 향후 연구에서는 실제 우울증 환자를 대상으로 
+-임상 검증을 수행하고, 다중 모달 감정 분석과 다
+-중 객체 해석 정확도 및 GPT 기반 상담 피드백의 
+-품질 향상을 위한 후처리 기법을 연구할 계획이다.
++한 임상 검증과 반복 사용에 따른 상담 효과의 종
++단적 평가를 수행하고, 다중 모달 감정 분석, 검출 
++성능이 낮은 클래스에 대한 다중 객체 해석 정확도 
++개선, GPT 기반 상담 피드백의 후처리 기법을 연구
++할 계획이다.
+ References
+ [1] World Health Organization, "Depression and Other 
+ Common Mental Disorders: Global Health Estimate
+-s," World Health Organization, Geneva, Switzerlan
+-d, 2017.
++s", World Health Organization, pp. 1-24, 2017.
+ [2] B. Han, Y. Jia, G. Hu, et al., "The Effects of Vis
+ ual Art Therapy on Adults with Depressive Sympt
+-oms: A Systematic Review and Meta-Analysis," In
++oms: A Systematic Review and Meta-Analysis", In
+ ternational Journal of Mental Health Nursing, Vol. 
+ 33, No. 5, pp. 1183-1196, Oct. 2024. https://doi.or
+ g/10.1111/inm.13331
+ [3] A. N. Vaidyam, H. Wisniewski, J. D. Halamka, 
+ M. S. Kashavan, and J. B. Torous, "Chatbots and 
+ Conversational Agents in Mental Health: A Revie
+-w of the Psychiatric Landscape," Canadian Journal 
++
++=== 6쪽 ===
++6 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
++w of the Psychiatric Landscape", Canadian Journal 
+ of Psychiatry, Vol. 64, No. 7, pp. 456-464, July 2
+ 019. https://doi.org/10.1177/0706743719828977
+ [4] A. Wiebe, K. Kannen, B. Selaskowski, A. Mehren, 
+ and A.-K. Thöne, "Virtual Reality in the Diagnosti
+ c and Therapy for Mental Disorders: A Systematic 
+-Review," Clinical Psychology Review, Vol. 98, Ar
+-ticle 102213, Dec. 2022. https://doi.org/10.1016/j.cp
+-r.2022.102213
+-[5] Ultralytics, "YOLO Documentation," https://docs.ultr
+-alytics.com/, (accessed Jan. 2026).
+-[6] OpenAI, "GPT-4 Technical Report," arXiv preprint 
+-arXiv:2303.08774, Mar. 2023. https://doi.org/10.485
+-50/arXiv.2303.08774
++Review", Clinical Psychology Review, Vol. 98, pp. 
++1-15, Dec. 2022. https://doi.org/10.1016/j.cpr.2022.1
++02213
++[5] Ultralytics, "YOLO Documentation", https://docs.ultr
++alytics.com/. [accessed: Jan. 2026]
++[6] OpenAI, "GPT-4o mini: Advancing Cost-Efficient I
++ntelligence", OpenAI Blog, Jul. 2024. https://opena
++i.com/index/gpt-4o-mini-advancing-cost-efficient-intel
++ligence/
++[7] H. Guo, B. Feng, Y. Ma, X. Zhang, H. Fan, Z. 
++Dong, T. Chen, and Q. Gong, "Analysis of the Sc
++reening and Predicting Characteristics of the House
++-Tree-Person Drawing Test for Mental Disorders: 
++A Systematic Review and Meta-Analysis", Frontier
++s in Psychiatry, Vol. 13, pp. 1-14, Jan. 2023. http
++s://doi.org/10.3389/fpsyt.2022.1041770
++[8] T. Pan, et al., "Automated Drawing Psychoanalysis 
++via House-Tree-Person Test", Proc. IEEE Conferen
++ce, pp. 1-6, Oct. 2022. https://doi.org/10.1109/ICN
++C-FSKD57922.2022.10098035
++[9] Y. Xie, T. Pan, B. Liu, H. Chen, and W. Liu, "I
++nterpretable Drawing Psychoanalysis via House-Tre
++e-Person Test", Proc. AI 2023: Australasian Joint 
++Conf. on Artificial Intelligence, pp. 1-13, Nov. 20
++23. https://doi.org/10.1007/978-981-99-8391-9_18
++[10] S. Wen, Y. Sun, B. Ku, Z. Gao, L. Ma, Y. Yan
++g, and C. Jiao, "From Visual Perception to Deep 
++Empathy: An Automated Assessment Framework f
++or House-Tree-Person Drawings Using Multimodal 
++LLMs and Multi-Agent Collaboration", arXiv prepr
++int arXiv:2512.21360, Dec. 2025. https://doi.org/10.
++48550/arXiv.2512.21360
++[11] V. Sorin, D. Brin, Y. Barash, E. Konen, A. Char
++ney, G. Nadkarni, and E. Klang, "Large Language 
++Models and Empathy: Systematic Review", Journal 
++of Medical Internet Research, Vol. 26, pp. 1-12, 
++Dec. 2024. https://doi.org/10.2196/52597
++[12] B. Kang and M. Hong, "Development and Evalua
++tion of a Mental Health Chatbot Using ChatGPT 
++4.0: Mixed Methods User Experience Study With 
++Korean Users", JMIR Medical Informatics, Vol. 1
++3, pp. 1-15, Jan. 2025. https://doi.org/10.2196/6353
++8
++저자소개
++곽 윤 석 (Yunsuk Kwak)
++ 2026년 경기대학교 
++인공지능전공 학사
++ 2026년 3월 ~ 현재 : 
++경기대학교 컴퓨터과학과 
++석사연구생
++ 관심분야 : 인공지능, 컴퓨터 
++비전, 딥러닝, 의료영상 분석, 
++개인정보 보호
++김 남 기 (Namgi Kim)
++ 1997년 서강대학교 
++컴퓨터공학과 학사
++ 2000년 KAIST 전산학과 석사
++ 2005년 KAIST 전산학과 박사
++ 2007년 ~ 현재 : 경기대학교 
++AI컴퓨터공학부 교수
++관심분야 : 컴퓨터 네트워크, 
++이상 탐지, 추천시스템 
++최적화, 멀티캐스트 라우팅

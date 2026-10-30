@@ -1,0 +1,14 @@
+{
+  "stage": "5차 · 최종 수정 원고",
+  "previous": "4차 원고",
+  "files": {
+    "논문/5차/원문_논문.pdf": {
+      "bytes": 466330,
+      "sha256": "ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de"
+    },
+    "논문/5차/원문_논문.hwp": {
+      "bytes": 872960,
+      "sha256": "32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803"
+    }
+  }
+}

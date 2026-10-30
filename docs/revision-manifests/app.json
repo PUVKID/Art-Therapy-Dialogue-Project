@@ -1,0 +1,30 @@
+{
+  "stage": "그림 자료 · 기본 앱",
+  "previous": null,
+  "files": {
+    "그림 자료/app.ipynb": {
+      "bytes": 8196,
+      "sha256": "25549c1d0f12e0d8a000d9b1185a575e4acc7a596522e79a3964c00e2f16e9d3"
+    },
+    "그림 자료/그림 1.png": {
+      "bytes": 63869,
+      "sha256": "0a562e57a4cf3df48b12530ea02befbd245e854f855f4ccf2e08dc80424fef3a"
+    },
+    "그림 자료/그림 2.png": {
+      "bytes": 324481,
+      "sha256": "182eef375de5b5be3fd2056ba7a7be797cbdbb4a26207c05dce09b19d9ea0958"
+    },
+    "그림 자료/그림 3.png": {
+      "bytes": 50719,
+      "sha256": "550b5d3b61833be5239b0027eef409d7bc103e122767cb01861741f852d15209"
+    },
+    "그림 자료/미술치료 논문 그림 1.drawio": {
+      "bytes": 8310,
+      "sha256": "0f0190e3df762ca02c17353022ab592577f9d170409b59b3bad71ec2f153afc4"
+    },
+    "그림 자료/미술치료 논문 그림 3.drawio": {
+      "bytes": 7609,
+      "sha256": "efa11289474acf761f9c26baa4beb3f87e40e7e5dcf8836661a4655727c85cf4"
+    }
+  }
+}

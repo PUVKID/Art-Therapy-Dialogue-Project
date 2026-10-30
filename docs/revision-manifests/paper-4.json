@@ -1,0 +1,66 @@
+{
+  "stage": "4차 원고",
+  "previous": "3차 원고",
+  "files": {
+    "논문/4차/원문_논문.pdf": {
+      "bytes": 453356,
+      "sha256": "f5c4f5810ed7113fae738132e20e2629d23ef1a168f8599105f99fb623f463b4"
+    },
+    "4차/그림 5.ipynb": {
+      "bytes": 8700,
+      "sha256": "5d1b3760da9434cb4ebeae30770df59bd17743531d9f3e5f7d077fc2d8f7728a"
+    },
+    "자료/4차/미술치료 논문 그림 1.drawio": {
+      "bytes": 7587,
+      "sha256": "60cb96bd3f58e73a9ba0c7b8dfda04ada1e6c555e242b08908e47a56978d3e6a"
+    },
+    "자료/4차/미술치료 논문 그림 3.drawio": {
+      "bytes": 7333,
+      "sha256": "7fa4b75a853fe04edc621af1f743253cb6c251de88bf55f4914f42fe6b10e4fc"
+    },
+    "자료/4차/그림/그림 1.png": {
+      "bytes": 40063,
+      "sha256": "2ce468cb7f5a8007285050940d4ccbd197055f66aeeb19ef5d4b5a3861a3e97e"
+    },
+    "자료/4차/그림/그림 2.png": {
+      "bytes": 281121,
+      "sha256": "10fe8ea2a838737106bfe38712dbaa843d7acea490dfe630083f72fa0e8cefa8"
+    },
+    "자료/4차/그림/그림 3.drawio.png": {
+      "bytes": 53235,
+      "sha256": "42c673455b805fd2fd23fb3b99cc8b0fbf169dbc7b28022dee622b658b78bba2"
+    },
+    "자료/4차/그림/그림 5.png": {
+      "bytes": 311734,
+      "sha256": "eb26ea6f203837fbfae9aa52372ef8231dbdf12fd7a9a0f805b23e9cd62bee46"
+    },
+    "논문/4차/원문_논문.hwp": {
+      "bytes": 874496,
+      "sha256": "dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36"
+    },
+    "자료/4차/평가점수_원본표.txt": {
+      "bytes": 3137,
+      "sha256": "e8861eac260025b9d094c0ce6a6ea886943877f23424512ded9effc090374e86"
+    },
+    "논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp": {
+      "bytes": 655360,
+      "sha256": "3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd"
+    },
+    "논문/4차/관련문서/심사답변서 1.hwp": {
+      "bytes": 374272,
+      "sha256": "b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d"
+    },
+    "논문/4차/관련문서/심사답변서 2.hwp": {
+      "bytes": 99840,
+      "sha256": "c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c"
+    },
+    "논문/4차/관련문서/심사답변서 3.hwp": {
+      "bytes": 61440,
+      "sha256": "23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24"
+    },
+    "자료/4차/그림 5_원본.ipynb": {
+      "bytes": 65399,
+      "sha256": "a013c39c65262fb9666ea2124e37528110a7f124ea92eae61af1df96f9a14723"
+    }
+  }
+}

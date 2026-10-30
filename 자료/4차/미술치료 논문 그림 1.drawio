@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="페이지-1" id="yCAi0SA1y5auQo3HsU8t">
+    <mxGraphModel dx="876" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-1" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-2" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Interface&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Gradio Web Platform&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="158" x="542" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Text Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="122" x="660" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-5" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Empathetic Counseling Feedback&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="322" x="460" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-7" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPT-4o-mini&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Psychological Interpretation&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="322" x="460" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-9" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Drawing and Counseling Input&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="158" x="340" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-11" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Image Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="122" x="460" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-13" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;YOLOv8&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Object Detection&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="122" x="460" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Detected Objects&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="122" x="460" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-16" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Report Generation (FPDF)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Drawing Analysis &amp;amp; Counseling Report&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="322" x="460" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PDF Report Output&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="322" x="460" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-19" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.189;entryY=0.063;entryDx=0;entryDy=0;entryPerimeter=0;" target="-PdGI1MCf0Ic7qQuFy9S-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-20" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.809;entryY=0.019;entryDx=0;entryDy=0;entryPerimeter=0;" target="-PdGI1MCf0Ic7qQuFy9S-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

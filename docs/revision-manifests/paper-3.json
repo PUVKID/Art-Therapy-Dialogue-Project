@@ -1,0 +1,30 @@
+{
+  "stage": "3차 원고",
+  "previous": "2차 원고",
+  "files": {
+    "논문/3차/원문_논문.pdf": {
+      "bytes": 435587,
+      "sha256": "daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1"
+    },
+    "자료/3차/미술치료 논문 그림 3.drawio": {
+      "bytes": 7582,
+      "sha256": "bbc9a5a511daf7a12e274ecbfe48426062bd7294b400838da6637e057c69aeaf"
+    },
+    "자료/3차/미술치료 논문 그림 3.png": {
+      "bytes": 58274,
+      "sha256": "3b63b1cea0ebd0111635e89a4a5831c8d673cca978e13ff5b1a33d6d53e8f85e"
+    },
+    "논문/3차/원문_논문.hwp": {
+      "bytes": 941056,
+      "sha256": "2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836"
+    },
+    "논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp": {
+      "bytes": 736256,
+      "sha256": "51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30"
+    },
+    "논문/3차/관련문서/3차_투고신청서.hwp": {
+      "bytes": 37888,
+      "sha256": "89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8"
+    }
+  }
+}

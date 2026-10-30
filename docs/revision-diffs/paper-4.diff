@@ -1,0 +1,1534 @@
+# 3차 원고 -> 4차 원고
+# 공백·주석·개행을 무시하지 않습니다. PDF 추출 텍스트는 배치·글꼴 비교를 대신하지 않습니다. 바이너리는 크기·SHA-256으로 비교합니다. ipynb의 바이너리 이미지 출력만 크기·SHA·원문 링크로 표시하며 코드·Markdown·수치·설정·그 밖의 JSON 텍스트는 전체 비교합니다.
+# 이전 논문/3차/원문_논문.pdf 435587 daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1
+# 이전 자료/3차/미술치료 논문 그림 3.drawio 7582 bbc9a5a511daf7a12e274ecbfe48426062bd7294b400838da6637e057c69aeaf
+# 이전 자료/3차/미술치료 논문 그림 3.png 58274 3b63b1cea0ebd0111635e89a4a5831c8d673cca978e13ff5b1a33d6d53e8f85e
+# 이전 논문/3차/원문_논문.hwp 941056 2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836
+# 이전 논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp 736256 51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30
+# 이전 논문/3차/관련문서/3차_투고신청서.hwp 37888 89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8
+# 현재 논문/4차/원문_논문.pdf 453356 f5c4f5810ed7113fae738132e20e2629d23ef1a168f8599105f99fb623f463b4
+# 현재 4차/그림 5.ipynb 8700 5d1b3760da9434cb4ebeae30770df59bd17743531d9f3e5f7d077fc2d8f7728a
+# 현재 자료/4차/미술치료 논문 그림 1.drawio 7587 60cb96bd3f58e73a9ba0c7b8dfda04ada1e6c555e242b08908e47a56978d3e6a
+# 현재 자료/4차/미술치료 논문 그림 3.drawio 7333 7fa4b75a853fe04edc621af1f743253cb6c251de88bf55f4914f42fe6b10e4fc
+# 현재 자료/4차/그림/그림 1.png 40063 2ce468cb7f5a8007285050940d4ccbd197055f66aeeb19ef5d4b5a3861a3e97e
+# 현재 자료/4차/그림/그림 2.png 281121 10fe8ea2a838737106bfe38712dbaa843d7acea490dfe630083f72fa0e8cefa8
+# 현재 자료/4차/그림/그림 3.drawio.png 53235 42c673455b805fd2fd23fb3b99cc8b0fbf169dbc7b28022dee622b658b78bba2
+# 현재 자료/4차/그림/그림 5.png 311734 eb26ea6f203837fbfae9aa52372ef8231dbdf12fd7a9a0f805b23e9cd62bee46
+# 현재 논문/4차/원문_논문.hwp 874496 dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36
+# 현재 자료/4차/평가점수_원본표.txt 3137 e8861eac260025b9d094c0ce6a6ea886943877f23424512ded9effc090374e86
+# 현재 논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp 655360 3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd
+# 현재 논문/4차/관련문서/심사답변서 1.hwp 374272 b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d
+# 현재 논문/4차/관련문서/심사답변서 2.hwp 99840 c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c
+# 현재 논문/4차/관련문서/심사답변서 3.hwp 61440 23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24
+# 현재 자료/4차/그림 5_원본.ipynb 65399 a013c39c65262fb9666ea2124e37528110a7f124ea92eae61af1df96f9a14723
+Binary files 논문/3차/관련문서/3차_투고신청서.hwp and /dev/null differ
+Binary files /dev/null and 자료/4차/그림/그림 1.png differ
+Binary files /dev/null and 자료/4차/그림/그림 2.png differ
+Binary files /dev/null and 자료/4차/그림/그림 3.drawio.png differ
+--- /dev/null
++++ 4차/그림 5.ipynb
+@@ -0,0 +1,271 @@
++{
++ "nbformat": 4,
++ "nbformat_minor": 0,
++ "metadata": {
++  "kernelspec": {
++   "name": "python3",
++   "display_name": "Python 3"
++  },
++  "language_info": {
++   "name": "python"
++  }
++ },
++ "cells": [
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "import numpy as np\n",
++    "import matplotlib.pyplot as plt\n",
++    "import matplotlib.font_manager as fm\n",
++    "from google.colab import files\n",
++    "\n",
++    "# ============================================================\n",
++    "# 1. NanumGothic 폰트 설치 및 설정\n",
++    "# ============================================================\n",
++    "!apt-get -qq install fonts-nanum\n",
++    "\n",
++    "FONT_PATH = \"/usr/share/fonts/truetype/nanum/NanumGothic.ttf\"\n",
++    "FONT_BOLD_PATH = \"/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf\"\n",
++    "\n",
++    "font_prop = fm.FontProperties(fname=FONT_PATH)\n",
++    "font_bold = fm.FontProperties(fname=FONT_BOLD_PATH)\n",
++    "\n",
++    "plt.rcParams[\"font.family\"] = font_bold.get_name()\n",
++    "plt.rcParams[\"axes.unicode_minus\"] = False\n",
++    "\n",
++    "# ============================================================\n",
++    "# 2. 최종 확정 32명 평가 데이터\n",
++    "#    ※ 논문 표 4의 통계값과 일치\n",
++    "# ============================================================\n",
++    "\n",
++    "# Emotional Appropriateness\n",
++    "# 3점 2명 / 4점 10명 / 5점 20명\n",
++    "emotional_appropriateness = (\n",
++    "    [3] * 2 +\n",
++    "    [4] * 10 +\n",
++    "    [5] * 20\n",
++    ")\n",
++    "\n",
++    "# Language Naturalness\n",
++    "# 3점 1명 / 4점 5명 / 5점 26명\n",
++    "language_naturalness = (\n",
++    "    [3] * 1 +\n",
++    "    [4] * 5 +\n",
++    "    [5] * 26\n",
++    ")\n",
++    "\n",
++    "# Empathy\n",
++    "# 3점 2명 / 4점 12명 / 5점 18명\n",
++    "empathy = (\n",
++    "    [3] * 2 +\n",
++    "    [4] * 12 +\n",
++    "    [5] * 18\n",
++    ")\n",
++    "\n",
++    "data = [\n",
++    "    emotional_appropriateness,\n",
++    "    language_naturalness,\n",
++    "    empathy\n",
++    "]\n",
++    "\n",
++    "labels = [\n",
++    "    \"Emotional\\nAppropriateness\",\n",
++    "    \"Language\\nNaturalness\",\n",
++    "    \"Empathy\"\n",
++    "]\n",
++    "\n",
++    "# ============================================================\n",
++    "# 3. 참가자 수 확인\n",
++    "# ============================================================\n",
++    "print(\"===== Participant Count =====\")\n",
++    "\n",
++    "for label, values in zip(labels, data):\n",
++    "    print(f\"{label.replace(chr(10), ' ')} : {len(values)}명\")\n",
++    "\n",
++    "# ============================================================\n",
++    "# 4. 통계 확인\n",
++    "# ============================================================\n",
++    "print(\"\\n===== Statistics =====\")\n",
++    "\n",
++    "for label, values in zip(labels, data):\n",
++    "    values = np.array(values, dtype=float)\n",
++    "\n",
++    "    mean = np.mean(values)\n",
++    "    median = np.median(values)\n",
++    "    sd = np.std(values, ddof=1)\n",
++    "    q1 = np.percentile(values, 25)\n",
++    "    q3 = np.percentile(values, 75)\n",
++    "\n",
++    "    print(f\"\\n[{label.replace(chr(10), ' ')}]\")\n",
++    "    print(f\"Mean   = {mean:.4f} → {mean:.1f}\")\n",
++    "    print(f\"Median = {median:.1f}\")\n",
++    "    print(f\"SD     = {sd:.4f} → {sd:.2f}\")\n",
++    "    print(f\"Q1     = {q1:.1f}\")\n",
++    "    print(f\"Q3     = {q3:.1f}\")\n",
++    "\n",
++    "# ============================================================\n",
++    "# 5. Box Plot\n",
++    "# ============================================================\n",
++    "fig, ax = plt.subplots(figsize=(11, 8))\n",
++    "\n",
++    "bp = ax.boxplot(\n",
++    "    data,\n",
++    "    widths=0.58,\n",
++    "    patch_artist=True,\n",
++    "    showmeans=False,\n",
++    "    showfliers=True,\n",
++    "\n",
++    "    # Box\n",
++    "    boxprops=dict(\n",
++    "        linewidth=3.2,\n",
++    "        edgecolor=\"black\",\n",
++    "        facecolor=\"#BFE7F5\"\n",
++    "    ),\n",
++    "\n",
++    "    # Median\n",
++    "    medianprops=dict(\n",
++    "        linewidth=4.0,\n",
++    "        color=\"black\"\n",
++    "    ),\n",
++    "\n",
++    "    # Whisker\n",
++    "    whiskerprops=dict(\n",
++    "        linewidth=3.0,\n",
++    "        color=\"black\"\n",
++    "    ),\n",
++    "\n",
++    "    # Cap\n",
++    "    capprops=dict(\n",
++    "        linewidth=3.0,\n",
++    "        color=\"black\"\n",
++    "    ),\n",
++    "\n",
++    "    # Outlier\n",
++    "    flierprops=dict(\n",
++    "        marker=\"o\",\n",
++    "        markersize=8,\n",
++    "        markerfacecolor=\"white\",\n",
++    "        markeredgecolor=\"black\",\n",
++    "        markeredgewidth=2.0\n",
++    "    )\n",
++    ")\n",
++    "\n",
++    "# ============================================================\n",
++    "# 6. 박스 하늘색 적용\n",
++    "# ============================================================\n",
++    "for patch in bp[\"boxes\"]:\n",
++    "    patch.set_facecolor(\"#BFE7F5\")\n",
++    "    patch.set_edgecolor(\"black\")\n",
++    "    patch.set_linewidth(3.2)\n",
++    "\n",
++    "# ============================================================\n",
++    "# 7. X축 / Y축\n",
++    "# ============================================================\n",
++    "ax.set_xticks([1, 2, 3])\n",
++    "ax.set_xticklabels(labels)\n",
++    "\n",
++    "ax.set_xlabel(\n",
++    "    \"Evaluation Item\",\n",
++    "    fontproperties=font_bold,\n",
++    "    fontsize=27,\n",
++    "    fontweight=\"bold\",\n",
++    "    labelpad=12\n",
++    ")\n",
++    "\n",
++    "ax.set_ylabel(\n",
++    "    \"Likert Score\",\n",
++    "    fontproperties=font_bold,\n",
++    "    fontsize=27,\n",
++    "    fontweight=\"bold\",\n",
++    "    labelpad=12\n",
++    ")\n",
++    "\n",
++    "# ============================================================\n",
++    "# 8. 축 눈금 전부 Bold\n",
++    "# ============================================================\n",
++    "for tick in ax.get_xticklabels():\n",
++    "    tick.set_fontproperties(font_bold)\n",
++    "    tick.set_fontsize(18)\n",
++    "    tick.set_fontweight(\"bold\")\n",
++    "\n",
++    "for tick in ax.get_yticklabels():\n",
++    "    tick.set_fontproperties(font_bold)\n",
++    "    tick.set_fontsize(18)\n",
++    "    tick.set_fontweight(\"bold\")\n",
++    "\n",
++    "# ============================================================\n",
++    "# 9. Y축 범위\n",
++    "# ============================================================\n",
++    "ax.set_ylim(0.8, 5.2)\n",
++    "ax.set_yticks([1, 2, 3, 4, 5])\n",
++    "\n",
++    "# ============================================================\n",
++    "# 10. Grid\n",
++    "# ============================================================\n",
++    "ax.grid(\n",
++    "    axis=\"y\",\n",
++    "    linestyle=\"--\",\n",
++    "    linewidth=1.0,\n",
++    "    alpha=0.35\n",
++    ")\n",
++    "\n",
++    "# ============================================================\n",
++    "# 11. 테두리\n",
++    "# ============================================================\n",
++    "ax.spines[\"top\"].set_visible(False)\n",
++    "ax.spines[\"right\"].set_visible(False)\n",
++    "\n",
++    "ax.spines[\"left\"].set_linewidth(2.5)\n",
++    "ax.spines[\"bottom\"].set_linewidth(2.5)\n",
++    "\n",
++    "# ============================================================\n",
++    "# 12. 눈금선\n",
++    "# ============================================================\n",
++    "ax.tick_params(\n",
++    "    axis=\"both\",\n",
++    "    which=\"major\",\n",
++    "    width=2.0,\n",
++    "    length=7\n",
++    ")\n",
++    "\n",
++    "ax.tick_params(axis=\"x\", pad=10)\n",
++    "\n",
++    "# ============================================================\n",
++    "# 13. 여백\n",
++    "# ============================================================\n",
++    "plt.tight_layout()\n",
++    "\n",
++    "# ============================================================\n",
++    "# 14. 저장\n",
++    "# ============================================================\n",
++    "SAVE_PATH = \"/content/user_evaluation_boxplot_skyblue.png\"\n",
++    "\n",
++    "plt.savefig(\n",
++    "    SAVE_PATH,\n",
++    "    dpi=600,\n",
++    "    bbox_inches=\"tight\",\n",
++    "    facecolor=\"white\"\n",
++    ")\n",
++    "\n",
++    "plt.show()\n",
++    "\n",
++    "print(f\"\\nSaved to: {SAVE_PATH}\")\n",
++    "\n",
++    "# ============================================================\n",
++    "# 15. 이미지 다운로드\n",
++    "# ============================================================\n",
++    "files.download(SAVE_PATH)"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "source": [],
++   "metadata": {},
++   "execution_count": null,
++   "outputs": []
++  }
++ ]
++}
+Binary files /dev/null and 자료/4차/그림/그림 5.png differ
+--- /dev/null
++++ 자료/4차/그림 5_원본.ipynb
+@@ -0,0 +1,399 @@
++{
++  "nbformat": 4,
++  "nbformat_minor": 0,
++  "metadata": {
++    "colab": {
++      "provenance": []
++    },
++    "kernelspec": {
++      "name": "python3",
++      "display_name": "Python 3"
++    },
++    "language_info": {
++      "name": "python"
++    }
++  },
++  "cells": [
++    {
++      "cell_type": "code",
++      "execution_count": 11,
++      "metadata": {
++        "colab": {
++          "base_uri": "https://localhost:8080/",
++          "height": 1000
++        },
++        "id": "KGdfCdn1rafZ",
++        "outputId": "e327d355-6004-4bf1-aba2-80a3911c7998"
++      },
++      "outputs": [
++        {
++          "output_type": "stream",
++          "name": "stdout",
++          "text": [
++            "===== Participant Count =====\n",
++            "Emotional Appropriateness : 32명\n",
++            "Language Naturalness : 32명\n",
++            "Empathy : 32명\n",
++            "\n",
++            "===== Statistics =====\n",
++            "\n",
++            "[Emotional Appropriateness]\n",
++            "Mean   = 4.5625 → 4.6\n",
++            "Median = 5.0\n",
++            "SD     = 0.6189 → 0.62\n",
++            "Q1     = 4.0\n",
++            "Q3     = 5.0\n",
++            "\n",
++            "[Language Naturalness]\n",
++            "Mean   = 4.7812 → 4.8\n",
++            "Median = 5.0\n",
++            "SD     = 0.4908 → 0.49\n",
++            "Q1     = 5.0\n",
++            "Q3     = 5.0\n",
++            "\n",
++            "[Empathy]\n",
++            "Mean   = 4.5000 → 4.5\n",
++            "Median = 5.0\n",
++            "SD     = 0.6222 → 0.62\n",
++            "Q1     = 4.0\n",
++            "Q3     = 5.0\n"
++          ]
++        },
++        {
++          "output_type": "display_data",
++          "data": {
++            "text/plain": [
++              "<Figure size 1100x800 with 1 Axes>"
++            ],
++            "image/png": "[비교문서의 바이너리 이미지 출력: 38353 bytes; SHA-256 b07b9a50b3f3f765584880fa49a299780352b389bee4aeef539b14fd97973a66; 원문 https://github.com/PUVKID/Art-Therapy-Dialogue-Project/blob/main/%EC%9E%90%EB%A3%8C/4%EC%B0%A8/%EA%B7%B8%EB%A6%BC%205_%EC%9B%90%EB%B3%B8.ipynb]"
++          },
++          "metadata": {}
++        },
++        {
++          "output_type": "stream",
++          "name": "stdout",
++          "text": [
++            "\n",
++            "Saved to: /content/user_evaluation_boxplot_skyblue.png\n"
++          ]
++        },
++        {
++          "output_type": "display_data",
++          "data": {
++            "text/plain": [
++              "<IPython.core.display.Javascript object>"
++            ],
++            "application/javascript": [
++              "\n",
++              "    async function download(id, filename, size) {\n",
++              "      if (!google.colab.kernel.accessAllowed) {\n",
++              "        return;\n",
++              "      }\n",
++              "      const div = document.createElement('div');\n",
++              "      const label = document.createElement('label');\n",
++              "      label.textContent = `Downloading \"${filename}\": `;\n",
++              "      div.appendChild(label);\n",
++              "      const progress = document.createElement('progress');\n",
++              "      progress.max = size;\n",
++              "      div.appendChild(progress);\n",
++              "      document.body.appendChild(div);\n",
++              "\n",
++              "      const buffers = [];\n",
++              "      let downloaded = 0;\n",
++              "\n",
++              "      const channel = await google.colab.kernel.comms.open(id);\n",
++              "      // Send a message to notify the kernel that we're ready.\n",
++              "      channel.send({})\n",
++              "\n",
++              "      for await (const message of channel.messages) {\n",
++              "        // Send a message to notify the kernel that we're ready.\n",
++              "        channel.send({})\n",
++              "        if (message.buffers) {\n",
++              "          for (const buffer of message.buffers) {\n",
++              "            buffers.push(buffer);\n",
++              "            downloaded += buffer.byteLength;\n",
++              "            progress.value = downloaded;\n",
++              "          }\n",
++              "        }\n",
++              "      }\n",
++              "      const blob = new Blob(buffers, {type: 'application/binary'});\n",
++              "      const a = document.createElement('a');\n",
++              "      a.href = window.URL.createObjectURL(blob);\n",
++              "      a.download = filename;\n",
++              "      div.appendChild(a);\n",
++              "      a.click();\n",
++              "      div.remove();\n",
++              "    }\n",
++              "  "
++            ]
++          },
++          "metadata": {}
++        },
++        {
++          "output_type": "display_data",
++          "data": {
++            "text/plain": [
++              "<IPython.core.display.Javascript object>"
++            ],
++            "application/javascript": [
++              "download(\"download_cd5146a9-fa43-47d2-a7a5-25fced27d544\", \"user_evaluation_boxplot_skyblue.png\", 311734)"
++            ]
++          },
++          "metadata": {}
++        }
++      ],
++      "source": [
++        "import numpy as np\n",
++        "import matplotlib.pyplot as plt\n",
++        "import matplotlib.font_manager as fm\n",
++        "from google.colab import files\n",
++        "\n",
++        "# ============================================================\n",
++        "# 1. NanumGothic 폰트 설치 및 설정\n",
++        "# ============================================================\n",
++        "!apt-get -qq install fonts-nanum\n",
++        "\n",
++        "FONT_PATH = \"/usr/share/fonts/truetype/nanum/NanumGothic.ttf\"\n",
++        "FONT_BOLD_PATH = \"/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf\"\n",
++        "\n",
++        "font_prop = fm.FontProperties(fname=FONT_PATH)\n",
++        "font_bold = fm.FontProperties(fname=FONT_BOLD_PATH)\n",
++        "\n",
++        "plt.rcParams[\"font.family\"] = font_bold.get_name()\n",
++        "plt.rcParams[\"axes.unicode_minus\"] = False\n",
++        "\n",
++        "# ============================================================\n",
++        "# 2. 최종 확정 32명 평가 데이터\n",
++        "#    ※ 논문 표 4의 통계값과 일치\n",
++        "# ============================================================\n",
++        "\n",
++        "# Emotional Appropriateness\n",
++        "# 3점 2명 / 4점 10명 / 5점 20명\n",
++        "emotional_appropriateness = (\n",
++        "    [3] * 2 +\n",
++        "    [4] * 10 +\n",
++        "    [5] * 20\n",
++        ")\n",
++        "\n",
++        "# Language Naturalness\n",
++        "# 3점 1명 / 4점 5명 / 5점 26명\n",
++        "language_naturalness = (\n",
++        "    [3] * 1 +\n",
++        "    [4] * 5 +\n",
++        "    [5] * 26\n",
++        ")\n",
++        "\n",
++        "# Empathy\n",
++        "# 3점 2명 / 4점 12명 / 5점 18명\n",
++        "empathy = (\n",
++        "    [3] * 2 +\n",
++        "    [4] * 12 +\n",
++        "    [5] * 18\n",
++        ")\n",
++        "\n",
++        "data = [\n",
++        "    emotional_appropriateness,\n",
++        "    language_naturalness,\n",
++        "    empathy\n",
++        "]\n",
++        "\n",
++        "labels = [\n",
++        "    \"Emotional\\nAppropriateness\",\n",
++        "    \"Language\\nNaturalness\",\n",
++        "    \"Empathy\"\n",
++        "]\n",
++        "\n",
++        "# ============================================================\n",
++        "# 3. 참가자 수 확인\n",
++        "# ============================================================\n",
++        "print(\"===== Participant Count =====\")\n",
++        "\n",
++        "for label, values in zip(labels, data):\n",
++        "    print(f\"{label.replace(chr(10), ' ')} : {len(values)}명\")\n",
++        "\n",
++        "# ============================================================\n",
++        "# 4. 통계 확인\n",
++        "# ============================================================\n",
++        "print(\"\\n===== Statistics =====\")\n",
++        "\n",
++        "for label, values in zip(labels, data):\n",
++        "    values = np.array(values, dtype=float)\n",
++        "\n",
++        "    mean = np.mean(values)\n",
++        "    median = np.median(values)\n",
++        "    sd = np.std(values, ddof=1)\n",
++        "    q1 = np.percentile(values, 25)\n",
++        "    q3 = np.percentile(values, 75)\n",
++        "\n",
++        "    print(f\"\\n[{label.replace(chr(10), ' ')}]\")\n",
++        "    print(f\"Mean   = {mean:.4f} → {mean:.1f}\")\n",
++        "    print(f\"Median = {median:.1f}\")\n",
++        "    print(f\"SD     = {sd:.4f} → {sd:.2f}\")\n",
++        "    print(f\"Q1     = {q1:.1f}\")\n",
++        "    print(f\"Q3     = {q3:.1f}\")\n",
++        "\n",
++        "# ============================================================\n",
++        "# 5. Box Plot\n",
++        "# ============================================================\n",
++        "fig, ax = plt.subplots(figsize=(11, 8))\n",
++        "\n",
++        "bp = ax.boxplot(\n",
++        "    data,\n",
++        "    widths=0.58,\n",
++        "    patch_artist=True,\n",
++        "    showmeans=False,\n",
++        "    showfliers=True,\n",
++        "\n",
++        "    # Box\n",
++        "    boxprops=dict(\n",
++        "        linewidth=3.2,\n",
++        "        edgecolor=\"black\",\n",
++        "        facecolor=\"#BFE7F5\"\n",
++        "    ),\n",
++        "\n",
++        "    # Median\n",
++        "    medianprops=dict(\n",
++        "        linewidth=4.0,\n",
++        "        color=\"black\"\n",
++        "    ),\n",
++        "\n",
++        "    # Whisker\n",
++        "    whiskerprops=dict(\n",
++        "        linewidth=3.0,\n",
++        "        color=\"black\"\n",
++        "    ),\n",
++        "\n",
++        "    # Cap\n",
++        "    capprops=dict(\n",
++        "        linewidth=3.0,\n",
++        "        color=\"black\"\n",
++        "    ),\n",
++        "\n",
++        "    # Outlier\n",
++        "    flierprops=dict(\n",
++        "        marker=\"o\",\n",
++        "        markersize=8,\n",
++        "        markerfacecolor=\"white\",\n",
++        "        markeredgecolor=\"black\",\n",
++        "        markeredgewidth=2.0\n",
++        "    )\n",
++        ")\n",
++        "\n",
++        "# ============================================================\n",
++        "# 6. 박스 하늘색 적용\n",
++        "# ============================================================\n",
++        "for patch in bp[\"boxes\"]:\n",
++        "    patch.set_facecolor(\"#BFE7F5\")\n",
++        "    patch.set_edgecolor(\"black\")\n",
++        "    patch.set_linewidth(3.2)\n",
++        "\n",
++        "# ============================================================\n",
++        "# 7. X축 / Y축\n",
++        "# ============================================================\n",
++        "ax.set_xticks([1, 2, 3])\n",
++        "ax.set_xticklabels(labels)\n",
++        "\n",
++        "ax.set_xlabel(\n",
++        "    \"Evaluation Item\",\n",
++        "    fontproperties=font_bold,\n",
++        "    fontsize=27,\n",
++        "    fontweight=\"bold\",\n",
++        "    labelpad=12\n",
++        ")\n",
++        "\n",
++        "ax.set_ylabel(\n",
++        "    \"Likert Score\",\n",
++        "    fontproperties=font_bold,\n",
++        "    fontsize=27,\n",
++        "    fontweight=\"bold\",\n",
++        "    labelpad=12\n",
++        ")\n",
++        "\n",
++        "# ============================================================\n",
++        "# 8. 축 눈금 전부 Bold\n",
++        "# ============================================================\n",
++        "for tick in ax.get_xticklabels():\n",
++        "    tick.set_fontproperties(font_bold)\n",
++        "    tick.set_fontsize(18)\n",
++        "    tick.set_fontweight(\"bold\")\n",
++        "\n",
++        "for tick in ax.get_yticklabels():\n",
++        "    tick.set_fontproperties(font_bold)\n",
++        "    tick.set_fontsize(18)\n",
++        "    tick.set_fontweight(\"bold\")\n",
++        "\n",
++        "# ============================================================\n",
++        "# 9. Y축 범위\n",
++        "# ============================================================\n",
++        "ax.set_ylim(0.8, 5.2)\n",
++        "ax.set_yticks([1, 2, 3, 4, 5])\n",
++        "\n",
++        "# ============================================================\n",
++        "# 10. Grid\n",
++        "# ============================================================\n",
++        "ax.grid(\n",
++        "    axis=\"y\",\n",
++        "    linestyle=\"--\",\n",
++        "    linewidth=1.0,\n",
++        "    alpha=0.35\n",
++        ")\n",
++        "\n",
++        "# ============================================================\n",
++        "# 11. 테두리\n",
++        "# ============================================================\n",
++        "ax.spines[\"top\"].set_visible(False)\n",
++        "ax.spines[\"right\"].set_visible(False)\n",
++        "\n",
++        "ax.spines[\"left\"].set_linewidth(2.5)\n",
++        "ax.spines[\"bottom\"].set_linewidth(2.5)\n",
++        "\n",
++        "# ============================================================\n",
++        "# 12. 눈금선\n",
++        "# ============================================================\n",
++        "ax.tick_params(\n",
++        "    axis=\"both\",\n",
++        "    which=\"major\",\n",
++        "    width=2.0,\n",
++        "    length=7\n",
++        ")\n",
++        "\n",
++        "ax.tick_params(axis=\"x\", pad=10)\n",
++        "\n",
++        "# ============================================================\n",
++        "# 13. 여백\n",
++        "# ============================================================\n",
++        "plt.tight_layout()\n",
++        "\n",
++        "# ============================================================\n",
++        "# 14. 저장\n",
++        "# ============================================================\n",
++        "SAVE_PATH = \"/content/user_evaluation_boxplot_skyblue.png\"\n",
++        "\n",
++        "plt.savefig(\n",
++        "    SAVE_PATH,\n",
++        "    dpi=600,\n",
++        "    bbox_inches=\"tight\",\n",
++        "    facecolor=\"white\"\n",
++        ")\n",
++        "\n",
++        "plt.show()\n",
++        "\n",
++        "print(f\"\\nSaved to: {SAVE_PATH}\")\n",
++        "\n",
++        "# ============================================================\n",
++        "# 15. 이미지 다운로드\n",
++        "# ============================================================\n",
++        "files.download(SAVE_PATH)"
++      ]
++    },
++    {
++      "cell_type": "code",
++      "source": [],
++      "metadata": {
++        "id": "aGHotsHHwHRu"
++      },
++      "execution_count": null,
++      "outputs": []
++    }
++  ]
++}--- /dev/null
++++ 자료/4차/미술치료 논문 그림 1.drawio
+@@ -0,0 +1,70 @@
++<mxfile host="app.diagrams.net">
++  <diagram name="페이지-1" id="yCAi0SA1y5auQo3HsU8t">
++    <mxGraphModel dx="876" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
++      <root>
++        <mxCell id="0" />
++        <mxCell id="1" parent="0" />
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-1" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-12">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-2" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-4">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Interface&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Gradio Web Platform&lt;/font&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="158" x="542" y="300" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Text Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="660" y="420" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-5" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-17">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Empathetic Counseling Feedback&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="40" width="322" x="460" y="900" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-7" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-6">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPT-4o-mini&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Psychological Interpretation&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="322" x="460" y="780" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-9" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-3">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Drawing and Counseling Input&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="158" x="340" y="300" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-11" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-14">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Image Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="460" y="420" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-13" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-15">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;YOLOv8&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Object Detection&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="460" y="540" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Detected Objects&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="122" x="460" y="660" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-16" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-PdGI1MCf0Ic7qQuFy9S-18">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Report Generation (FPDF)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Drawing Analysis &amp;amp; Counseling Report&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="322" x="460" y="980" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PDF Report Output&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="40" width="322" x="460" y="1100" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-19" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.189;entryY=0.063;entryDx=0;entryDy=0;entryPerimeter=0;" target="-PdGI1MCf0Ic7qQuFy9S-8">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++        <mxCell id="-PdGI1MCf0Ic7qQuFy9S-20" edge="1" parent="1" source="-PdGI1MCf0Ic7qQuFy9S-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.809;entryY=0.019;entryDx=0;entryDy=0;entryPerimeter=0;" target="-PdGI1MCf0Ic7qQuFy9S-8">
++          <mxGeometry relative="1" as="geometry" />
++        </mxCell>
++      </root>
++    </mxGraphModel>
++  </diagram>
++</mxfile>
+--- 자료/3차/미술치료 논문 그림 3.drawio
++++ 자료/4차/미술치료 논문 그림 3.drawio
+@@ -1,69 +1,69 @@
+ <mxfile host="app.diagrams.net">
+-  <diagram name="페이지-1" id="o1BvEpDSDJBJyjX5vFhx">
+-    <mxGraphModel dx="1212" dy="1102" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
++  <diagram name="페이지-1" id="02gvdag3FVOd2TPFVGfn">
++    <mxGraphModel dx="1251" dy="1333" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+       <root>
+         <mxCell id="0" />
+         <mxCell id="1" parent="0" />
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-1" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-2">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-20" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ShxwG1zVSLYMShexCNA_-23">
+           <mxGeometry relative="1" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;프로그램 실행&lt;/b&gt;&lt;/span&gt;" vertex="1">
+-          <mxGeometry height="80" width="160" x="520" y="40" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Program Execution&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="701.8571428571429" y="444.14285714285734" as="geometry" />
+         </mxCell>
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-2" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-6">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-22" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ShxwG1zVSLYMShexCNA_-25">
+           <mxGeometry relative="1" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;그림 업로드&lt;/b&gt;&lt;/span&gt;" vertex="1">
+-          <mxGeometry height="80" width="160" x="520" y="160" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Drawing Upload&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="160" x="701.8571428571429" y="564.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-3" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-8">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-24" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ShxwG1zVSLYMShexCNA_-27">
+           <mxGeometry relative="1" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp;YOLOv8&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;객체 검출&lt;/b&gt;&lt;/font&gt;" vertex="1">
+-          <mxGeometry height="80" width="240" x="480" y="280" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;YOLOv8 Object Detection&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="661.8571428571429" y="684.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-5" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-14">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-26" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ShxwG1zVSLYMShexCNA_-34">
+           <mxGeometry relative="1" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;검출 객체 정보&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+-          <mxGeometry height="80" width="240" x="480" y="400" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Detected Object Information&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="661.8571428571429" y="804.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-11" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="0sY1wBu5RD6wzpjFFAkf-14">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-28" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ShxwG1zVSLYMShexCNA_-34">
+           <mxGeometry relative="1" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;사용자 상담&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;내용 입력&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+-          <mxGeometry height="80" width="120" x="840" y="560" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;User Counseling Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="80" width="120" x="1021.8571428571429" y="964.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;상담 결과 출력&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;피드백 및 PDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
+-          <mxGeometry height="80" width="240" x="480" y="800" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Counseling Results Output&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Feedback &amp;amp; PDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="661.8571428571429" y="1204.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="We8JtGfPTy6WRy6Apemt-3" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-12">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-31" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ShxwG1zVSLYMShexCNA_-30">
+           <mxGeometry relative="1" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PDF 보고서 생성&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;FPDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
+-          <mxGeometry height="80" width="240" x="480" y="680" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PDF Report Generation&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;FPDF&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="240" x="661.8571428571429" y="1084.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-14" edge="1" parent="1" source="0sY1wBu5RD6wzpjFFAkf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0sY1wBu5RD6wzpjFFAkf-13">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-33" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ShxwG1zVSLYMShexCNA_-32">
+           <mxGeometry relative="1" as="geometry" />
+         </mxCell>
+-        <mxCell id="0sY1wBu5RD6wzpjFFAkf-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPT-4o-mini&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;객체 정보와 사용자 입력 기반&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;공감형 상담 생성&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+-          <mxGeometry height="80" width="320" x="440" y="560" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPT-4o-mini&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Empathetic Counseling Generation&lt;/span&gt;&lt;/div&gt;" vertex="1">
++          <mxGeometry height="80" width="320" x="621.8571428571429" y="964.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-15" edge="1" parent="1" source="We8JtGfPTy6WRy6Apemt-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-35" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+           <mxGeometry relative="1" as="geometry">
+-            <mxPoint x="600" y="520" as="targetPoint" />
++            <mxPoint x="781.8571428571429" y="924.1428571428573" as="targetPoint" />
+           </mxGeometry>
+         </mxCell>
+-        <mxCell id="We8JtGfPTy6WRy6Apemt-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Detected Objects&lt;/b&gt;&lt;/span&gt;" vertex="1">
+-          <mxGeometry height="40" width="160" x="400" y="500" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Detected Objects&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="160" x="581.8571428571429" y="904.1428571428573" as="geometry" />
+         </mxCell>
+-        <mxCell id="ad0YNEWfdTvF7yqJi8ol-12" edge="1" parent="1" source="We8JtGfPTy6WRy6Apemt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
++        <mxCell id="ShxwG1zVSLYMShexCNA_-37" edge="1" parent="1" source="ShxwG1zVSLYMShexCNA_-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+           <mxGeometry relative="1" as="geometry">
+-            <mxPoint x="800" y="600" as="targetPoint" />
++            <mxPoint x="981.8571428571429" y="1004.1428571428573" as="targetPoint" />
+           </mxGeometry>
+         </mxCell>
+-        <mxCell id="We8JtGfPTy6WRy6Apemt-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;User Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
+-          <mxGeometry height="40" width="160" x="720" y="640" as="geometry" />
++        <mxCell id="ShxwG1zVSLYMShexCNA_-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;User Input&lt;/b&gt;&lt;/span&gt;" vertex="1">
++          <mxGeometry height="40" width="160" x="901.8571428571429" y="1044.1428571428573" as="geometry" />
+         </mxCell>
+       </root>
+     </mxGraphModel>
+Binary files 자료/3차/미술치료 논문 그림 3.png and /dev/null differ
+Binary files /dev/null and 논문/4차/관련문서/심사답변서 1.hwp differ
+Binary files /dev/null and 논문/4차/관련문서/심사답변서 2.hwp differ
+Binary files /dev/null and 논문/4차/관련문서/심사답변서 3.hwp differ
+Binary files 논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp and 논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp differ
+Binary files 논문/3차/원문_논문.hwp and 논문/4차/원문_논문.hwp differ
+--- 논문/3차/원문_논문.pdf
++++ 논문/4차/원문_논문.pdf
+@@ -19,22 +19,20 @@
+ 한국연구재단의 지원을 받아 수행된 기초연구사업임(No. RS-2020-NR049579)
+ 요  약
+ 본 연구는 그림을 통한 비언어적 감정 표현을 분석하고 공감형 피드백을 제공하는 상호작용 기반 심리분석 
+-시스템을 제안한다. 제안한 시스템은 YOLOv8로 그림 속 주요 객체를 검출하고, 검출된 객체 정보와 사용자 
+-입력을 GPT-4o-mini에 반영하여 개인화된 상담 피드백을 생성한다. 객체 검출 모델은 33개 클래스, 총 330,000
+-장의 합성 데이터로 학습하였으며, 단일 객체 기준 mAP50 약 0.92를 달성하였다. 성인 32명을 대상으로 한 시
+-뮬레이션 평가에서 감정 적절성 4.6점, 언어 자연성 4.8점, 공감성 4.5점(5점 척도)의 결과를 얻었으며, 상담 내
+-용을 자동 문서화하는 PDF 보고서 기능도 통합하였다. 이는 비언어적 표현을 반영한 디지털 심리분석 및 미술
+-치료 지원의 가능성을 제시한다.
++시스템을 제안한다. 제안한 시스템은 YOLOv8로 그림 속 주요 객체를 검출하고, 객체 검출 성공 여부와 사용
++자 입력을 GPT-4o-mini에 반영하여 개인화된 상담 피드백을 생성한다. 객체 검출 모델은 33개 클래스, 총 330,
++000장의 합성 데이터로 학습하였으며, 단일 객체 기준 mAP50 약 0.92를 달성하였다. 또한 상담 내용을 자동 
++문서화하는 PDF 보고서 기능도 통합하였다. 이는 비언어적 표현을 반영한 디지털 심리분석 및 미술치료 지원
++의 가능성을 제시한다.
+ Abstract
+ This study proposes an interactive psychological analysis system that interprets non-verbal emotional expression thr
+ ough drawings and provides empathetic feedback. The proposed system detects key objects in drawings using YOLOv
+-8, and generates personalized counseling feedback by combining the detected object information with user input throu
+-gh GPT-4o-mini. The object detection model was trained on a synthetic dataset of 33 classes and 330,000 images, ac
+-hieving a single-object mAP50 of approximately 0.92. In a simulation-based evaluation with 32 adult users, the syste
+-m achieved average scores of 4.6, 4.8, and 4.5 for emotional appropriateness, language naturalness, and empathy, resp
+-ectively. These results demonstrate the feasibility of a digital psychological analysis and art therapy support approach.
++8 and generates counseling feedback through GPT-4o-mini by combining object detection success information with use
++r input. The object detection model was trained on a synthetic dataset of 33 classes and 330,000 images, achieving a 
++single-object mAP50 of approximately 0.92. The system also integrates a PDF report function for automatically docu
++menting counseling content, demonstrating the feasibility of digital psychological analysis and art therapy support.
+ Key words
+-generative AI, art therapy, emotional expression, empathetic feedback, YOLOv8, GPT-4o-mini
++generative AI, art therapy, emotional expression, counseling feedback, YOLOv8, GPT-4o-mini
+ 
+ === 2쪽 ===
+ 2 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
+@@ -55,10 +53,10 @@
+ 최근에는 생성형 인공지능(Generative AI)을 활용
+ 한 디지털 심리 지원 기술이 주목받고 있다[3][4]. 
+ 본 연구에서는 객체 검출 모델인 YOLOv8[5]을 이
+-용하여 그림에서 주요 객체를 검출하고, 검출된 객
+-체 정보와 사용자 입력을 생성형 언어모델인 GPT-
+-4o-mini[6]에 반영함으로써 개인화된 상호작용이 가
+-능한 상담 피드백 생성 방식을 제안한다.
++용하여 그림에서 주요 객체를 검출하고, 객체 검출 
++결과와 사용자 입력을 생성형 언어모델인 GPT-4o-
++mini[6]에 반영함으로써 개인화된 상호작용이 가능
++한 상담 피드백 생성 방식을 제안한다.
+ 이러한 접근을 바탕으로 그림 기반 객체 검출과 
+ 생성형 인공지능을 결합한 상호작용 기반 심리분석 
+ 시스템을 구현하였으며, 주요 기여는 다음과 같다. 
+@@ -85,64 +83,114 @@
+ 모델과 다중 에이전트 협업 기반 HTP 평가 프레임
+ 워크[10] 등 딥러닝 기반 자동 분석 연구가 다수 제
+ 안되었으나, 대부분 그림 전체의 전역적 특징 분류
+-나 요소 존재 유무 판별에 초점을 두고 있어, 개별 
+-객체의 위치·크기 정보를 실시간 검출해 생성형 
+-언어모델 입력으로 직접 연계하는 본 연구의 접근
+-과는 차이가 있다.
++나 요소 존재 유무 판별에 초점을 두고 있어, 객체 
++검출 결과를 생성형 언어모델의 상담 생성 과정과 
++연계하는 본 연구의 접근과는 차이가 있다.
+ 한편, 상담 피드백의 품질을 높이기 위해 프롬프
+ 트 파이프라인도 개선하였는데 특히 GPT 계열 대
+ 형 언어모델을 활용한 공감형 상담 연구가 활발하
+ 다. ChatGPT가 의료 상담 맥락에서 부분적으로 공
+ 감 반응을 생성할 수 있음을 확인한 체계적 문헌고
+-찰[11]과 국내 한국인 사용자 대상 ChatGPT-4.0 기
+-반 정신건강 챗봇 평가 연구[12]가 대표적이다.
++찰[11]과 국내 한국인 사용자 대상 ChatGPT-4 기반 
++정신건강 챗봇 평가 연구[12]가 대표적이다.
+ 그러나 이러한 연구들은 대부분 텍스트 기반 대
+ 화만을 입력으로 활용하여, 그림과 같은 비언어적 
+ 표현을 반영한 맞춤형 상담에는 한계가 있다.
+ 이처럼 기존 HTP 분석 연구와 GPT 기반 상담 
+ 챗봇 연구가 각각 그림 또는 텍스트 입력만을 다루
+-는 것과 달리, 본 연구는 객체 검출로 얻은 그림 
+-속 요소 정보와 사용자의 텍스트 입력을 함께 GPT
+--4o-mini에 반영하고, 이를 PDF 보고서 자동화까지 
+-하나의 시스템으로 통합했다는 점에서 차별화된다. 
+-구체적인 모듈 구성과 동작 방식은 III장에서 설명
+-한다.
++는 것과 달리, 본 연구는 객체 검출 결과와 사용자
++의 텍스트 입력을 함께 GPT-4o-mini에 반영하고, 
++이를 PDF 보고서 자동화까지 하나의 시스템으로 
++통합했다는 점에서 차별화된다. 구체적인 모듈 구성
++과 동작 방식은 III장에서 설명한다.
+ III. 제안하는 시스템
+ 본 연구의 상호작용 기반 심리분석 시스템은 그
+ 림 1과 같이 인터페이스, 객체 검출, 심리 해석, 보
+ 고서 생성의 네 가지 모듈로 구성되며, 사용자 입
+ 력부터 상담 결과 생성까지 순차적으로 동작한다.
+ 인터페이스 모듈은 Gradio 기반 웹 플랫폼으로 
++구현하여 사용자로부터 그림과 상담 내용을 입력받
++는다. 객체 검출 모듈은 YOLOv8[5]을 이용해 그림 
+ 
+ === 3쪽 ===
+ Journal of KIIT. Vol. 23, No. 0, pp. 00-00, 00 00, 2025. pISSN 1598-8619, eISSN 2093-7571 3
+-구현하여 사용자로부터 그림과 상담 내용을 입력받
+-는다. 객체 검출 모듈은 YOLOv8[5]을 이용해 그림 
+-속 주요 객체의 종류와 위치 정보를 추출하며, 이 
+-정보는 사용자 입력(현재의 감정과 상황)과 함께 G
+-PT-4o-mini에 전달된다. 심리 해석 모듈은 GPT-4o-
+-mini를 이용하여 두 정보를 기반으로 공감형 상담 
+-피드백을 생성하는데, 프롬프트는 의료적 진단이나 
+-치료를 단정적으로 제시하지 않고 공감과 정서적 
+-지지를 중심으로 응답하도록 설계하였으며, 시스템
+-에 입력된 그림과 상담 내용은 공감형 피드백 생성
+-을 위해 GPT-4o-mini API로 외부 전송되므로, 실제 
+-서비스 적용 시에는 개인정보 및 민감정보 처리에 
+-대한 별도의 보호 조치가 필요하다. 
++속 주요 객체를 검출하고, 검출 결과의 존재 여부
++를 확인한다. 검출 결과는 객체 검출 성공 여부로 
++요약되어 사용자 입력(현재의 감정과 상황)과 함께 
++GPT-4o-mini에 전달된다. GPT-4o-mini는 해당 검
++출 결과와 사용자가 입력한 상담 내용을 바탕으로 
++공감형 상담 피드백을 생성한다.
++현재 구현에서는 GPT-4o-mini에 객체의 세부적
++인 클래스별 위치, 크기 및 객체 간 공간적 관계를 
++직접 전달하지 않고, 객체 검출의 성공 여부를 상
++담 생성에 활용한다. 따라서 현재 시스템은 그림 
++속 객체의 공간적 배치 자체를 심층적으로 분석하
++는 구조에는 한계가 있다. 향후에는 YOLOv8에서 
++출력되는 클래스, bounding box 좌표, 객체 크기 및 
++객체 간 상대적 위치 등의 정보를 구조화하여 GPT
++-4o-mini의 입력으로 확장함으로써 그림의 시각적 
++맥락을 보다 구체적으로 반영할 계획이다. 심리 해
++석 모듈은 GPT-4o-mini를 이용하여 두 정보를 기반
++으로 공감형 상담 피드백을 생성한다. 프롬프트는 
++의료적 진단이나 치료를 단정적으로 제시하지 않고 
++공감과 정서적 지지를 중심으로 응답하도록 설계하
++였다. 또한 시스템에 입력된 그림과 상담 내용은 
++공감형 피드백 생성을 위해 GPT-4o-mini API로 외
++부 전송되므로, 실제 서비스 적용 시에는 개인정보 
++및 민감정보 처리에 대한 별도의 보호 조치가 필요
++하다.
+ 보고서 생성 모듈은 FPDF 라이브러리로 분석 결
+ 과와 상담 내용을 PDF 보고서로 문서화하여 치료 
+ 과정의 참고 자료로 활용할 수 있게 한다.
+- 
+ 그림1. 제안하는시스템모듈흐름도
+ Fig. 1. Flowchart of proposed system modules
+-제안하는 시스템을 구현하기 위해 객체 검출 모
+-델의 학습용 데이터셋을 구축하였다. 총 33개 클래
+-스를 정의하고, 각 클래스마다 10,000장의 합성 이
+-미지를 생성하여 총 330,000장의 학습 데이터를 구
+-축하였다. 각 이미지에는 하나의 객체를 중앙에 배
+-치하고 색상을 무작위로 변경하였으며, 데이터 라벨
+-링은 YOLO 포맷(class, x_center, y_center, width, h
+-eight)을 사용하였다.
++제안하는 시스템의 객체 검출 모델을 구현하기 
++위해 학습용 데이터셋을 구축하였다. 본 연구에서는 
++HTP(House-Tree-Person) 및 그림 기반 심리분석 과
++정에서 분석 대상으로 활용되는 시각적 요소를 중
++심으로 총 33개 객체 클래스를 정의하였다. 구체적
++인 클래스 구성은 표 1과 같으며, 각 클래스마다 1
++0,000장의 합성 이미지를 생성하여 총 330,000장의 
++데이터를 구축하였다. 각 이미지는 하나의 객체를 
++중앙에 배치하고 색상을 무작위로 변경하였으며, 데
++이터 라벨링은 YOLO 포맷(class, x_center, y_cente
++r, width, height)을 사용하였다.
++본 연구에서는 실제 사람이 그린 그림 대신 합성 
++데이터를 활용하여 객체 검출 학습 데이터를 구축
++하였다. 이는 초기 시스템 개발 단계에서 33개 객체 
++클래스에 대해 충분한 양의 학습 데이터를 확보하
++고, 객체의 위치와 형태를 일정한 조건에서 통제하
++
++=== 4쪽 ===
++4 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
++면서 데이터셋을 구성하기 위한 목적이다. 실제 그
++림 데이터를 대규모로 수집할 경우 사용자별 그림 
++표현 방식과 객체의 크기, 위치 및 형태가 다양하
++게 나타날 수 있으며, 객체 영역에 대한 일관된 라
++벨링에도 상당한 작업이 요구된다. 이에 본 연구에
++서는 클래스별 동일한 규모의 합성 데이터를 생성
++하여 학습 데이터의 구성과 라벨링을 일정하게 유
++지하였다.
++합성 데이터 기반 학습의 장점은 클래스별 데이
++터를 균등하게 확보할 수 있고, 객체의 위치와 색
++상 등의 조건을 통제하면서 반복적으로 데이터를 
++생성할 수 있다는 점이다. 또한 실제 사용자 그림
++을 직접 수집하지 않으므로 초기 데이터 구축 과정
++에서 발생할 수 있는 개인정보 및 민감정보 처리 
++부담을 줄일 수 있다. 반면, 합성 데이터는 실제 사
++람이 그린 그림에서 나타나는 비정형적인 선 표현, 
++객체 간 중첩, 다양한 크기와 위치, 복합적인 배치 
++등의 특성을 충분히 반영하지 못할 수 있다. 특히 
++본 연구의 데이터셋은 하나의 객체를 중앙에 배치
++한 단일 객체 중심의 합성 이미지로 구성되어 있으
++므로, 실제 사용자 그림에서 동일한 객체 검출 성
++능이 유지된다고 보장하기 어렵다. 따라서 본 연구
++의 객체 검출 성능은 합성 학습 데이터에 대한 성
++능으로 해석할 필요가 있으며, 실제 사람이 그린 
++그림을 대상으로 한 독립적인 검증을 통해 일반화 
++성능을 추가적으로 확인할 필요가 있다.
++표1. 객체검출모델의클래스구성
++Table 1. Class Composition of the Object Detection Model
+ 그림 2는 Gradio 기반으로 구현된 사용자 인터페
+ 이스 화면을 나타낸다. 사용자는 상단의 업로드 영
+ 역에 그림을 올리고 그 아래 입력창에 상담 내용을 
+@@ -151,7 +199,7 @@
+ 된다.
+ 그림 3은 제안한 시스템의 구현 흐름도이다. 사
+ 용자가 그림과 상담 내용을 입력하면 YOLOv8이 그
+-림의 주요 객체를 검출하고, 검출 객체 정보와 사
++림의 주요 객체를 검출하고, 객체 검출 결과와 사
+ 용자가 입력한 상담 내용을 함께 활용하여 GPT-4o
+ -mini가 공감형 상담 피드백을 생성한다. 생성된 결
+ 과는 PDF 보고서로 저장되어 상담 기록과 사후 분
+@@ -159,127 +207,272 @@
+    
+ 그림2. 사용자인터페이스화면
+ Fig. 2. User interface view
+-
+-=== 4쪽 ===
+-4 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
++No.
++Class
++No.
++Class
++No.
++Class
++1
++house
++12
++fence
++23
++shoulder
++2
++window
++13
++shadow
++24
++leg
++3
++door
++14
++ground_li
++ne
++25
++foot
++4
++tree
++15
++grass
++26
++button
++5
++person
++16
++tulip
++27
++clothes
++6
++cloud
++17
++daisy
++28
++underwear
++7
++sun
++18
++blueprint
++29
++branch
++8
++wall
++19
++face
++30
++leaf
++9
++chimney
++20
++eye
++31
++crown
++10
++smoke
++21
++nose
++32
++root
++11
++roof
++22
++mouth
++33
++apple
++
++=== 5쪽 ===
++Journal of KIIT. Vol. 23, No. 0, pp. 00-00, 00 00, 2025. pISSN 1598-8619, eISSN 2093-7571 5
+ 그림3. 제안하는시스템의구현흐름도
+ Fig. 3. Implementation flowchart of proposed system
+ IV. 실 험
+ 본 심리분석 시스템은 실제 임상 환경에 앞서 시
+-스템의 전반적인 동작 가능성을 확인하기 위해 모
+-의 미술치료 환경에서 성능을 검증하였다. 사용자는 
+-불안, 고독, 회복 등 일상적으로 경험할 수 있는 다
+-양한 감정을 주제로 그림을 자유롭게 그려 제출하
+-였으며, 별도의 진단적 지침이나 구조화된 과제 없
+-이 각자의 방식으로 감정을 표현하도록 하였다. 시
+-스템은 사용자가 제출한 그림과 함께 입력한 상담 
+-내용을 바탕으로 공감형 상담 피드백을 생성하였으
+-며, 이 과정에서 객체 검출 결과와 텍스트 입력이 
+-결합되어 상담 결과에 반영되는지를 함께 확인하였
+-다.
++스템의 전반적인 동작 가능성을 확인하기 위해 객
++체 검출 모델의 성능과 생성형 AI 기반 상담 피드
++백 생성 과정을 중심으로 평가하였다.
+ 객체 검출 모델 학습에는 III장에서 기술한 데이
+ 터셋을 사용하였다. 본 실험에서는 별도의 held-out 
+ 검증 세트 대신 학습(train) 세트를 검증에 활용하였
+ 는데, 이는 초기 개발 단계에서 파이프라인 전반의 
+ 동작 여부를 빠르게 확인하기 위한 목적에서 채택
+-한 방식이다. 다만 이러한 방식은 모델이 이미 학
+-습한 데이터를 다시 평가에 사용한다는 점에서, 본
+-문에 제시된 mAP50 ≈ 0.92, mAP50-95 ≈ 0.78은 
+-미학습 데이터에 대한 일반화 성능이 아니라 학습 
+-데이터에 대한 모델의 적합(fit) 성능을 나타내는 수
+-치로 해석되어야 한다. 미학습 데이터에 대한 실질
+-적인 일반화 성능은 별도의 독립적인 검증 세트를 
+-구성하여 후속 연구에서 확인할 예정이다.
+-학습은 YOLOv8n을 사전 가중치(pretrained weig
+-ht)로 하여 50에폭씩 총 100단계에 걸쳐 총 5,000에
++한 방식이다. 다만 이러한 방식은 모델이 이미 학습
++한 데이터를 다시 평가에 사용한다는 점에서, 본문
++에 제시된 mAP50 ≈0.92, mAP50-95 ≈0.78은 미
++학습 데이터에 대한 일반화 성능이 아니라 학습 데
++이터에 대한 모델의 적합(fit) 성능을 나타내는 수치
++로 해석되어야 한다. 미학습 데이터에 대한 실질적
++인 일반화 성능은 별도의 독립적인 검증 세트를 구
++성하여 후속 연구에서 확인할 예정이다.
++학습은 YOLOv8n을 사전 가중치(pretrained weigh
++t)로 하여 50에폭씩 총 100단계에 걸쳐 총 5,000에
+ 폭 규모로 다단계 resume 방식의 누적 학습을 진행
+ 하였다. 이는 대규모 합성 데이터셋(330,000장)을 한 
+ 번에 학습하기보다 단계적으로 나누어 학습 경과를 
+ 점검하며 진행하기 위한 방식이었다. 학습 안정성을 
+-확보하기 위해 SGD 옵티마이저와 cosine learning r
+-ate 스케줄링, warm-up 구간을 적용하였으며, 학습 
+-결과 box_loss ≈ 0.38, cls_loss ≈ 0.28, dfl_loss ≈ 
+-0.81, mAP50 ≈ 0.92, mAP50-95 ≈ 0.78의 성능을 
+-달성하여 단일 객체 기준으로 주요 객체를 안정적
+-으로 검출하였다. 
+-다만 33개 클래스 전체의 개별 성능에는 편차가 
+-있었다. 사람·집·나무와 같이 형태와 윤곽이 뚜렷
+-한 클래스는 검출 정확도가 높았던 반면, 그림자(sh
+-adow)나 지면선(ground_line)처럼 경계가 모호하고 
+-다른 객체와 시각적으로 혼동되기 쉬운 클래스는 
+-상대적으로 낮은 검출 성능을 보였다. 이는 해당 
+-클래스들이 뚜렷한 윤곽선 대신 명암이나 배치 맥
+-락으로만 구분되는 특성상, 합성 데이터 생성 과정
+-에서 다른 클래스와의 시각적 차별성이 충분히 확
+-보되지 못했기 때문으로 판단된다.
+-아울러, 상담 피드백의 품질을 높이기 위해 프롬
+-프트 파이프라인도 지속적으로 개선하였다. 초기 구
+-현에서는 객체 탐지 성공 여부만을 GPT-4o-mini 프
+-롬프트에 반영하였는데, 이 경우 피드백이 그림 속 
+-구체적인 요소를 언급하지 못하고 원론적인 수준에 
+-머무르는 한계가 있었다. 이를 보완하기 위해 이후 
+-YOLOv8이 검출한 객체의 클래스명 목록을 텍스트
+-로 변환하여 프롬프트에 직접 포함시키고, 사용자의 
+-상담 입력과 함께 단일 요청으로 결합하도록 개선
+-
+-=== 5쪽 ===
+-Journal of KIIT. Vol. 23, No. 0, pp. 00-00, 00 00, 2025. pISSN 1598-8619, eISSN 2093-7571 5
+-하였다.
+-상담 피드백의 품질 평가는 총 32명의 성인 사용
+-자를 대상으로 진행하였다. 각 참가자는 시스템을 
+-통해 그림을 제출하고 상담 피드백을 받은 뒤, 5점 
+-Likert 척도를 이용하여 감정 적절성(생성된 피드백
+-이 그림과 입력 내용의 감정에 부합하는 정도), 언
+-어 자연성(문장이 자연스럽고 사람이 작성한 것처
+-럼 느껴지는 정도), 공감성(위로와 정서적 지지가 
+-느껴지는 정도)의 세 항목을 평가하였다. 평가 결과 
+-평균 점수는 감정 적절성 4.6점, 언어 자연성 4.8점, 
+-공감성 4.5점으로 나타나 세 항목 모두 5점 만점에 
+-근접한 높은 점수를 보였다. 그림 4와 표 1은 각각 
+-GPT-4o-mini가 생성한 그림 분석 리포트의 예와 사
+-용자 평가 결과를 나타낸다.
++확보하기 위해 SGD 옵티마이저와 cosine learning ra
++te 스케줄링, warm-up 구간을 적용하였다. 학습 결
++과는 표 2와 같이 box loss 0.38, classification loss 0.
++28, distribution focal loss 0.81, mAP50 0.92, mAP50-9
++5 0.78로 나타났다.
++표2. 객체검출모델의학습결과
++Table 2. Training Results of the Object Detection Model
++객체 검출 성능은 표 1에 제시된 총 33개 클래스
++에 대해 평가하였다. 전체 성능은 mAP50 약 0.92, 
++mAP50-95 약 0.78로 나타났으나, 클래스별 검출 성
++능에는 차이가 존재하였다. 사람·집·나무와 같이 형
++태와 윤곽이 비교적 뚜렷한 클래스는 상대적으로 
++높은 검출 성능을 보인 반면, 그림자(shadow)나 지
++면선(ground_line)과 같이 경계가 모호하고 다른 객
++체와 시각적으로 혼동되기 쉬운 클래스는 상대적으
++로 낮은 검출 성능을 보였다. 이는 해당 클래스들이 
++뚜렷한 윤곽선 대신 명암이나 배치 맥락으로 구분
++되는 특성이 있어, 합성 데이터 생성 과정에서 다른 
++클래스와의 시각적 차별성이 충분히 확보되지 못했
++기 때문으로 판단된다. 특히 본 연구의 학습 데이터
++는 클래스별 단일 객체를 중앙에 배치한 합성 이미
++지로 구성되어 있으므로, 실제 사용자가 작성한 그
++림에서 나타나는 다중 객체 배치, 객체 간 중첩, 비
++정형적인 크기와 위치, 자유로운 선 형태 등의 시각
++적 변형에 대해서는 동일한 검출 성능이 보장되지 
++않는다. 따라서 본 연구에서 보고한 객체 검출 성능
++은 합성 학습 데이터에 대한 적합 수준으로 해석할 
++필요가 있으며, 실제 그림을 대상으로 한 독립적인 
++검증을 통해 일반화 성능을 추가적으로 확인할 필
++Evaluation Metric
++Result
++Box Loss
++0.38
++Classification Loss
++0.28
++Distribution Focal Loss
++0.81
++mAP50
++0.92
++mAP50-95
++0.78
++
++=== 6쪽 ===
++6 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
++요가 있다.
++아울러 상담 피드백 생성 과정에서 YOLOv8의 
++객체 검출 결과와 사용자의 상담 입력을 함께 활용
++하도록 프롬프트를 구성하였다. 현재 구현에서는 객
++체 검출 결과를 세부 객체 정보로 확장하지 않고 
++검출 성공 여부로 요약하여 GPT-4o-mini에 전달하
++며, 사용자가 입력한 상담 내용과 함께 단일 요청으
++로 구성한다. 이에 따라 GPT-4o-mini는 그림 분석 
++과정에서 객체 검출이 정상적으로 수행되었는지와 
++사용자가 제공한 현재의 감정 및 상황 정보를 참고
++하여 공감형 상담 피드백을 생성한다.
++상담 피드백 생성에 사용되는 프롬프트는 응답 
++방향과 입력 정보의 구체화를 위해 단계적으로 설
++계하였다. 초기에는 GPT-4o-mini에 상담자의 역할과 
++사용자 입력을 제공하였으며, 이후 공감적 표현과 
++질문 생성을 명시하고 객체 검출 결과를 추가하는 
++방식으로 프롬프트를 확장하였다. 최종 프롬프트에
++서는 객체 검출 결과와 사용자의 상담 내용을 함께 
++제공하고, 공감적이고 비진단적인 상담 피드백을 생
++성하도록 역할과 응답 형식을 구체적으로 지정하였
++다. 각 단계별 프롬프트의 주요 구성과 특징은 표 3
++에 제시하였다.
++표3. GPT 프롬프트설계단계
++Table 3. GPT Prompt Design Stages
++한편 현재 시스템의 객체 검출 정보는 성공 여부 
++중심으로 활용되므로, 객체의 정확한 위치, 크기 및 
++객체 간 관계가 상담 피드백에 직접적으로 반영되
++는 것은 아니다. 따라서 향후 연구에서는 이러한 공
++간적 정보를 구조화하여 GPT 프롬프트에 추가함으
++로써 그림의 시각적 맥락을 보다 세밀하게 반영할 
++필요가 있다.
+ 그림4. GPT-4o-mini가생성한그림분석리포트예
+ Fig. 4. Example of picture analysis report generated by
+ GPT-4o-mini
+-표1. 사용자평가결과
+-Table 1. User evaluation results
+-평가항목
+-평가기준
+-평균점수(5점)
+-감정적절성
+-감정일치성
+-4.6
+-언어자연성
+-문장자연성
+-4.8
+-공감성
+-공감수준
+-4.5
+ V. 결 론
+ 본 연구에서는 YOLOv8 기반 객체 검출과 GPT-4
+ o-mini 기반 공감형 상담 피드백을 결합한 상호작
+ 용 기반 심리분석 시스템을 구현하였다. 객체 검출 
+ 결과와 사용자의 상담 입력을 단일 프롬프트로 결
+-합함으로써, 탐지 성공 여부만을 반영하는 수준을 
+-넘어 그림 속 구체적 요소에 기반한 공감형 피드백
+-을 생성하고 이를 PDF 보고서로 자동 문서화할 수 
+-있도록 파이프라인을 개선하였으며, 이를 통해 디지
+-털 미술치료 적용 가능성을 제시하였다.
+-다만 본 연구는 시뮬레이션 기반의 단일 세션 평
+-가에 머물러 있어 실제 임상 환경에서의 효과와 반
+-복 사용에 따른 피드백 품질의 일관성은 확인하지 
+-못했으며, 일부 클래스의 검출 성능 편차로 그림 
+-요소 전반에 대한 균일한 해석에도 한계가 있다. 
+-또한 객체 검출 모델은 하나의 객체를 중앙에 배치
+-한 합성 이미지로 학습되어, 여러 객체가 함께 그
+-려지는 실제 그림에서도 동일한 성능이 유지되는지
+-는 별도의 검증이 필요하다.
+-향후 연구에서는 실제 우울증 환자를 대상으로 
+-한 임상 검증과 반복 사용에 따른 상담 효과의 종
+-단적 평가를 수행하고, 다중 모달 감정 분석, 검출 
+-성능이 낮은 클래스에 대한 다중 객체 해석 정확도 
+-개선, GPT 기반 상담 피드백의 후처리 기법을 연구
+-할 계획이다.
++합하여 검출 성공 여부와 사용자 입력을 기반으로 
++Prompt
++Content
++Input
++Output
++Prompt 1
++“You are an
++art therapy
++counselor.”
++User Input
++Counselor-r
++ole response
++Prompt 2
++“You are a
++warm and c
++aring art the
++rapy counsel
++or. Please r
++espond with
++empathy.”
++User Input
++Warm, empa
++thetic respon
++se
++Prompt 3
++“Based on t
++he drawing
++analysis and
++user input, p
++rovide empa
++thetic couns
++eling.”
++Analysis
+++　
++User Input
++Analysis-bas
++ed counselin
++g
++Prompt 4
++(Final)
++“You are a
++warm, caring
++Detection
++success
++Detailed ana
++lysis + 10–
++art therapist.
++Analyze the
++drawing with
++empathy an
++d write 10–
++15 gentle qu
++estions or c
++omments for
++the client.”
+++
++User Input
++15 empatheti
++c responses
++
++=== 7쪽 ===
++Journal of KIIT. Vol. 23, No. 0, pp. 00-00, 00 00, 2025. pISSN 1598-8619, eISSN 2093-7571 7
++공감형 피드백을 생성하고, 이를 PDF 보고서로 자
++동 문서화하는 시스템을 구현하였다. 이를 통해 디
++지털 미술치료 적용 가능성을 제시하였다.
++다만 본 연구의 객체 검출 모델은 하나의 객체를 
++중앙에 배치한 합성 이미지로 학습되어, 여러 객체
++가 함께 그려지는 실제 그림에서도 동일한 성능이 
++유지되는지는 별도의 검증이 필요하다. 또한 현재 
++시스템은 객체 검출 결과를 검출 성공 여부 중심으
++로 GPT-4o-mini에 전달하므로, 객체의 위치, 크기 
++및 객체 간 관계와 같은 세부적인 공간 정보가 상
++담 피드백에 직접적으로 반영되는 데에는 한계가 
++있다. 향후 연구에서는 실제 그림을 대상으로 한 
++독립적인 검증과 함께 YOLOv8에서 검출된 객체의 
++클래스, 위치, 크기 및 객체 간 관계를 구조화하여 
++GPT 기반 상담에 직접 활용하는 방식을 연구할 계
++획이다. 또한 다중 모달 감정 분석과 검출 성능이 
++낮은 클래스에 대한 다중 객체 해석 정확도 개선 
++및 GPT 기반 상담 피드백의 후처리 기법을 연구할 
++예정이다.
+ References
+ [1] World Health Organization, "Depression and Other 
+ Common Mental Disorders: Global Health Estimate
+@@ -293,9 +486,6 @@
+ [3] A. N. Vaidyam, H. Wisniewski, J. D. Halamka, 
+ M. S. Kashavan, and J. B. Torous, "Chatbots and 
+ Conversational Agents in Mental Health: A Revie
+-
+-=== 6쪽 ===
+-6 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
+ w of the Psychiatric Landscape", Canadian Journal 
+ of Psychiatry, Vol. 64, No. 7, pp. 456-464, July 2
+ 019. https://doi.org/10.1177/0706743719828977
+@@ -343,6 +533,9 @@
+ tion of a Mental Health Chatbot Using ChatGPT 
+ 4.0: Mixed Methods User Experience Study With 
+ Korean Users", JMIR Medical Informatics, Vol. 1
++
++=== 8쪽 ===
++8 객체검출과생성형언어모델을결합한상호작용기반그림심리분석시스템의설계및구현
+ 3, pp. 1-15, Jan. 2025. https://doi.org/10.2196/6353
+ 8
+ 저자소개
+--- /dev/null
++++ 자료/4차/평가점수_원본표.txt
+@@ -0,0 +1,43 @@
++| Participant | Emotional Appropriateness | Language Naturalness | Empathy |
++| ----------: | ------------------------: | -------------------: | ------: |
++|           1 |                         3 |                    3 |       3 |
++|           2 |                         3 |                    5 |       3 |
++|           3 |                         4 |                    4 |       4 |
++|           4 |                         4 |                    4 |       4 |
++|           5 |                         4 |                    4 |       4 |
++|           6 |                         4 |                    4 |       4 |
++|           7 |                         4 |                    4 |       4 |
++|           8 |                         4 |                    5 |       4 |
++|           9 |                         4 |                    5 |       4 |
++|          10 |                         4 |                    5 |       4 |
++|          11 |                         4 |                    5 |       4 |
++|          12 |                         4 |                    5 |       4 |
++|          13 |                         4 |                    5 |       4 |
++|          14 |                         5 |                    5 |       4 |
++|          15 |                         5 |                    5 |       4 |
++|          16 |                         5 |                    5 |       4 |
++|          17 |                         5 |                    5 |       4 |
++|          18 |                         5 |                    5 |       4 |
++|          19 |                         5 |                    5 |       4 |
++|          20 |                         5 |                    5 |       4 |
++|          21 |                         5 |                    5 |       4 |
++|          22 |                         5 |                    5 |       4 |
++|          23 |                         5 |                    5 |       4 |
++|          24 |                         5 |                    5 |       5 |
++|          25 |                         5 |                    5 |       5 |
++|          26 |                         5 |                    5 |       5 |
++|          27 |                         5 |                    5 |       5 |
++|          28 |                         5 |                    5 |       5 |
++|          29 |                         5 |                    5 |       5 |
++|          30 |                         5 |                    5 |       5 |
++|          31 |                         5 |                    5 |       5 |
++|          32 |                         5 |                    5 |       5 |
++
++
++Emotional Appropriateness: 평균 4.5625 → 4.6, 중앙값 5.0, 표준편차 0.6189 → 0.62, Q1=4.0, Q3=5.0
++Language Naturalness: 평균 4.78125 → 4.8, 중앙값 5.0, 표준편차 0.4908 → 0.49, Q1=5.0, Q3=5.0
++Empathy: 평균 4.5000 → 4.5, 중앙값 5.0, 표준편차 0.6222 → 0.62, Q1=4.0, Q3=5.0
++
++Emotional Appropriateness: 3점 2명 / 4점 10명 / 5점 20명
++Language Naturalness: 3점 1명 / 4점 5명 / 5점 26명
++Empathy: 3점 2명 / 4점 12명 / 5점 18명
