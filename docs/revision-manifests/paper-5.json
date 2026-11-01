@@ -4,11 +4,18 @@
   "files": {
     "논문/5차/원문_논문.pdf": {
       "bytes": 466330,
-      "sha256": "ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de"
+      "sha256": "ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de",
+      "public_path": "논문/5차/원문_논문.pdf",
+      "public_bytes": 442168,
+      "public_sha256": "ad147012ad46454e8d66e84be55b3810f311adba2a6cbe275a6f1f710bf982bd"
     },
     "논문/5차/원문_논문.hwp": {
       "bytes": 872960,
-      "sha256": "32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803"
+      "sha256": "32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803",
+      "public_path": "논문/5차/원문_논문.hwp.md",
+      "public_bytes": 436,
+      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

@@ -13,7 +13,7 @@
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
 | [논문/5차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 466330 | `ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de` |
-| [논문/5차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 872960 | `32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803` |
+| [논문/5차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 872960 | `32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803` |
 
 ## 🔎 해석·검증 범위
 

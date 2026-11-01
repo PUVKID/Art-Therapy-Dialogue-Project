@@ -4,31 +4,53 @@
   "files": {
     "논문/2차/원문_논문.pdf": {
       "bytes": 377013,
-      "sha256": "b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616"
+      "sha256": "b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616",
+      "public_path": "논문/2차/원문_논문.pdf",
+      "public_bytes": 356337,
+      "public_sha256": "4e19c07e8a9f585897bc934a61bfd2fc6b1f56fcc76db93760e142cae519562a"
     },
     "논문/2차/원문_논문.hwp": {
       "bytes": 727040,
-      "sha256": "c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb"
+      "sha256": "c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb",
+      "public_path": "논문/2차/원문_논문.hwp.md",
+      "public_bytes": 436,
+      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
     },
     "논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp": {
       "bytes": 715264,
-      "sha256": "f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8"
+      "sha256": "f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8",
+      "public_path": "논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp.md",
+      "public_bytes": 439,
+      "public_sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
     },
     "논문/2차/관련문서/2차_투고신청서.hwp": {
       "bytes": 37376,
-      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635"
+      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635",
+      "public_path": "논문/2차/관련문서/2차_투고신청서.hwp.md",
+      "public_bytes": 408,
+      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
     },
     "논문/2차/관련문서/심사답변서 1.hwp": {
       "bytes": 89600,
-      "sha256": "3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e"
+      "sha256": "3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e",
+      "public_path": "논문/2차/관련문서/심사답변서 1.hwp.md",
+      "public_bytes": 408,
+      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
     },
     "논문/2차/관련문서/심사답변서 2.hwp": {
       "bytes": 84480,
-      "sha256": "7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da"
+      "sha256": "7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da",
+      "public_path": "논문/2차/관련문서/심사답변서 2.hwp.md",
+      "public_bytes": 408,
+      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
     },
     "논문/2차/관련문서/심사답변서 3.hwp": {
       "bytes": 82944,
-      "sha256": "8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21"
+      "sha256": "8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21",
+      "public_path": "논문/2차/관련문서/심사답변서 3.hwp.md",
+      "public_bytes": 408,
+      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

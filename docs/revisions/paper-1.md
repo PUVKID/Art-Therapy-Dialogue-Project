@@ -13,9 +13,9 @@
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
 | [논문/1차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 351613 | `fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941` |
-| [논문/1차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 681472 | `ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa` |
-| [논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) | .hwp | 671232 | `48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776` |
-| [논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp) | .hwp | 37376 | `782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635` |
+| [논문/1차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 681472 | `ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa` |
+| [논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) | .hwp | 671232 | `48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776` |
+| [논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) | .hwp | 37376 | `782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635` |
 
 ## 🔎 해석·검증 범위
 

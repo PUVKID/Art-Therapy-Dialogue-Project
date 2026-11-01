@@ -1,0 +1,835 @@
+# 개인정보 값은 공개 비교에서 제외했습니다. 원본의 실제 전체 차이는 별도 비공개로 보존합니다.
+--- before/README.md
++++ after/README.md
+@@ -23,7 +23,7 @@
+ 
+ [현재 원문 PDF·공식 링크 교체 위치](docs/PAPERS.md) · [모든 실제 차수·최종본·전체 비교](docs/REVISION_INDEX.md)
+ 
+-- **5차 · 최종 수정 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp)
++- **5차 · 최종 수정 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md)
+ 
+ 공식 공개 URL은 아직 등록하지 않았습니다. 추후 [논문 전용 표](docs/PAPERS.md)의 교체 칸과 이 항목을 함께 갱신합니다.
+ 
+@@ -206,3 +206,33 @@
+ **대화형 프로토타입과 평가 자료를 함께 살펴봅니다.**
+ 
+ </div>
++
++
++> 공개 PDF에서는 지정된 개인정보와 학과·학부 정보를 제외했습니다. 저자·공동저자의 성명, 학교, 이메일, ORCID와 사진은 보존합니다. 편집 원문 링크는 비공개 보관 안내로 연결됩니다.
++
++
++<details>
++<summary>📚 차수별 논문 공개본 전체 보기</summary>
++
++| 원고·공개 경로 | 논문 |
++| :--- | :--- |
++| 논문/1차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
++| 논문/2차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
++| 논문/3차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
++| 논문/4차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
++| 논문/5차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
++| 논문/최종_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) |
++
++</details>
++
++
++<details>
++<summary>🧹 공개 자료 정리 기록</summary>
++
++| 검수 대상 | 연결 자료 | 상세·이번 비교 |
++| :--- | :--- | :--- |
++| **4차** | [📁 검수 자료](4%EC%B0%A8) | [📖 정리 내용](docs/publication-review/item-1.md) · [🔎 파일 비교](docs/publication-review/공개파일변경.json) |
++
++[🗂️ 전체 차수와 자료](docs/REVISION_INDEX.md)
++
++</details>
+--- before/docs/PAPERS.md
++++ after/docs/PAPERS.md
+@@ -1,9 +1,12 @@
+ # 📄 내 논문 PDF와 공식 링크 교체 위치
+ 
+-현재 링크는 보존 중인 원문 PDF입니다. 나중에 공개된 공식 논문 URL을 확인하면 아래 `공식 공개 URL` 열과 첫 화면의 `내 논문 PDF` 항목을 함께 교체합니다. 공식 링크가 공개되면 현재 PDF 링크와 함께 갱신합니다.
++현재 링크에서 논문 공개본을 읽을 수 있습니다. 나중에 공개된 공식 논문 URL을 확인하면 아래 `공식 공개 URL` 열과 첫 화면의 `내 논문 PDF` 항목을 함께 교체합니다. 공식 링크가 공개되면 현재 PDF 링크와 함께 갱신합니다.
+ 
+ | 원고 단계 | 지금 바로 읽는 PDF | 편집 원본 | 공식 공개 URL(교체 위치) |
+ |---|---|---|---|
+-| 5차 · 최종 수정 원고 | [PDF 원문](../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | [원본](../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | 미등록 — 공식 URL 확인 후 이 칸 교체 |
++| 5차 · 최종 수정 원고 | [PDF 원문](../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | [원본](../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | 미등록 — 공식 URL 확인 후 이 칸 교체 |
+ 
+-저자 성명·소속·이메일·전화·저자소개·사진을 포함한 원문을 보관합니다. 과거 공개 정제 사본은 기존 경로에 남고 현재 원문과 구분합니다. 인증정보·식별 가능한 환자 의료 원본·별도로 보관하는 외부 비공개 자료는 포함하지 않습니다.
++저자 성명·학교·이메일·전화·저자소개·사진을 보존하고 학과 정보를 제외한 PDF를 제공합니다. 과거 공개 정제 사본은 기존 경로에 남고 현재 원문과 구분합니다. 인증정보·식별 가능한 환자 의료 원본·별도로 보관하는 외부 비공개 자료는 포함하지 않습니다.
++
++
++> 공개 PDF에서는 지정된 개인정보와 학과·학부 정보를 제외했습니다. 저자·공동저자의 성명, 학교, 이메일, ORCID와 사진은 보존합니다. 편집 원문 링크는 비공개 보관 안내로 연결됩니다.
+--- before/docs/PUBLIC_CHANGELOG_2026-10-30.md
++++ after/docs/PUBLIC_CHANGELOG_2026-10-30.md
+@@ -78,7 +78,7 @@
+ - [전체 단계·직전 단계 차이](REVISION_INDEX.md)에 파일별 근거와 원고 설명을 연결했습니다. 공백·주석·코드셀·Markdown·텍스트·수치·실험 설정을 전체 비교하며 ipynb의 바이너리 이미지 출력만 바이트 길이·SHA-256·원문 링크로 표시합니다. 원문 ipynb 자체는 보존합니다.
+ - UTF-8, 비밀 패턴, 실제 로컬 링크, 노트북 JSON, source/public SHA 및 코드 셀 보존, PDF 열기를 검사했습니다. 원본0바이트 노트북은 그대로 남기며 JSON·실행·성능 근거에서 제외합니다.
+ - 의료 원본 후보가 포함된 노트북 이미지 출력만 제외한 사본은 비공개 대응표에 source/public 해시와 변환 이유를 구별해 기록했습니다.
+-- 원문에 실린 본인·공동저자의 성명·소속·이메일·전화·ORCID·이력·사진은 최신 공개 지시에 따라 보존합니다. 기존 원격 정제 사본은 이력으로 유지합니다.
++- 본인·공동저자의 성명·학교·이메일·전화·ORCID·이력·사진을 보존하고, 학과 정보와 지정된 개인정보를 제외한 공개본을 제공합니다. 기존 원격 정제 사본은 이력으로 유지합니다.
+ - 인증키·비밀번호, 대용량 모델·원데이터, 연구와 무관한 결제 자료·도구 설치 캐시와 본인 비저자·공개권한 근거 불명확 외부 원고는 별도 제외·보류 근거로 관리합니다. 원본은 수정·삭제하지 않았습니다.
+ - 새 학습·임상·제조 장비·추천 성능 실험은 수행하지 않았습니다. 저장 표와 원고 보고값을 새 실측으로 소개하지 않습니다.
+ - 이 변경 기록 시점에는 원격 쓰기·커밋·푸시를 수행하지 않았고 부모 통합 독립 검토와 반영을 기다립니다.
+--- before/docs/changes/2026-10-30-자료와차수정리.md
++++ after/docs/changes/2026-10-30-자료와차수정리.md
+@@ -49,28 +49,28 @@
+ | [그림 자료/그림 3.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%203.png) |
+ | [그림 자료/미술치료 논문 그림 1.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%201.drawio) |
+ | [그림 자료/미술치료 논문 그림 3.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.drawio) |
+-| [논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) |
+-| [논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp) |
+-| [논문/1차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) |
++| [논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) |
++| [논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) |
++| [논문/1차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) |
+ | [논문/1차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
+-| [논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) |
+-| [논문/2차/관련문서/2차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp) |
+-| [논문/2차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp) |
+-| [논문/2차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp) |
+-| [논문/2차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp) |
+-| [논문/2차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) |
++| [논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) |
++| [논문/2차/관련문서/2차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) |
++| [논문/2차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp.md) |
++| [논문/2차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp.md) |
++| [논문/2차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp.md) |
++| [논문/2차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) |
+ | [논문/2차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
+-| [논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) |
+-| [논문/3차/관련문서/3차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp) |
+-| [논문/3차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) |
++| [논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) |
++| [논문/3차/관련문서/3차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) |
++| [논문/3차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) |
+ | [논문/3차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
+-| [논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/4%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) |
+-| [논문/4차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp) |
+-| [논문/4차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp) |
+-| [논문/4차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp) |
+-| [논문/4차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) |
++| [논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/4%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) |
++| [논문/4차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp.md) |
++| [논문/4차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp.md) |
++| [논문/4차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp.md) |
++| [논문/4차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) |
+ | [논문/4차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
+-| [논문/5차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) |
++| [논문/5차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) |
+ | [논문/5차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
+ | [자료/3차/미술치료 논문 그림 3.drawio](../../%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.drawio) |
+ | [자료/3차/미술치료 논문 그림 3.png](../../%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.png) |
+--- before/docs/revision-manifests/app.json
++++ after/docs/revision-manifests/app.json
+@@ -4,27 +4,46 @@
+   "files": {
+     "그림 자료/app.ipynb": {
+       "bytes": 8196,
+-      "sha256": "25549c1d0f12e0d8a000d9b1185a575e4acc7a596522e79a3964c00e2f16e9d3"
++      "sha256": "25549c1d0f12e0d8a000d9b1185a575e4acc7a596522e79a3964c00e2f16e9d3",
++      "public_path": "그림 자료/app.ipynb",
++      "public_bytes": 8196,
++      "public_sha256": "25549c1d0f12e0d8a000d9b1185a575e4acc7a596522e79a3964c00e2f16e9d3"
+     },
+     "그림 자료/그림 1.png": {
+       "bytes": 63869,
+-      "sha256": "0a562e57a4cf3df48b12530ea02befbd245e854f855f4ccf2e08dc80424fef3a"
++      "sha256": "0a562e57a4cf3df48b12530ea02befbd245e854f855f4ccf2e08dc80424fef3a",
++      "public_path": "그림 자료/그림 1.png",
++      "public_bytes": 63869,
++      "public_sha256": "0a562e57a4cf3df48b12530ea02befbd245e854f855f4ccf2e08dc80424fef3a"
+     },
+     "그림 자료/그림 2.png": {
+       "bytes": 324481,
+-      "sha256": "182eef375de5b5be3fd2056ba7a7be797cbdbb4a26207c05dce09b19d9ea0958"
++      "sha256": "182eef375de5b5be3fd2056ba7a7be797cbdbb4a26207c05dce09b19d9ea0958",
++      "public_path": "그림 자료/그림 2.png",
++      "public_bytes": 324481,
++      "public_sha256": "182eef375de5b5be3fd2056ba7a7be797cbdbb4a26207c05dce09b19d9ea0958"
+     },
+     "그림 자료/그림 3.png": {
+       "bytes": 50719,
+-      "sha256": "550b5d3b61833be5239b0027eef409d7bc103e122767cb01861741f852d15209"
++      "sha256": "550b5d3b61833be5239b0027eef409d7bc103e122767cb01861741f852d15209",
++      "public_path": "그림 자료/그림 3.png",
++      "public_bytes": 50719,
++      "public_sha256": "550b5d3b61833be5239b0027eef409d7bc103e122767cb01861741f852d15209"
+     },
+     "그림 자료/미술치료 논문 그림 1.drawio": {
+       "bytes": 8310,
+-      "sha256": "0f0190e3df762ca02c17353022ab592577f9d170409b59b3bad71ec2f153afc4"
++      "sha256": "0f0190e3df762ca02c17353022ab592577f9d170409b59b3bad71ec2f153afc4",
++      "public_path": "그림 자료/미술치료 논문 그림 1.drawio",
++      "public_bytes": 8310,
++      "public_sha256": "0f0190e3df762ca02c17353022ab592577f9d170409b59b3bad71ec2f153afc4"
+     },
+     "그림 자료/미술치료 논문 그림 3.drawio": {
+       "bytes": 7609,
+-      "sha256": "efa11289474acf761f9c26baa4beb3f87e40e7e5dcf8836661a4655727c85cf4"
++      "sha256": "efa11289474acf761f9c26baa4beb3f87e40e7e5dcf8836661a4655727c85cf4",
++      "public_path": "그림 자료/미술치료 논문 그림 3.drawio",
++      "public_bytes": 7609,
++      "public_sha256": "efa11289474acf761f9c26baa4beb3f87e40e7e5dcf8836661a4655727c85cf4"
+     }
+-  }
++  },
++  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
+ }
+--- before/docs/revision-manifests/paper-1.json
++++ after/docs/revision-manifests/paper-1.json
+@@ -4,19 +4,32 @@
+   "files": {
+     "논문/1차/원문_논문.pdf": {
+       "bytes": 351613,
+-      "sha256": "fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941"
++      "sha256": "fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941",
++      "public_path": "논문/1차/원문_논문.pdf",
++      "public_bytes": 332680,
++      "public_sha256": "ee102a526d347ddc9b591b591b19781dacc4184bb63a392f85beb87e2ed697b7"
+     },
+     "논문/1차/원문_논문.hwp": {
+       "bytes": 681472,
+-      "sha256": "ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa"
++      "sha256": "ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa",
++      "public_path": "논문/1차/원문_논문.hwp.md",
++      "public_bytes": 436,
++      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+     },
+     "논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp": {
+       "bytes": 671232,
+-      "sha256": "48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776"
++      "sha256": "48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776",
++      "public_path": "논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp.md",
++      "public_bytes": 439,
++      "public_sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+     },
+     "논문/1차/관련문서/투고신청서.hwp": {
+       "bytes": 37376,
+-      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635"
++      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635",
++      "public_path": "논문/1차/관련문서/투고신청서.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     }
+-  }
++  },
++  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
+ }
+--- before/docs/revision-manifests/paper-2.json
++++ after/docs/revision-manifests/paper-2.json
+@@ -4,31 +4,53 @@
+   "files": {
+     "논문/2차/원문_논문.pdf": {
+       "bytes": 377013,
+-      "sha256": "b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616"
++      "sha256": "b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616",
++      "public_path": "논문/2차/원문_논문.pdf",
++      "public_bytes": 356337,
++      "public_sha256": "4e19c07e8a9f585897bc934a61bfd2fc6b1f56fcc76db93760e142cae519562a"
+     },
+     "논문/2차/원문_논문.hwp": {
+       "bytes": 727040,
+-      "sha256": "c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb"
++      "sha256": "c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb",
++      "public_path": "논문/2차/원문_논문.hwp.md",
++      "public_bytes": 436,
++      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+     },
+     "논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp": {
+       "bytes": 715264,
+-      "sha256": "f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8"
++      "sha256": "f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8",
++      "public_path": "논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp.md",
++      "public_bytes": 439,
++      "public_sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+     },
+     "논문/2차/관련문서/2차_투고신청서.hwp": {
+       "bytes": 37376,
+-      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635"
++      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635",
++      "public_path": "논문/2차/관련문서/2차_투고신청서.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     },
+     "논문/2차/관련문서/심사답변서 1.hwp": {
+       "bytes": 89600,
+-      "sha256": "3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e"
++      "sha256": "3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e",
++      "public_path": "논문/2차/관련문서/심사답변서 1.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     },
+     "논문/2차/관련문서/심사답변서 2.hwp": {
+       "bytes": 84480,
+-      "sha256": "7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da"
++      "sha256": "7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da",
++      "public_path": "논문/2차/관련문서/심사답변서 2.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     },
+     "논문/2차/관련문서/심사답변서 3.hwp": {
+       "bytes": 82944,
+-      "sha256": "8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21"
++      "sha256": "8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21",
++      "public_path": "논문/2차/관련문서/심사답변서 3.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     }
+-  }
++  },
++  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
+ }
+--- before/docs/revision-manifests/paper-3.json
++++ after/docs/revision-manifests/paper-3.json
+@@ -4,27 +4,46 @@
+   "files": {
+     "논문/3차/원문_논문.pdf": {
+       "bytes": 435587,
+-      "sha256": "daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1"
++      "sha256": "daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1",
++      "public_path": "논문/3차/원문_논문.pdf",
++      "public_bytes": 414281,
++      "public_sha256": "7cba88b0992395e1fa379ff753a759bc546b95a0e7b9d98762daa0f176bae9c2"
+     },
+     "자료/3차/미술치료 논문 그림 3.drawio": {
+       "bytes": 7582,
+-      "sha256": "bbc9a5a511daf7a12e274ecbfe48426062bd7294b400838da6637e057c69aeaf"
++      "sha256": "bbc9a5a511daf7a12e274ecbfe48426062bd7294b400838da6637e057c69aeaf",
++      "public_path": "자료/3차/미술치료 논문 그림 3.drawio",
++      "public_bytes": 7582,
++      "public_sha256": "bbc9a5a511daf7a12e274ecbfe48426062bd7294b400838da6637e057c69aeaf"
+     },
+     "자료/3차/미술치료 논문 그림 3.png": {
+       "bytes": 58274,
+-      "sha256": "3b63b1cea0ebd0111635e89a4a5831c8d673cca978e13ff5b1a33d6d53e8f85e"
++      "sha256": "3b63b1cea0ebd0111635e89a4a5831c8d673cca978e13ff5b1a33d6d53e8f85e",
++      "public_path": "자료/3차/미술치료 논문 그림 3.png",
++      "public_bytes": 58274,
++      "public_sha256": "3b63b1cea0ebd0111635e89a4a5831c8d673cca978e13ff5b1a33d6d53e8f85e"
+     },
+     "논문/3차/원문_논문.hwp": {
+       "bytes": 941056,
+-      "sha256": "2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836"
++      "sha256": "2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836",
++      "public_path": "논문/3차/원문_논문.hwp.md",
++      "public_bytes": 436,
++      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+     },
+     "논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp": {
+       "bytes": 736256,
+-      "sha256": "51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30"
++      "sha256": "51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30",
++      "public_path": "논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp.md",
++      "public_bytes": 439,
++      "public_sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+     },
+     "논문/3차/관련문서/3차_투고신청서.hwp": {
+       "bytes": 37888,
+-      "sha256": "89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8"
++      "sha256": "89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8",
++      "public_path": "논문/3차/관련문서/3차_투고신청서.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     }
+-  }
++  },
++  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
+ }
+--- before/docs/revision-manifests/paper-4.json
++++ after/docs/revision-manifests/paper-4.json
+@@ -4,63 +4,109 @@
+   "files": {
+     "논문/4차/원문_논문.pdf": {
+       "bytes": 453356,
+-      "sha256": "f5c4f5810ed7113fae738132e20e2629d23ef1a168f8599105f99fb623f463b4"
++      "sha256": "f5c4f5810ed7113fae738132e20e2629d23ef1a168f8599105f99fb623f463b4",
++      "public_path": "논문/4차/원문_논문.pdf",
++      "public_bytes": 431512,
++      "public_sha256": "9278830510001c6d8ceec8bf642a18cfa7b3e8a73e7be2a3a809f812123b4592"
+     },
+     "4차/그림 5.ipynb": {
+       "bytes": 8700,
+-      "sha256": "5d1b3760da9434cb4ebeae30770df59bd17743531d9f3e5f7d077fc2d8f7728a"
++      "sha256": "5d1b3760da9434cb4ebeae30770df59bd17743531d9f3e5f7d077fc2d8f7728a",
++      "public_path": "4차/그림 5.ipynb",
++      "public_bytes": 8700,
++      "public_sha256": "5d1b3760da9434cb4ebeae30770df59bd17743531d9f3e5f7d077fc2d8f7728a"
+     },
+     "자료/4차/미술치료 논문 그림 1.drawio": {
+       "bytes": 7587,
+-      "sha256": "60cb96bd3f58e73a9ba0c7b8dfda04ada1e6c555e242b08908e47a56978d3e6a"
++      "sha256": "60cb96bd3f58e73a9ba0c7b8dfda04ada1e6c555e242b08908e47a56978d3e6a",
++      "public_path": "자료/4차/미술치료 논문 그림 1.drawio",
++      "public_bytes": 7587,
++      "public_sha256": "60cb96bd3f58e73a9ba0c7b8dfda04ada1e6c555e242b08908e47a56978d3e6a"
+     },
+     "자료/4차/미술치료 논문 그림 3.drawio": {
+       "bytes": 7333,
+-      "sha256": "7fa4b75a853fe04edc621af1f743253cb6c251de88bf55f4914f42fe6b10e4fc"
++      "sha256": "7fa4b75a853fe04edc621af1f743253cb6c251de88bf55f4914f42fe6b10e4fc",
++      "public_path": "자료/4차/미술치료 논문 그림 3.drawio",
++      "public_bytes": 7333,
++      "public_sha256": "7fa4b75a853fe04edc621af1f743253cb6c251de88bf55f4914f42fe6b10e4fc"
+     },
+     "자료/4차/그림/그림 1.png": {
+       "bytes": 40063,
+-      "sha256": "2ce468cb7f5a8007285050940d4ccbd197055f66aeeb19ef5d4b5a3861a3e97e"
++      "sha256": "2ce468cb7f5a8007285050940d4ccbd197055f66aeeb19ef5d4b5a3861a3e97e",
++      "public_path": "자료/4차/그림/그림 1.png",
++      "public_bytes": 40063,
++      "public_sha256": "2ce468cb7f5a8007285050940d4ccbd197055f66aeeb19ef5d4b5a3861a3e97e"
+     },
+     "자료/4차/그림/그림 2.png": {
+       "bytes": 281121,
+-      "sha256": "10fe8ea2a838737106bfe38712dbaa843d7acea490dfe630083f72fa0e8cefa8"
++      "sha256": "10fe8ea2a838737106bfe38712dbaa843d7acea490dfe630083f72fa0e8cefa8",
++      "public_path": "자료/4차/그림/그림 2.png",
++      "public_bytes": 281121,
++      "public_sha256": "10fe8ea2a838737106bfe38712dbaa843d7acea490dfe630083f72fa0e8cefa8"
+     },
+     "자료/4차/그림/그림 3.drawio.png": {
+       "bytes": 53235,
+-      "sha256": "42c673455b805fd2fd23fb3b99cc8b0fbf169dbc7b28022dee622b658b78bba2"
++      "sha256": "42c673455b805fd2fd23fb3b99cc8b0fbf169dbc7b28022dee622b658b78bba2",
++      "public_path": "자료/4차/그림/그림 3.drawio.png",
++      "public_bytes": 53235,
++      "public_sha256": "42c673455b805fd2fd23fb3b99cc8b0fbf169dbc7b28022dee622b658b78bba2"
+     },
+     "자료/4차/그림/그림 5.png": {
+       "bytes": 311734,
+-      "sha256": "eb26ea6f203837fbfae9aa52372ef8231dbdf12fd7a9a0f805b23e9cd62bee46"
++      "sha256": "eb26ea6f203837fbfae9aa52372ef8231dbdf12fd7a9a0f805b23e9cd62bee46",
++      "public_path": "자료/4차/그림/그림 5.png",
++      "public_bytes": 311734,
++      "public_sha256": "eb26ea6f203837fbfae9aa52372ef8231dbdf12fd7a9a0f805b23e9cd62bee46"
+     },
+     "논문/4차/원문_논문.hwp": {
+       "bytes": 874496,
+-      "sha256": "dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36"
++      "sha256": "dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36",
++      "public_path": "논문/4차/원문_논문.hwp.md",
++      "public_bytes": 436,
++      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+     },
+     "자료/4차/평가점수_원본표.txt": {
+       "bytes": 3137,
+-      "sha256": "e8861eac260025b9d094c0ce6a6ea886943877f23424512ded9effc090374e86"
++      "sha256": "e8861eac260025b9d094c0ce6a6ea886943877f23424512ded9effc090374e86",
++      "public_path": "자료/4차/평가점수_원본표.txt",
++      "public_bytes": 3137,
++      "public_sha256": "e8861eac260025b9d094c0ce6a6ea886943877f23424512ded9effc090374e86"
+     },
+     "논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp": {
+       "bytes": 655360,
+-      "sha256": "3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd"
++      "sha256": "3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd",
++      "public_path": "논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp.md",
++      "public_bytes": 439,
++      "public_sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+     },
+     "논문/4차/관련문서/심사답변서 1.hwp": {
+       "bytes": 374272,
+-      "sha256": "b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d"
++      "sha256": "b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d",
++      "public_path": "논문/4차/관련문서/심사답변서 1.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     },
+     "논문/4차/관련문서/심사답변서 2.hwp": {
+       "bytes": 99840,
+-      "sha256": "c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c"
++      "sha256": "c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c",
++      "public_path": "논문/4차/관련문서/심사답변서 2.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     },
+     "논문/4차/관련문서/심사답변서 3.hwp": {
+       "bytes": 61440,
+-      "sha256": "23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24"
++      "sha256": "23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24",
++      "public_path": "논문/4차/관련문서/심사답변서 3.hwp.md",
++      "public_bytes": 408,
++      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+     },
+     "자료/4차/그림 5_원본.ipynb": {
+       "bytes": 65399,
+-      "sha256": "a013c39c65262fb9666ea2124e37528110a7f124ea92eae61af1df96f9a14723"
++      "sha256": "a013c39c65262fb9666ea2124e37528110a7f124ea92eae61af1df96f9a14723",
++      "public_path": "자료/4차/그림 5_원본.ipynb",
++      "public_bytes": 65399,
++      "public_sha256": "a013c39c65262fb9666ea2124e37528110a7f124ea92eae61af1df96f9a14723"
+     }
+-  }
++  },
++  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
+ }
+--- before/docs/revision-manifests/paper-5.json
++++ after/docs/revision-manifests/paper-5.json
+@@ -4,11 +4,18 @@
+   "files": {
+     "논문/5차/원문_논문.pdf": {
+       "bytes": 466330,
+-      "sha256": "ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de"
++      "sha256": "ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de",
++      "public_path": "논문/5차/원문_논문.pdf",
++      "public_bytes": 442168,
++      "public_sha256": "ad147012ad46454e8d66e84be55b3810f311adba2a6cbe275a6f1f710bf982bd"
+     },
+     "논문/5차/원문_논문.hwp": {
+       "bytes": 872960,
+-      "sha256": "32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803"
++      "sha256": "32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803",
++      "public_path": "논문/5차/원문_논문.hwp.md",
++      "public_bytes": 436,
++      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+     }
+-  }
++  },
++  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
+ }
+--- before/docs/revisions/paper-1.md
++++ after/docs/revisions/paper-1.md
+@@ -13,9 +13,9 @@
+ | 파일 | 종류 | 바이트 | SHA-256 |
+ |---|---|---:|---|
+ | [논문/1차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 351613 | `fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941` |
+-| [논문/1차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 681472 | `ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa` |
+-| [논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) | .hwp | 671232 | `48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776` |
+-| [논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp) | .hwp | 37376 | `782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635` |
++| [논문/1차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 681472 | `ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa` |
++| [논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) | .hwp | 671232 | `48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776` |
++| [논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) | .hwp | 37376 | `782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635` |
+ 
+ ## 🔎 해석·검증 범위
+ 
+--- before/docs/revisions/paper-2.md
++++ after/docs/revisions/paper-2.md
+@@ -13,12 +13,12 @@
+ | 파일 | 종류 | 바이트 | SHA-256 |
+ |---|---|---:|---|
+ | [논문/2차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 377013 | `b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616` |
+-| [논문/2차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 727040 | `c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb` |
+-| [논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) | .hwp | 715264 | `f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8` |
+-| [논문/2차/관련문서/2차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp) | .hwp | 37376 | `782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635` |
+-| [논문/2차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp) | .hwp | 89600 | `3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e` |
+-| [논문/2차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp) | .hwp | 84480 | `7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da` |
+-| [논문/2차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp) | .hwp | 82944 | `8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21` |
++| [논문/2차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 727040 | `c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb` |
++| [논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%8B%A8%ED%8E%B8%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) | .hwp | 715264 | `f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8` |
++| [논문/2차/관련문서/2차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/2%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) | .hwp | 37376 | `782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635` |
++| [논문/2차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp.md) | .hwp | 89600 | `3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e` |
++| [논문/2차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp.md) | .hwp | 84480 | `7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da` |
++| [논문/2차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp.md) | .hwp | 82944 | `8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21` |
+ 
+ ## 🔎 해석·검증 범위
+ 
+--- before/docs/revisions/paper-3.md
++++ after/docs/revisions/paper-3.md
+@@ -15,9 +15,9 @@
+ | [논문/3차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 435587 | `daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1` |
+ | [자료/3차/미술치료 논문 그림 3.drawio](../../%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.drawio) | .drawio | 7582 | `bbc9a5a511daf7a12e274ecbfe48426062bd7294b400838da6637e057c69aeaf` |
+ | [자료/3차/미술치료 논문 그림 3.png](../../%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.png) | .png | 58274 | `3b63b1cea0ebd0111635e89a4a5831c8d673cca978e13ff5b1a33d6d53e8f85e` |
+-| [논문/3차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 941056 | `2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836` |
+-| [논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) | .hwp | 736256 | `51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30` |
+-| [논문/3차/관련문서/3차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp) | .hwp | 37888 | `89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8` |
++| [논문/3차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 941056 | `2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836` |
++| [논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) | .hwp | 736256 | `51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30` |
++| [논문/3차/관련문서/3차_투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/3%EC%B0%A8_%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) | .hwp | 37888 | `89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8` |
+ 
+ ## 🔎 해석·검증 범위
+ 
+--- before/docs/revisions/paper-4.md
++++ after/docs/revisions/paper-4.md
+@@ -20,12 +20,12 @@
+ | [자료/4차/그림/그림 2.png](../../%EC%9E%90%EB%A3%8C/4%EC%B0%A8/%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC%202.png) | .png | 281121 | `10fe8ea2a838737106bfe38712dbaa843d7acea490dfe630083f72fa0e8cefa8` |
+ | [자료/4차/그림/그림 3.drawio.png](../../%EC%9E%90%EB%A3%8C/4%EC%B0%A8/%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC%203.drawio.png) | .png | 53235 | `42c673455b805fd2fd23fb3b99cc8b0fbf169dbc7b28022dee622b658b78bba2` |
+ | [자료/4차/그림/그림 5.png](../../%EC%9E%90%EB%A3%8C/4%EC%B0%A8/%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC%205.png) | .png | 311734 | `eb26ea6f203837fbfae9aa52372ef8231dbdf12fd7a9a0f805b23e9cd62bee46` |
+-| [논문/4차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 874496 | `dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36` |
++| [논문/4차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 874496 | `dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36` |
+ | [자료/4차/평가점수_원본표.txt](../../%EC%9E%90%EB%A3%8C/4%EC%B0%A8/%ED%8F%89%EA%B0%80%EC%A0%90%EC%88%98_%EC%9B%90%EB%B3%B8%ED%91%9C.txt) | .txt | 3137 | `e8861eac260025b9d094c0ce6a6ea886943877f23424512ded9effc090374e86` |
+-| [논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/4%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp) | .hwp | 655360 | `3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd` |
+-| [논문/4차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp) | .hwp | 374272 | `b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d` |
+-| [논문/4차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp) | .hwp | 99840 | `c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c` |
+-| [논문/4차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp) | .hwp | 61440 | `23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24` |
++| [논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/4%EC%B0%A8_%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%ED%95%99%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C_%EC%8B%AC%EC%82%AC%EC%9A%A9.hwp.md) | .hwp | 655360 | `3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd` |
++| [논문/4차/관련문서/심사답변서 1.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%201.hwp.md) | .hwp | 374272 | `b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d` |
++| [논문/4차/관련문서/심사답변서 2.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%202.hwp.md) | .hwp | 99840 | `c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c` |
++| [논문/4차/관련문서/심사답변서 3.hwp](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%EC%8B%AC%EC%82%AC%EB%8B%B5%EB%B3%80%EC%84%9C%203.hwp.md) | .hwp | 61440 | `23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24` |
+ | [자료/4차/그림 5_원본.ipynb](../../%EC%9E%90%EB%A3%8C/4%EC%B0%A8/%EA%B7%B8%EB%A6%BC%205_%EC%9B%90%EB%B3%B8.ipynb) | .ipynb | 65399 | `a013c39c65262fb9666ea2124e37528110a7f124ea92eae61af1df96f9a14723` |
+ 
+ ## 🔎 해석·검증 범위
+--- before/docs/revisions/paper-5.md
++++ after/docs/revisions/paper-5.md
+@@ -13,7 +13,7 @@
+ | 파일 | 종류 | 바이트 | SHA-256 |
+ |---|---|---:|---|
+ | [논문/5차/원문_논문.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 466330 | `ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de` |
+-| [논문/5차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 872960 | `32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803` |
++| [논문/5차/원문_논문.hwp](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 872960 | `32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803` |
+ 
+ ## 🔎 해석·검증 범위
+ 
+--- before/docs/versions/latest.md
++++ after/docs/versions/latest.md
+@@ -1,6 +1,6 @@
+ # 📚 최종 원고 · 5차
+ 
+-현재 최종 원문은 [5차 전체 PDF](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)와 [HWP 원본](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp)입니다.
++현재 최종 원문은 [5차 전체 PDF](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)와 [PDF 공개 안내](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md)입니다.
+ 
+ 기존 `논문/최종_논문.pdf`는 4차의 과거 정제 사본입니다. 5차는 연구 본문과 저자소개·전화·사진을 보존하며 접수·수정·채택일과 권·호 표기를 정리한 최종 수정 단계입니다. 원고의 표기와 외부 공식 게재 확인은 구분합니다.
+ 
+
+Binary: 논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp
+Before bytes=671232 sha256=48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776
+After bytes=None sha256=None
+--- before/논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp.md
++++ after/논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](../%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/1차/관련문서/투고신청서.hwp
+Before bytes=37376 sha256=782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635
+After bytes=None sha256=None
+--- before/논문/1차/관련문서/투고신청서.hwp.md
++++ after/논문/1차/관련문서/투고신청서.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/1차/원문_논문.hwp
+Before bytes=681472 sha256=ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa
+After bytes=None sha256=None
+--- before/논문/1차/원문_논문.hwp.md
++++ after/논문/1차/원문_논문.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/1차/원문_논문.pdf
+Before bytes=351613 sha256=fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941
+After bytes=332680 sha256=ee102a526d347ddc9b591b591b19781dacc4184bb63a392f85beb87e2ed697b7
+
+Binary: 논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp
+Before bytes=715264 sha256=f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8
+After bytes=None sha256=None
+--- before/논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp.md
++++ after/논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](../%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/2차/관련문서/2차_투고신청서.hwp
+Before bytes=37376 sha256=782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635
+After bytes=None sha256=None
+--- before/논문/2차/관련문서/2차_투고신청서.hwp.md
++++ after/논문/2차/관련문서/2차_투고신청서.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/2차/관련문서/심사답변서 1.hwp
+Before bytes=89600 sha256=3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e
+After bytes=None sha256=None
+--- before/논문/2차/관련문서/심사답변서 1.hwp.md
++++ after/논문/2차/관련문서/심사답변서 1.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/2차/관련문서/심사답변서 2.hwp
+Before bytes=84480 sha256=7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da
+After bytes=None sha256=None
+--- before/논문/2차/관련문서/심사답변서 2.hwp.md
++++ after/논문/2차/관련문서/심사답변서 2.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/2차/관련문서/심사답변서 3.hwp
+Before bytes=82944 sha256=8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21
+After bytes=None sha256=None
+--- before/논문/2차/관련문서/심사답변서 3.hwp.md
++++ after/논문/2차/관련문서/심사답변서 3.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/2차/원문_논문.hwp
+Before bytes=727040 sha256=c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb
+After bytes=None sha256=None
+--- before/논문/2차/원문_논문.hwp.md
++++ after/논문/2차/원문_논문.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/2차/원문_논문.pdf
+Before bytes=377013 sha256=b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616
+After bytes=356337 sha256=4e19c07e8a9f585897bc934a61bfd2fc6b1f56fcc76db93760e142cae519562a
+
+Binary: 논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp
+Before bytes=736256 sha256=51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30
+After bytes=None sha256=None
+--- before/논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp.md
++++ after/논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](../%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/3차/관련문서/3차_투고신청서.hwp
+Before bytes=37888 sha256=89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8
+After bytes=None sha256=None
+--- before/논문/3차/관련문서/3차_투고신청서.hwp.md
++++ after/논문/3차/관련문서/3차_투고신청서.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/3차/원문_논문.hwp
+Before bytes=941056 sha256=2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836
+After bytes=None sha256=None
+--- before/논문/3차/원문_논문.hwp.md
++++ after/논문/3차/원문_논문.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/3차/원문_논문.pdf
+Before bytes=435587 sha256=daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1
+After bytes=414281 sha256=7cba88b0992395e1fa379ff753a759bc546b95a0e7b9d98762daa0f176bae9c2
+
+Binary: 논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp
+Before bytes=655360 sha256=3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd
+After bytes=None sha256=None
+--- before/논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp.md
++++ after/논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](../%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/4차/관련문서/심사답변서 1.hwp
+Before bytes=374272 sha256=b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d
+After bytes=None sha256=None
+--- before/논문/4차/관련문서/심사답변서 1.hwp.md
++++ after/논문/4차/관련문서/심사답변서 1.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/4차/관련문서/심사답변서 2.hwp
+Before bytes=99840 sha256=c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c
+After bytes=None sha256=None
+--- before/논문/4차/관련문서/심사답변서 2.hwp.md
++++ after/논문/4차/관련문서/심사답변서 2.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/4차/관련문서/심사답변서 3.hwp
+Before bytes=61440 sha256=23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24
+After bytes=None sha256=None
+--- before/논문/4차/관련문서/심사답변서 3.hwp.md
++++ after/논문/4차/관련문서/심사답변서 3.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++이 편집 문서는 비공개로 보관합니다. 공개 논문과 연구 내용은 [논문 안내](../../../docs/PAPERS.md)에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/4차/원문_논문.hwp
+Before bytes=874496 sha256=dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36
+After bytes=None sha256=None
+--- before/논문/4차/원문_논문.hwp.md
++++ after/논문/4차/원문_논문.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/4차/원문_논문.pdf
+Before bytes=453356 sha256=f5c4f5810ed7113fae738132e20e2629d23ef1a168f8599105f99fb623f463b4
+After bytes=431512 sha256=9278830510001c6d8ceec8bf642a18cfa7b3e8a73e7be2a3a809f812123b4592
+
+Binary: 논문/5차/원문_논문.hwp
+Before bytes=872960 sha256=32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803
+After bytes=None sha256=None
+--- before/논문/5차/원문_논문.hwp.md
++++ after/논문/5차/원문_논문.hwp.md
+@@ -0,0 +1,5 @@
++# 📄 편집 원문 공개 안내
++
++개인정보를 제외한 [연구 PDF](%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)를 제공합니다. 저자·공동저자 정보와 연구 내용은 PDF에서 확인할 수 있습니다.
++
++편집 원문의 본문·문서 정보·내장 미리보기에 제거 대상 정보가 남는 것을 막기 위해 원문 파일은 공개하지 않습니다. 이전 원본은 별도로 보존했습니다.
+
+Binary: 논문/5차/원문_논문.pdf
+Before bytes=466330 sha256=ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de
+After bytes=442168 sha256=ad147012ad46454e8d66e84be55b3810f311adba2a6cbe275a6f1f710bf982bd
+
+Binary: 논문/최종_논문.pdf
+Before bytes=422826 sha256=253cea03a3c762ccfde07db88831bc75198aa12ce9294d84eacdb9e354cb5342
+After bytes=417845 sha256=591bfeb6ef2502b0d3450b90b139e40d4a050b174c7ee0b590cc97acb53931e1
+
+--- before/docs/PRIVACY_CHANGELOG_2026-10-30.md
++++ after/docs/PRIVACY_CHANGELOG_2026-10-30.md
+@@ -0,0 +1,7 @@
++# 📝 개인정보 정리와 논문 공개본
++
++저자·공동저자의 성명, 학교, 이메일, ORCID와 사진을 유지하고 학과·학부 세부 표기를 제외했습니다. 편집 원문은 로컬에 보존하며 검수한 PDF를 제공합니다. 연구 알고리즘과 보고 수치는 바꾸지 않았습니다.
++
++[📚 논문 안내](PAPERS.md) · [🔎 공개 가능한 전체 비교](privacy-changes.diff) · [📋 이번 실제 파일별 변경·크기·해시](publication-review/공개파일변경.json)
++
++제외한 개인정보 값을 공개 패치에 다시 기록하지 않습니다. 원본의 실제 전체 차이는 로컬에 보존하고, 공개 바이너리는 이전·현재 크기와 SHA-256으로 구분합니다.

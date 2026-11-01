@@ -10,3 +10,13 @@
 | [4차 원고](revisions/paper-4.md) | 객체 탐지 결과를 성공 여부로 요약하는 구현 경로, 학습 데이터 기준 mAP50 0.92·mAP50-95 0.78의 해석과 한계를 구체화한 8쪽 원고입니다. 점수 배열의 기술통계·박스플롯 노트북이 함께 있습니다. | drawio·hwp·ipynb·pdf·png·txt | [직접 자료](../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | [전체 차이](revision-diffs/paper-4.diff) |
 | [5차 · 최종 수정 원고](revisions/paper-5.md) | 4차의 연구 내용을 유지하면서 소속을 석사과정으로 정리하고, 접수 2026-09-03·수정 09-23·채택 09-26 및 권24·호10·2026-10-31 표기를 넣은 최종 수정 원고입니다. IITP 표기·저자 영문 표기·소개 문구 등의 차이도 있습니다. 원고 표기만으로 외부 게재 사실을 추가 확정하지 않습니다. | hwp·pdf | [직접 자료](../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) | [전체 차이](revision-diffs/paper-5.diff) |
 | [그림 자료 · 기본 앱](revisions/app.md) | 그림 분석과 텍스트 질문이 별도 호출인 Gradio 대화·PDF 프로토타입입니다. 원고의 통합 대화 설계와 실제 앱 호출 구성을 구분합니다. | drawio·ipynb·png | [직접 자료](../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb) | [전체 차이](revision-diffs/app.diff) |
+
+
+<details>
+<summary>🧹 공개 자료 정리 기록</summary>
+
+| 검수 대상 | 연결 자료 | 상세·이번 비교 |
+| :--- | :--- | :--- |
+| **4차** | [📁 검수 자료](../4%EC%B0%A8) | [📖 정리 내용](publication-review/item-1.md) · [🔎 파일 비교](publication-review/공개파일변경.json) |
+
+</details>

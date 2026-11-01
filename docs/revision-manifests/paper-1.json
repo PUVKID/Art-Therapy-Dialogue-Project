@@ -4,19 +4,32 @@
   "files": {
     "논문/1차/원문_논문.pdf": {
       "bytes": 351613,
-      "sha256": "fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941"
+      "sha256": "fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941",
+      "public_path": "논문/1차/원문_논문.pdf",
+      "public_bytes": 332680,
+      "public_sha256": "ee102a526d347ddc9b591b591b19781dacc4184bb63a392f85beb87e2ed697b7"
     },
     "논문/1차/원문_논문.hwp": {
       "bytes": 681472,
-      "sha256": "ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa"
+      "sha256": "ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa",
+      "public_path": "논문/1차/원문_논문.hwp.md",
+      "public_bytes": 436,
+      "public_sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
     },
     "논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp": {
       "bytes": 671232,
-      "sha256": "48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776"
+      "sha256": "48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776",
+      "public_path": "논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp.md",
+      "public_bytes": 439,
+      "public_sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
     },
     "논문/1차/관련문서/투고신청서.hwp": {
       "bytes": 37376,
-      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635"
+      "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635",
+      "public_path": "논문/1차/관련문서/투고신청서.hwp.md",
+      "public_bytes": 408,
+      "public_sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

@@ -1,0 +1,677 @@
+{
+  "scope": "이번 공개 자료 정리의 실제 파일 변경. 개인정보 원문 값은 재기록하지 않습니다. 이 색인 자체의 재귀 해시는 포함하지 않습니다.",
+  "changes": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "before": {
+        "bytes": 13029,
+        "sha256": "49e68feab2a4c92add2fd8977edcba90bb985e18501234d6cb025fbd9ebdd898"
+      },
+      "after": {
+        "bytes": 14357,
+        "sha256": "fdee790344849742c8c256026b2f73334e2038ec4c6056c7dfcc914000d19f5f"
+      }
+    },
+    {
+      "path": "docs/PAPERS.md",
+      "change": "modified",
+      "before": {
+        "bytes": 1045,
+        "sha256": "24b19c2561accc3ddd2f809227ea7d49f2eeb8a6fdffa629a30a964c2653550b"
+      },
+      "after": {
+        "bytes": 1329,
+        "sha256": "7c9817319d2c0c19ad68b524b36b490e7dd20abeead24bbe3138bd5ec6789302"
+      }
+    },
+    {
+      "path": "docs/PRIVACY_CHANGELOG_2026-10-30.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 740,
+        "sha256": "59e797c9554ad5216b53f8a63ff06bfca2b4ff26c213fdc7bfe1ef514dd82092"
+      }
+    },
+    {
+      "path": "docs/PUBLIC_CHANGELOG_2026-10-30.md",
+      "change": "modified",
+      "before": {
+        "bytes": 5182,
+        "sha256": "422de382e8f782c597fc2cd6c8a406b9d394c8e39312d5198816ecdbf7eb9ea9"
+      },
+      "after": {
+        "bytes": 5298,
+        "sha256": "e3005b8b7e2091b4ab9f659b5ffafaf30fc6ad46fe2a4d6f1820230914ac6bfd"
+      }
+    },
+    {
+      "path": "docs/REVISION_INDEX.md",
+      "change": "modified",
+      "before": {
+        "bytes": 3083,
+        "sha256": "1f90fcbc9a727ba8960c799f4979af0d08027f63cfe6a97912816c13f400178e"
+      },
+      "after": {
+        "bytes": 3413,
+        "sha256": "cb624685a499e839ad7cd3c7bae997cfc15a96fafafd92716ad9e15e0dfa4ece"
+      }
+    },
+    {
+      "path": "docs/changes/2026-10-30-공개자료정리.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 403,
+        "sha256": "b3ccd8be5bc51d4630f76cb85a8467be72d649568033b9700b21e3deb6fcb9de"
+      }
+    },
+    {
+      "path": "docs/changes/2026-10-30-자료와차수정리.md",
+      "change": "modified",
+      "before": {
+        "bytes": 9703,
+        "sha256": "7051cb6c395ecfaf56d11585011d53d5d0b904c99783078e4e7836570c1ac9f5"
+      },
+      "after": {
+        "bytes": 9757,
+        "sha256": "f062b090db5c401bde3843ebc126649f620b95446861b4f4460d2ed59ed35d53"
+      }
+    },
+    {
+      "path": "docs/privacy-changes.diff",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 64912,
+        "sha256": "740d73e7a6092e9954a9dac0a73d58d33257d875a0f3292e8ca00fa5ba649667"
+      }
+    },
+    {
+      "path": "docs/publication-review/item-1.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 671,
+        "sha256": "1a447db2f4f7e5a0f2ed28e4e2951974d76029bff6345dfd1ca8c28f3acc84f5"
+      }
+    },
+    {
+      "path": "docs/revision-diffs/paper-1.diff",
+      "change": "modified",
+      "before": {
+        "bytes": 12645,
+        "sha256": "62656c79ff8919c60c6374bf8b763ad9ebd11f0a65ac50382b8cd7fc0bf156f3"
+      },
+      "after": {
+        "bytes": 12583,
+        "sha256": "0e2e09fcd5fe702d54382b83205eb59a09fb403abbc0ac974afb577deb0cf90f"
+      }
+    },
+    {
+      "path": "docs/revision-diffs/paper-3.diff",
+      "change": "modified",
+      "before": {
+        "bytes": 40384,
+        "sha256": "279dccb8f987bc7862e834f47dad5cd4eecb79e2d861c6ce6204fab954052c84"
+      },
+      "after": {
+        "bytes": 40260,
+        "sha256": "186dd2d7e5c557ffc07ad9e4f9a717876f12bd0a9be057f46936b3a616ac40e3"
+      }
+    },
+    {
+      "path": "docs/revision-diffs/paper-5.diff",
+      "change": "modified",
+      "before": {
+        "bytes": 85055,
+        "sha256": "454d19d340a353a1d6d3747e03d51ae4837deb961b51046b7545cf1d034bbf75"
+      },
+      "after": {
+        "bytes": 84799,
+        "sha256": "29fdf7e7752d5ea841bb93f6de2638b5421f2737d087df7d648f09f53bde9eb5"
+      }
+    },
+    {
+      "path": "docs/revision-manifests/app.json",
+      "change": "modified",
+      "before": {
+        "bytes": 1011,
+        "sha256": "e99030fbc2b328b1922609f510c8c9fc156bf8484cd4e9404614f051c3e52be6"
+      },
+      "after": {
+        "bytes": 2240,
+        "sha256": "93105aee645e5a0bfb0b01d3427823c9802b7e86f9bbc1fa5e10000e16d74f96"
+      }
+    },
+    {
+      "path": "docs/revision-manifests/paper-1.json",
+      "change": "modified",
+      "before": {
+        "bytes": 742,
+        "sha256": "a609abefc31453993230c379e017f11beb227bbbe957240b1d69390906819c40"
+      },
+      "after": {
+        "bytes": 1673,
+        "sha256": "86ab042be08ca3b9e8b1ad6d00846c1a274151768b1af4815ea84a288a8f1d02"
+      }
+    },
+    {
+      "path": "docs/revision-manifests/paper-2.json",
+      "change": "modified",
+      "before": {
+        "bytes": 1265,
+        "sha256": "de84af4a0d88c50fc506f7b85c2808ed9992629d4263f3c1884e8ab57685fbc8"
+      },
+      "after": {
+        "bytes": 2782,
+        "sha256": "3fe834e4524022e0cf72316077a29709f55097141954e904f667a422aee4c589"
+      }
+    },
+    {
+      "path": "docs/revision-manifests/paper-3.json",
+      "change": "modified",
+      "before": {
+        "bytes": 1089,
+        "sha256": "8d88483a863d6341e2e8d22affb50b51606347f7f0f5dc3e7dde42e18df76ade"
+      },
+      "after": {
+        "bytes": 2404,
+        "sha256": "4a779c6a31cc17bfdabaf87859fb43ffbf454e0ccab596cc8b2630415790780f"
+      }
+    },
+    {
+      "path": "docs/revision-manifests/paper-4.json",
+      "change": "modified",
+      "before": {
+        "bytes": 2500,
+        "sha256": "5352a8dbe8b632b41111bcdd861516d28ea438e4da1affbdff7def35e1b70707"
+      },
+      "after": {
+        "bytes": 5434,
+        "sha256": "57a2e5c25e1a71159cc2f8bd9b629c9c22918f54b7612583e3723c95f6afeb79"
+      }
+    },
+    {
+      "path": "docs/revision-manifests/paper-5.json",
+      "change": "modified",
+      "before": {
+        "bytes": 396,
+        "sha256": "2655f83cc35b05881db14e2dba9bb12c105793f52f92d11a0123db93c241ba86"
+      },
+      "after": {
+        "bytes": 908,
+        "sha256": "9dedcb4a8fec59b4e1dc6608861126e3d3f8f78786d4c334f5c3e5bb1fdef3af"
+      }
+    },
+    {
+      "path": "docs/revisions/paper-1.md",
+      "change": "modified",
+      "before": {
+        "bytes": 2294,
+        "sha256": "80e22a6f2146de1f716b6ce9218e4ab83d2714ada580cc0d6ca5df35af007f49"
+      },
+      "after": {
+        "bytes": 2325,
+        "sha256": "25382d9a59b4ac610f4b778a45486614e760447f894132b8eba14477cdb9bd32"
+      }
+    },
+    {
+      "path": "docs/revisions/paper-2.md",
+      "change": "modified",
+      "before": {
+        "bytes": 3098,
+        "sha256": "0b2bc1cf5180aed6a16ccf9c19c2055716be6b061c70b551c15e4f34e274150c"
+      },
+      "after": {
+        "bytes": 3141,
+        "sha256": "e57964904c0a97be8ae85d0562769da19753869e65b70555649d12c57324ff6f"
+      }
+    },
+    {
+      "path": "docs/revisions/paper-3.md",
+      "change": "modified",
+      "before": {
+        "bytes": 2868,
+        "sha256": "b96a321aa35243e0c94a06b535c6741b1affab60035556889b2097f8a95ae60b"
+      },
+      "after": {
+        "bytes": 2901,
+        "sha256": "3729bad503069897efbaa096516fb28d392f667328e5a1bb4b7d95d186736bb7"
+      }
+    },
+    {
+      "path": "docs/revisions/paper-4.md",
+      "change": "modified",
+      "before": {
+        "bytes": 5985,
+        "sha256": "3ba3ffb8cd4ebb3ac4614b6707ab601ddeffe927e75f2e374ee5381ce013f648"
+      },
+      "after": {
+        "bytes": 6033,
+        "sha256": "2fec853d0e7979760f6d22476489b15e2bc3196557ba855293de3c3d338f919b"
+      }
+    },
+    {
+      "path": "docs/revisions/paper-5.md",
+      "change": "modified",
+      "before": {
+        "bytes": 1794,
+        "sha256": "d5996d1f3532607893f3ccea9d78cc372d165a0c0c52283db8580b9a1ca239a4"
+      },
+      "after": {
+        "bytes": 1817,
+        "sha256": "3aaebdbe1c00ea634b8b03e697460f1b235d8e5d71aad40db07791011684ba0a"
+      }
+    },
+    {
+      "path": "docs/versions/latest.md",
+      "change": "modified",
+      "before": {
+        "bytes": 667,
+        "sha256": "c78a54ad449380941a7a89105195cf38f709fba7a9d603f52c883dc4dc2798db"
+      },
+      "after": {
+        "bytes": 684,
+        "sha256": "8cc2a1a58fa82a0f8016289f838b94f324d69efb24d129776035a3b45b4cb730"
+      }
+    },
+    {
+      "path": "논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 671232,
+        "sha256": "48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/1차/관련문서/정보기술학회_단편논문_미술치료_심사용.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 439,
+        "sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+      }
+    },
+    {
+      "path": "논문/1차/관련문서/투고신청서.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 37376,
+        "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/1차/관련문서/투고신청서.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/1차/원문_논문.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 681472,
+        "sha256": "ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/1차/원문_논문.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 436,
+        "sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+      }
+    },
+    {
+      "path": "논문/1차/원문_논문.pdf",
+      "change": "modified",
+      "before": {
+        "bytes": 351613,
+        "sha256": "fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941"
+      },
+      "after": {
+        "bytes": 332680,
+        "sha256": "ee102a526d347ddc9b591b591b19781dacc4184bb63a392f85beb87e2ed697b7"
+      }
+    },
+    {
+      "path": "논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 715264,
+        "sha256": "f7a98783a22d80179b6386caaeb2eecf6f288573f293f1c17645fae57a6f83e8"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/2차/관련문서/2차_정보기술학회_단편논문_미술치료_심사용.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 439,
+        "sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+      }
+    },
+    {
+      "path": "논문/2차/관련문서/2차_투고신청서.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 37376,
+        "sha256": "782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/2차/관련문서/2차_투고신청서.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/2차/관련문서/심사답변서 1.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 89600,
+        "sha256": "3851f1baf9cb5ad249b074147b6ade2cc27b3a20c6c1de5767d15e20e391486e"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/2차/관련문서/심사답변서 1.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/2차/관련문서/심사답변서 2.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 84480,
+        "sha256": "7545e87a96ec7df691716df64d13e56c1303781b234c7cf09cee5c00cccb97da"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/2차/관련문서/심사답변서 2.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/2차/관련문서/심사답변서 3.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 82944,
+        "sha256": "8d7e8c35ecaa9054f6e86509cb6e22e6592eb69666ccd68eb852790208a76b21"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/2차/관련문서/심사답변서 3.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/2차/원문_논문.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 727040,
+        "sha256": "c5ce0be0686c2ab5708e2299d683ea038e2c44da35cbf79d902d9f7b328e97eb"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/2차/원문_논문.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 436,
+        "sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+      }
+    },
+    {
+      "path": "논문/2차/원문_논문.pdf",
+      "change": "modified",
+      "before": {
+        "bytes": 377013,
+        "sha256": "b39d7a6d88c2576829592744a48ee79c25406b5404544ce1d348b6549a2e9616"
+      },
+      "after": {
+        "bytes": 356337,
+        "sha256": "4e19c07e8a9f585897bc934a61bfd2fc6b1f56fcc76db93760e142cae519562a"
+      }
+    },
+    {
+      "path": "논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 736256,
+        "sha256": "51d6ada66703e94d1324e5191543f39be62895f42c806c54246a083a83667f30"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/3차/관련문서/3차_정보기술학회_논문_미술치료_심사용.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 439,
+        "sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+      }
+    },
+    {
+      "path": "논문/3차/관련문서/3차_투고신청서.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 37888,
+        "sha256": "89ffc93d8e9aef0f04798a51adf70ffda32b63dd944068e708e688e4201ce8d8"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/3차/관련문서/3차_투고신청서.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/3차/원문_논문.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 941056,
+        "sha256": "2587fcbf3012f61b2c6b4d3ba8ef1c61dcf39a64e6f67792c0b7fb76ec039836"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/3차/원문_논문.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 436,
+        "sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+      }
+    },
+    {
+      "path": "논문/3차/원문_논문.pdf",
+      "change": "modified",
+      "before": {
+        "bytes": 435587,
+        "sha256": "daf5f0da3ddbfbeb4b92671d7f7d4c32f078774abef08b0efb47a5b49dda87e1"
+      },
+      "after": {
+        "bytes": 414281,
+        "sha256": "7cba88b0992395e1fa379ff753a759bc546b95a0e7b9d98762daa0f176bae9c2"
+      }
+    },
+    {
+      "path": "논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 655360,
+        "sha256": "3905c3f4dcb3ddd1534a220e9b84a55b99c2efee819c35118f3c9a8a5750eddd"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/4차/관련문서/4차_정보기술학회_논문_미술치료_심사용.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 439,
+        "sha256": "da61402510667d05a74d6463df06724f5a7c83ed24b80d03570d6816b2b508a4"
+      }
+    },
+    {
+      "path": "논문/4차/관련문서/심사답변서 1.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 374272,
+        "sha256": "b84a4b1a135a070ad711539103ca8f70c51b1a54773f35dc5ebf4dfdcf6bfe3d"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/4차/관련문서/심사답변서 1.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/4차/관련문서/심사답변서 2.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 99840,
+        "sha256": "c103a729ffd87a5a8115893e6b177c2bd03791f4639b17ea7f19e4c93f35bd0c"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/4차/관련문서/심사답변서 2.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/4차/관련문서/심사답변서 3.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 61440,
+        "sha256": "23b7f44d99d670bfc9661695ab14ff7923c1d76e905793dc4fdd091b2a753a24"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/4차/관련문서/심사답변서 3.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 408,
+        "sha256": "df323b960addada60c0bd948a74f821d71817ccdbe362861f1b8b97b54135f75"
+      }
+    },
+    {
+      "path": "논문/4차/원문_논문.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 874496,
+        "sha256": "dd7df74ec0b299ca6eee8c2e37dc9e375d248aa470864803ae99a930e8cc9c36"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/4차/원문_논문.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 436,
+        "sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+      }
+    },
+    {
+      "path": "논문/4차/원문_논문.pdf",
+      "change": "modified",
+      "before": {
+        "bytes": 453356,
+        "sha256": "f5c4f5810ed7113fae738132e20e2629d23ef1a168f8599105f99fb623f463b4"
+      },
+      "after": {
+        "bytes": 431512,
+        "sha256": "9278830510001c6d8ceec8bf642a18cfa7b3e8a73e7be2a3a809f812123b4592"
+      }
+    },
+    {
+      "path": "논문/5차/원문_논문.hwp",
+      "change": "deleted",
+      "before": {
+        "bytes": 872960,
+        "sha256": "32ed87bde6355bae939df74394be3ededb110472fa97e72f7898d81736293803"
+      },
+      "after": null
+    },
+    {
+      "path": "논문/5차/원문_논문.hwp.md",
+      "change": "added",
+      "before": null,
+      "after": {
+        "bytes": 436,
+        "sha256": "58438aa054541f014e8ed2de1608e8444149e0183b7b3b03d3ea15e0a3849778"
+      }
+    },
+    {
+      "path": "논문/5차/원문_논문.pdf",
+      "change": "modified",
+      "before": {
+        "bytes": 466330,
+        "sha256": "ae4c9ec2feb7daaef6f1a52ff85dc37432c7f6eafe153a338876c743a2e4a4de"
+      },
+      "after": {
+        "bytes": 442168,
+        "sha256": "ad147012ad46454e8d66e84be55b3810f311adba2a6cbe275a6f1f710bf982bd"
+      }
+    },
+    {
+      "path": "논문/최종_논문.pdf",
+      "change": "modified",
+      "before": {
+        "bytes": 422826,
+        "sha256": "253cea03a3c762ccfde07db88831bc75198aa12ce9294d84eacdb9e354cb5342"
+      },
+      "after": {
+        "bytes": 417845,
+        "sha256": "591bfeb6ef2502b0d3450b90b139e40d4a050b174c7ee0b590cc97acb53931e1"
+      }
+    }
+  ]
+}
