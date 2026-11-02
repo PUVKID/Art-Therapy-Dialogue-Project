@@ -19,15 +19,18 @@
 
 </div>
 
-## 📄 내 논문 PDF
+## 📄 논문과 최신 자료
 
-[현재 원문 PDF·공식 링크 교체 위치](docs/PAPERS.md) · [모든 실제 차수·최종본·전체 비교](docs/REVISION_INDEX.md)
+| 자료 | 원문 파일 |
+|---|---|
+| 최종 논문 · 그림 심리분석 | [PDF 다운로드](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) |
+| 최종 논문 · 그림 심리분석 | [HWP 다운로드](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) |
 
-- **5차 · 최종 수정 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.hwp.md)
-
-공식 공개 URL은 아직 등록하지 않았습니다. 추후 [논문 전용 표](docs/PAPERS.md)의 교체 칸과 이 항목을 함께 갱신합니다.
+[📚 자료별 설명](docs/PAPERS.md) · [🗂️ 코드 차수와 변경 이력](docs/REVISION_INDEX.md)
 
 ## 🗂️ 모든 실제 차수와 최종본
+
+아래 표는 코드 개발과 원고 수정 당시의 변화입니다. 현재 다운로드는 최신 완성 문서로 연결하며 이전 첨부는 변경 이력에서 구분합니다.
 
 | 단계 | 설명 | 파일 종류 | 전체 차이 |
 |---|---|---|---|
@@ -35,7 +38,7 @@
 | [2차 원고](docs/revisions/paper-2.md) | 1차 대비 초록·기여·네 모듈 설명을 다시 쓰고, 32명 성인 사용자의 세 평가 평균 4.6·4.8·4.5와 표를 명시하며 참고문헌을 확장한 4쪽 원고입니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-2.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/2%EC%B0%A8) |
 | [3차 원고](docs/revisions/paper-3.md) | 제목을 객체 검출·생성형 언어모델 기반 그림 심리분석 시스템으로 바꾸고, 33클래스·330,000장 합성 데이터와 성인 32명 시뮬레이션 평가, 관련 연구와 PDF 보고서 설명을 확장한 6쪽 원고입니다. | drawio·hwp·pdf·png | [직전 단계 비교](docs/revision-diffs/paper-3.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/3%EC%B0%A8) |
 | [4차 원고](docs/revisions/paper-4.md) | 객체 탐지 결과를 성공 여부로 요약하는 구현 경로, 학습 데이터 기준 mAP50 0.92·mAP50-95 0.78의 해석과 한계를 구체화한 8쪽 원고입니다. 점수 배열의 기술통계·박스플롯 노트북이 함께 있습니다. | drawio·hwp·ipynb·pdf·png·txt | [직전 단계 비교](docs/revision-diffs/paper-4.diff) · [자료 폴더](4%EC%B0%A8) |
-| [5차 · 최종 수정 원고](docs/revisions/paper-5.md) | 4차의 연구 내용을 유지하면서 소속을 석사과정으로 정리하고, 접수 2026-09-03·수정 09-23·채택 09-26 및 권24·호10·2026-10-31 표기를 넣은 최종 수정 원고입니다. IITP 표기·저자 영문 표기·소개 문구 등의 차이도 있습니다. 원고 표기만으로 외부 게재 사실을 추가 확정하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-5.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/5%EC%B0%A8) |
+| [5차 · 최종 수정 원고](docs/revisions/paper-5.md) | 4차의 연구 내용을 유지하면서 소속을 석사과정으로 정리하고, 접수 2026-09-03·수정 09-23·채택 09-26 및 권24·호10·2026-10-31 표기를 넣은 최종 수정 원고입니다. IITP 표기·저자 영문 표기·소개 문구 등의 차이도 있습니다. 원고 표기만으로 외부 게재 사실을 추가 확정하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-5.diff) · [최신 자료](%EB%85%BC%EB%AC%B8) |
 | [그림 자료 · 기본 앱](docs/revisions/app.md) | 그림 분석과 텍스트 질문이 별도 호출인 Gradio 대화·PDF 프로토타입입니다. 원고의 통합 대화 설계와 실제 앱 호출 구성을 구분합니다. | drawio·ipynb·png | [직전 단계 비교](docs/revision-diffs/app.diff) · [자료 폴더](%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C) |
 
 <a name="overview"></a>
@@ -124,7 +127,7 @@ flowchart LR
 
 ### 📄 최종 논문
 
-[5차 최종 원문 전체](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf)와 1~4차 원문을 함께 보존합니다. 기존 `논문/최종_논문.pdf`는 4차의 과거 정제 사본이며 5차 최종 원고와 구분합니다. 현재 원문은 본문·도표·저자소개·전화·사진을 보존합니다. 논문에 실린 연구 그림과 별개로 사용자 원본 자료·의료 원데이터 폴더는 포함하지 않습니다.
+현재 첨부는 5차 최종 수정 원고의 전체 PDF와 같은 판의 HWP로 통일했습니다. 이전 원고의 변화는 차수별 설명과 비교 이력에서 확인할 수 있습니다. 현재 원문은 본문·도표·저자소개·전화·사진을 보존합니다. 논문에 실린 연구 그림과 별개로 사용자 원본 자료·의료 원데이터 폴더는 포함하지 않습니다.
 
 <a name="논문과-구현의-관계"></a>
 
@@ -208,22 +211,19 @@ python -m jupyter lab
 </div>
 
 
-> 공개 PDF에서는 지정된 개인정보와 학과·학부 정보를 제외했습니다. 저자·공동저자의 성명, 학교, 이메일, ORCID와 사진은 보존합니다. 편집 원문 링크는 비공개 보관 안내로 연결됩니다.
-
-
-<details>
-<summary>📚 차수별 논문 공개본 전체 보기</summary>
-
-| 원고·공개 경로 | 논문 |
-| :--- | :--- |
-| 논문/1차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
-| 논문/2차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
-| 논문/3차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
-| 논문/4차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/4%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
-| 논문/5차/원문_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EB%AC%B8_%EB%85%BC%EB%AC%B8.pdf) |
-| 논문/최종_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) |
-
-</details>
 
 
 
+
+
+
+
+## 📚 현재 첨부 문서
+
+이전 원고·발표의 변경 설명과 코드 차수는 위의 이력에서 확인할 수 있습니다. 다운로드는 문서 계보별 최신 완성본으로 연결합니다.
+
+| 문서 | 자료 폴더 | 상세 | 직전 공개본 전체 비교 |
+|---|---|---|---|
+| 최종 논문 · 그림 심리분석 | [폴더](%EB%85%BC%EB%AC%B8) | [설명](docs/latest/art-interactive-drawing-system.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+
+[📝 최신 문서 구성 변경](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C.md)
