@@ -12,14 +12,14 @@
 
 [프로젝트 전체 소개](../README.md)
 
-| 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
-| --- | --- | --- | --- |
-| [1차 원고](revisions/paper-1.md) | [상세 설명](#layout18-table-1-row-1-field-1) | [폴더](../%EB%85%BC%EB%AC%B8/1%EC%B0%A8) | [전체 비교](revision-diffs/paper-1.diff) |
-| [2차 원고](revisions/paper-2.md) | [상세 설명](#layout18-table-1-row-2-field-1) | [폴더](../%EB%85%BC%EB%AC%B8/2%EC%B0%A8) | [전체 비교](revision-diffs/paper-2.diff) |
-| [3차 원고](revisions/paper-3.md) | [상세 설명](#layout18-table-1-row-3-field-1) | [폴더](../%EB%85%BC%EB%AC%B8/3%EC%B0%A8) | [전체 비교](revision-diffs/paper-3.diff) |
-| [4차](revisions/paper-4.md) | [상세 설명](#layout18-table-1-row-4-field-1) | [폴더](../4%EC%B0%A8) | [전체 비교](revision-diffs/paper-4.diff) |
-| [5차 · 최종 수정 원고](revisions/paper-5.md) | [상세 설명](#layout18-table-1-row-5-field-1) | [폴더](../%EB%85%BC%EB%AC%B8) | [전체 비교](revision-diffs/paper-5.diff) |
-| [그림 자료 · 기본 앱](revisions/app.md) | [상세 설명](#layout18-table-1-row-6-field-1) | [폴더](../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C) | [전체 비교](revision-diffs/app.diff) |
+| 차수·단계 · 주요 내용 · 자료 · 직전 비교 |
+| --- |
+| **차수·단계**<br>[1차 원고](revisions/paper-1.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-1-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8/1%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-1.diff) |
+| **차수·단계**<br>[2차 원고](revisions/paper-2.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-2-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8/2%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-2.diff) |
+| **차수·단계**<br>[3차 원고](revisions/paper-3.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-3-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8/3%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-3.diff) |
+| **차수·단계**<br>[4차](revisions/paper-4.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-4-field-1)<br><br>**자료**<br>[폴더](../4%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-4.diff) |
+| **차수·단계**<br>[5차 · 최종 수정 원고](revisions/paper-5.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-5-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-5.diff) |
+| **차수·단계**<br>[그림 자료 · 기본 앱](revisions/app.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-6-field-1)<br><br>**자료**<br>[폴더](../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/app.diff) |
 
 <a id="layout18-table-1-row-1-field-1"></a>
 
