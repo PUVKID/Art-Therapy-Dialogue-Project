@@ -28,6 +28,15 @@
 
 | 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
 | --- | --- | --- | --- |
-| [그림 자료 · 기본 앱](../docs/revisions/app.md) | 그림 업로드→YOLO 탐지 여부→상담형 메시지→PDF를 Gradio 화면에서 연결하는 노트북 앱입니다. 텍스트 질문 버튼은 별도 요청을 처리합니다. | [폴더](.) | [전체 비교](../docs/revision-diffs/app.diff) |
+| [그림 자료 · 기본 앱](../docs/revisions/app.md) | [상세 설명](#layout18-table-2-row-1-field-1) | [폴더](.) | [전체 비교](../docs/revision-diffs/app.diff) |
+
+<a id="layout18-table-2-row-1-field-1"></a>
+
+**[그림 자료 · 기본 앱](../docs/revisions/app.md)**
+
+**주요 내용**
+
+그림 업로드→YOLO 탐지 여부→상담형 메시지→PDF를 Gradio 화면에서 연결하는 노트북 앱입니다. 텍스트 질문 버튼은 별도 요청을 처리합니다.
+
 
 [프로젝트](../README.md) · [전체 차수](../docs/REVISION_INDEX.md)

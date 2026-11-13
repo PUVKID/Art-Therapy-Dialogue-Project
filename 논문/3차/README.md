@@ -29,6 +29,15 @@
 
 | 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
 | --- | --- | --- | --- |
-| [3차 원고](../../docs/revisions/paper-3.md) | 제목을 객체 검출·생성형 언어모델 기반 그림 심리분석 시스템으로 바꾸고 데이터·대화·보고서 구조를 확장한 6쪽 원고 단계입니다. | [폴더](.) | [전체 비교](../../docs/revision-diffs/paper-3.diff) |
+| [3차 원고](../../docs/revisions/paper-3.md) | [상세 설명](#layout18-table-2-row-1-field-1) | [폴더](.) | [전체 비교](../../docs/revision-diffs/paper-3.diff) |
+
+<a id="layout18-table-2-row-1-field-1"></a>
+
+**[3차 원고](../../docs/revisions/paper-3.md)**
+
+**주요 내용**
+
+제목을 객체 검출·생성형 언어모델 기반 그림 심리분석 시스템으로 바꾸고 데이터·대화·보고서 구조를 확장한 6쪽 원고 단계입니다.
+
 
 [프로젝트](../../README.md) · [전체 차수](../../docs/REVISION_INDEX.md)

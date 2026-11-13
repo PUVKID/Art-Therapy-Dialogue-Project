@@ -376,9 +376,18 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 관련 함수와 셀을 파일별로 정리했습니다. 실행 전 설정과 호출 순서, 출력 경로를 확인하세요.
 
-| 파일 | 핵심 정의 |
-| --- | --- |
-| [그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb) | 셀 4: `build_pdf`<br>셀 5: `analyze_and_suggest`<br>셀 6: `ask_gpt` |
+<a id="layout18-table-20-row-1"></a>
+
+**[그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb)**
+
+**파일**
+
+[그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb)
+
+**핵심 정의**
+
+셀 4: `build_pdf`<br>셀 5: `analyze_and_suggest`<br>셀 6: `ask_gpt`
+
 
 <a name="setup"></a>
 
@@ -438,14 +447,88 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 <details>
 <summary>이 단계의 파일 기록과 전체 해시</summary>
 
-아래 표는 해당 단계가 기록될 당시의 파일 정보입니다. 현재 첨부는 [프로젝트 자료 안내](../PAPERS.md)에서 확인할 수 있습니다.
+아래 내용는 해당 단계가 기록될 당시의 파일 정보입니다. 현재 첨부는 [프로젝트 자료 안내](../PAPERS.md)에서 확인할 수 있습니다.
 
-| 파일 | 종류 | 바이트 | SHA-256 |
-|---|---|---:|---|
-| `논문/1차/원문_논문.pdf` | .pdf | 351613 | `fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941` |
-| [최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 681472 | `ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa` |
-| [최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 671232 | `48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776` |
-| [논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md) | .hwp | 37376 | `782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635` |
+<a id="layout18-table-23-row-1"></a>
+
+**`논문/1차/원문_논문.pdf`**
+
+**파일**
+
+`논문/1차/원문_논문.pdf`
+
+**종류**
+
+.pdf
+
+**바이트**
+
+351613
+
+**SHA-256**
+
+`fb51e5d3b0c7c01f5024a49dbf302514573440c310cf6f31f63d9148f8cca941`
+
+<a id="layout18-table-23-row-2"></a>
+
+**[최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)**
+
+**파일**
+
+[최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
+
+**종류**
+
+.hwp
+
+**바이트**
+
+681472
+
+**SHA-256**
+
+`ffc877c63ceedf68c72d11d56aaa37f04228a3583669d1054185952427c159fa`
+
+<a id="layout18-table-23-row-3"></a>
+
+**[최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)**
+
+**파일**
+
+[최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
+
+**종류**
+
+.hwp
+
+**바이트**
+
+671232
+
+**SHA-256**
+
+`48edd40e0adb89c534d7672bd2f68a858c6da4235084039a2933c9fefee85776`
+
+<a id="layout18-table-23-row-4"></a>
+
+**[논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md)**
+
+**파일**
+
+[논문/1차/관련문서/투고신청서.hwp](../../%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/%ED%88%AC%EA%B3%A0%EC%8B%A0%EC%B2%AD%EC%84%9C.hwp.md)
+
+**종류**
+
+.hwp
+
+**바이트**
+
+37376
+
+**SHA-256**
+
+`782a85cd46176399564780f07fa2b406174171bc4e2ca684afac74e95f853635`
+
 
 </details>
 

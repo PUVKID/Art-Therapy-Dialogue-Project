@@ -371,9 +371,18 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 관련 함수와 셀을 파일별로 정리했습니다. 실행 전 설정과 호출 순서, 출력 경로를 확인하세요.
 
-| 파일 | 핵심 정의 |
-| --- | --- |
-| [그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb) | 셀 4: `build_pdf`<br>셀 5: `analyze_and_suggest`<br>셀 6: `ask_gpt` |
+<a id="layout18-table-20-row-1"></a>
+
+**[그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb)**
+
+**파일**
+
+[그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb)
+
+**핵심 정의**
+
+셀 4: `build_pdf`<br>셀 5: `analyze_and_suggest`<br>셀 6: `ask_gpt`
+
 
 <a name="setup"></a>
 
@@ -434,16 +443,128 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 <details>
 <summary>이 단계의 파일 기록과 전체 해시</summary>
 
-아래 표는 해당 단계가 기록될 당시의 파일 정보입니다. 현재 첨부는 [프로젝트 자료 안내](../PAPERS.md)에서 확인할 수 있습니다.
+아래 내용는 해당 단계가 기록될 당시의 파일 정보입니다. 현재 첨부는 [프로젝트 자료 안내](../PAPERS.md)에서 확인할 수 있습니다.
 
-| 파일 | 종류 | 바이트 | SHA-256 |
-|---|---|---:|---|
-| [그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb) | .ipynb | 8196 | `25549c1d0f12e0d8a000d9b1185a575e4acc7a596522e79a3964c00e2f16e9d3` |
-| [그림 자료/그림 1.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%201.png) | .png | 63869 | `0a562e57a4cf3df48b12530ea02befbd245e854f855f4ccf2e08dc80424fef3a` |
-| [그림 자료/그림 2.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%202.png) | .png | 324481 | `182eef375de5b5be3fd2056ba7a7be797cbdbb4a26207c05dce09b19d9ea0958` |
-| [그림 자료/그림 3.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%203.png) | .png | 50719 | `550b5d3b61833be5239b0027eef409d7bc103e122767cb01861741f852d15209` |
-| [그림 자료/미술치료 논문 그림 1.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%201.drawio) | .drawio | 8310 | `0f0190e3df762ca02c17353022ab592577f9d170409b59b3bad71ec2f153afc4` |
-| [그림 자료/미술치료 논문 그림 3.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.drawio) | .drawio | 7609 | `efa11289474acf761f9c26baa4beb3f87e40e7e5dcf8836661a4655727c85cf4` |
+<a id="layout18-table-23-row-1"></a>
+
+**[그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb)**
+
+**파일**
+
+[그림 자료/app.ipynb](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/app.ipynb)
+
+**종류**
+
+.ipynb
+
+**바이트**
+
+8196
+
+**SHA-256**
+
+`25549c1d0f12e0d8a000d9b1185a575e4acc7a596522e79a3964c00e2f16e9d3`
+
+<a id="layout18-table-23-row-2"></a>
+
+**[그림 자료/그림 1.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%201.png)**
+
+**파일**
+
+[그림 자료/그림 1.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%201.png)
+
+**종류**
+
+.png
+
+**바이트**
+
+63869
+
+**SHA-256**
+
+`0a562e57a4cf3df48b12530ea02befbd245e854f855f4ccf2e08dc80424fef3a`
+
+<a id="layout18-table-23-row-3"></a>
+
+**[그림 자료/그림 2.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%202.png)**
+
+**파일**
+
+[그림 자료/그림 2.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%202.png)
+
+**종류**
+
+.png
+
+**바이트**
+
+324481
+
+**SHA-256**
+
+`182eef375de5b5be3fd2056ba7a7be797cbdbb4a26207c05dce09b19d9ea0958`
+
+<a id="layout18-table-23-row-4"></a>
+
+**[그림 자료/그림 3.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%203.png)**
+
+**파일**
+
+[그림 자료/그림 3.png](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A6%BC%203.png)
+
+**종류**
+
+.png
+
+**바이트**
+
+50719
+
+**SHA-256**
+
+`550b5d3b61833be5239b0027eef409d7bc103e122767cb01861741f852d15209`
+
+<a id="layout18-table-23-row-5"></a>
+
+**[그림 자료/미술치료 논문 그림 1.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%201.drawio)**
+
+**파일**
+
+[그림 자료/미술치료 논문 그림 1.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%201.drawio)
+
+**종류**
+
+.drawio
+
+**바이트**
+
+8310
+
+**SHA-256**
+
+`0f0190e3df762ca02c17353022ab592577f9d170409b59b3bad71ec2f153afc4`
+
+<a id="layout18-table-23-row-6"></a>
+
+**[그림 자료/미술치료 논문 그림 3.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.drawio)**
+
+**파일**
+
+[그림 자료/미술치료 논문 그림 3.drawio](../../%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C/%EB%AF%B8%EC%88%A0%EC%B9%98%EB%A3%8C%20%EB%85%BC%EB%AC%B8%20%EA%B7%B8%EB%A6%BC%203.drawio)
+
+**종류**
+
+.drawio
+
+**바이트**
+
+7609
+
+**SHA-256**
+
+`efa11289474acf761f9c26baa4beb3f87e40e7e5dcf8836661a4655727c85cf4`
+
 
 </details>
 

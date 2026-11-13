@@ -29,6 +29,15 @@
 
 | 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
 | --- | --- | --- | --- |
-| [2차 원고](../../docs/revisions/paper-2.md) | 1차의 시스템 구조를 유지하면서 초록·기여·각 모듈 설명을 다듬고 평가 항목과 결과표를 구체화한 4쪽 원고 단계입니다. | [폴더](.) | [전체 비교](../../docs/revision-diffs/paper-2.diff) |
+| [2차 원고](../../docs/revisions/paper-2.md) | [상세 설명](#layout18-table-2-row-1-field-1) | [폴더](.) | [전체 비교](../../docs/revision-diffs/paper-2.diff) |
+
+<a id="layout18-table-2-row-1-field-1"></a>
+
+**[2차 원고](../../docs/revisions/paper-2.md)**
+
+**주요 내용**
+
+1차의 시스템 구조를 유지하면서 초록·기여·각 모듈 설명을 다듬고 평가 항목과 결과표를 구체화한 4쪽 원고 단계입니다.
+
 
 [프로젝트](../../README.md) · [전체 차수](../../docs/REVISION_INDEX.md)

@@ -29,6 +29,15 @@
 
 | 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
 | --- | --- | --- | --- |
-| [1차 원고](../../docs/revisions/paper-1.md) | 우울증 환자 대상 미술치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4쪽 원고 단계입니다. | [폴더](.) | [전체 비교](../../docs/revision-diffs/paper-1.diff) |
+| [1차 원고](../../docs/revisions/paper-1.md) | [상세 설명](#layout18-table-2-row-1-field-1) | [폴더](.) | [전체 비교](../../docs/revision-diffs/paper-1.diff) |
+
+<a id="layout18-table-2-row-1-field-1"></a>
+
+**[1차 원고](../../docs/revisions/paper-1.md)**
+
+**주요 내용**
+
+우울증 환자 대상 미술치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4쪽 원고 단계입니다.
+
 
 [프로젝트](../../README.md) · [전체 차수](../../docs/REVISION_INDEX.md)
