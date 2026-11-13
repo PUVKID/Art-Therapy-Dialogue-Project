@@ -65,7 +65,7 @@ YOLO 요약을 GPT-4o-mini 요청의 문맥으로 이용합니다.
 3. 구현을 보려면 그림 자료/app.ipynb의 설정과 analyze_and_suggest·ask_gpt를 나누어 살펴봅니다.
 4. 평가 수치를 읽을 때 학습 자료 기준 지표, 점수 배열과 실제 원응답의 범위를 구분합니다.
 
-| 차수·단계 · 주요 내용 · 자료 · 직전 비교 |
+| 내용 |
 | --- |
 | **차수·단계**<br>[2차 원고](../../docs/revisions/paper-2.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-2-row-1-field-1)<br><br>**자료**<br>[폴더](.)<br><br>**직전 비교**<br>[전체 비교](../../docs/revision-diffs/paper-2.diff) |
 
