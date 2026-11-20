@@ -21,7 +21,7 @@
 
 [이 수준의 프로젝트 전체 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨1.md)
 
-| 항목 (Category) | 이 차수의 내용 |
+| 항목 | 이 차수의 내용 |
 | --- | --- |
 | 목적 | 그림 업로드 →YOLO 탐지 여부 →상담형 메시지 →PDF를 Gradio 화면에서 연결하는 노트북 앱입니다.<br>텍스트 질문 버튼은 별도 요청을 처리합니다. |
 | 변경 | 원고의 그림 분석 구조를 읽을 수 있는 기본 앱입니다.<br>평가 그림을 그리는 4차 노트북과 입력·출력 및 실행 목적이 다릅니다. |
@@ -60,7 +60,7 @@
 | 탐지 요약 | gpt-4o-mini 텍스트 요청 | 상담형 메시지 |
 | 그림·요약·메시지 | FPDF 문서 생성 | 입력 그림 표시와 PDF 다운로드 |
 
-| 항목 (Category) | 조건·기본값 |
+| 항목 | 조건·기본값 |
 | --- | --- |
 | 패키지 | Gradio·Ultralytics·FPDF2·OpenAI·OpenCV |
 | 경로 | YOLO_MODEL_PATH·PROJECT_DIR·FONT_PATH |
@@ -104,7 +104,7 @@
 
 [이 수준의 프로젝트 전체 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨2.md)
 
-| 항목 (Category) | 이 차수의 내용 |
+| 항목 | 이 차수의 내용 |
 | --- | --- |
 | 목적 | 그림 업로드 →YOLO 탐지 여부 →상담형 메시지 →PDF를 Gradio 화면에서 연결하는 노트북 앱입니다.<br>텍스트 질문 버튼은 별도 요청을 처리합니다. |
 | 변경 | 원고의 그림 분석 구조를 읽을 수 있는 기본 앱입니다.<br>평가 그림을 그리는 4차 노트북과 입력·출력 및 실행 목적이 다릅니다. |
@@ -143,7 +143,7 @@ YOLO 객체 탐지와 GPT-4o-mini의 텍스트 생성을 Gradio 화면·보고�
 | 탐지 요약 | gpt-4o-mini 텍스트 요청 | 상담형 메시지 |
 | 그림·요약·메시지 | FPDF 문서 생성 | 입력 그림 표시와 PDF 다운로드 |
 
-| 항목 (Category) | 조건·기본값 |
+| 항목 | 조건·기본값 |
 | --- | --- |
 | 패키지 | Gradio·Ultralytics·FPDF2·OpenAI·OpenCV |
 | 경로 | YOLO_MODEL_PATH·PROJECT_DIR·FONT_PATH |
@@ -187,7 +187,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 [이 수준의 프로젝트 전체 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨3.md)
 
-| 항목 (Category) | 이 차수의 내용 |
+| 항목 | 이 차수의 내용 |
 | --- | --- |
 | 목적 | 그림 업로드 →YOLO 탐지 여부 →상담형 메시지 →PDF를 Gradio 화면에서 연결하는 노트북 앱입니다.<br>텍스트 질문 버튼은 별도 요청을 처리합니다. |
 | 변경 | 원고의 그림 분석 구조를 읽을 수 있는 기본 앱입니다.<br>평가 그림을 그리는 4차 노트북과 입력·출력 및 실행 목적이 다릅니다. |
@@ -226,7 +226,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 | 탐지 요약 | gpt-4o-mini 텍스트 요청 | 상담형 메시지 |
 | 그림·요약·메시지 | FPDF 문서 생성 | 입력 그림 표시와 PDF 다운로드 |
 
-| 항목 (Category) | 조건·기본값 |
+| 항목 | 조건·기본값 |
 | --- | --- |
 | 패키지 | Gradio·Ultralytics·FPDF2·OpenAI·OpenCV |
 | 경로 | YOLO_MODEL_PATH·PROJECT_DIR·FONT_PATH |
@@ -270,7 +270,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 [이 수준의 프로젝트 전체 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨4.md)
 
-| 항목 (Category) | 이 차수의 내용 |
+| 항목 | 이 차수의 내용 |
 | --- | --- |
 | 목적 | 그림 업로드 →YOLO 탐지 여부 →상담형 메시지 →PDF를 Gradio 화면에서 연결하는 노트북 앱입니다.<br>텍스트 질문 버튼은 별도 요청을 처리합니다. |
 | 변경 | 원고의 그림 분석 구조를 읽을 수 있는 기본 앱입니다.<br>평가 그림을 그리는 4차 노트북과 입력·출력 및 실행 목적이 다릅니다. |
@@ -309,7 +309,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 | 탐지 요약 | gpt-4o-mini 텍스트 요청 | 상담형 메시지 |
 | 그림·요약·메시지 | FPDF 문서 생성 | 입력 그림 표시와 PDF 다운로드 |
 
-| 항목 (Category) | 조건·기본값 |
+| 항목 | 조건·기본값 |
 | --- | --- |
 | 패키지 | Gradio·Ultralytics·FPDF2·OpenAI·OpenCV |
 | 경로 | YOLO_MODEL_PATH·PROJECT_DIR·FONT_PATH |
@@ -422,7 +422,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 ## 실행 환경과 설정
 
-| 항목 (Category) | 조건·기본값 |
+| 항목 | 조건·기본값 |
 | --- | --- |
 | 패키지 | Gradio·Ultralytics·FPDF2·OpenAI·OpenCV |
 | 경로 | YOLO_MODEL_PATH·PROJECT_DIR·FONT_PATH |
