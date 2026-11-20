@@ -5,10 +5,18 @@
 <!-- reading-levels17:start -->
 **읽기 수준 선택** · [LEVEL 1 - Beginner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
 
-**논문 읽기:** 곽윤석·김남기의 논문은 Journal of KIIT 24(10), 77–84쪽, 2026-10-31에 게재되었습니다. 전체 8쪽 게재본은 [공식 DOI 페이지](https://doi.org/10.14801/jkiit.2026.24.10.77)에서 읽을 수 있습니다. **HWP는 기존 투고 원고**입니다. 게재본 PDF는 저장소에 첨부하지 않습니다. 과거 차수의 파일 구성도·해시·쪽수는 해당 투고 자료의 이력으로 읽어 주세요.
+**논문 읽기:** 곽윤석·김남기의 논문은 Journal of KIIT 24(10), 77 –84 쪽, 2026-10-31에 게재되었습니다.
+
+전체 8쪽 게재 본은 [공식 DOI 페이지](https://doi.org/10.14801/jkiit.2026.24.10.77)에서 읽을 수 있습니다.
+
+**HWP는 기존 투고 원고**입니다.
+
+게재 본 PDF는 저장소에 첨부하지 않습니다.
+
+과거 차수의 파일 구성도·해 시·쪽 수는 해당 투고 자료의 이력으로 읽어 주세요.
 <!-- reading-levels17:end -->
 
-우울증 환자 대상 미술치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4쪽 원고 단계입니다.
+우울증 환자 대상 미술 치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4 쪽 원고 단계입니다.
 
 | 주요 구성 | 내용 |
 | --- | --- |
@@ -27,17 +35,9 @@
 3. 구현을 보려면 그림 자료/app.ipynb의 설정과 analyze_and_suggest·ask_gpt를 나누어 살펴봅니다.
 4. 평가 수치를 읽을 때 학습 자료 기준 지표, 점수 배열과 실제 원응답의 범위를 구분합니다.
 
-| 차수·단계 | 자료 |
-| --- | --- |
-| [1차 원고](../../docs/revisions/paper-1.md) | **주요 내용** [상세 설명](#layout18-table-2-row-1-field-1)<br>**자료** [폴더](.)<br>**직전 비교** [전체 비교](../../docs/revision-diffs/paper-1.diff) |
-
-<a id="layout18-table-2-row-1-field-1"></a>
-
-**[1차 원고](../../docs/revisions/paper-1.md)**
-
-**주요 내용**
-
-우울증 환자 대상 미술치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4쪽 원고 단계입니다.
+| 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
+| --- | --- | --- | --- |
+| [1차 원고](../../docs/revisions/paper-1.md) | <a id="layout18-table-2-row-1-field-1"></a>우울증 환자 대상 미술 치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4 쪽 원고 단계입니다. | [폴더](.) | [전체 비교](../../docs/revision-diffs/paper-1.diff) |
 
 
 [프로젝트](../../README.md) · [전체 차수](../../docs/REVISION_INDEX.md)
