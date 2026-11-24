@@ -22,7 +22,7 @@
 과거 차수의 파일 구성도·해시·쪽 수는 해당 투고 자료의 이력으로 읽어 주세요.
 
 <details open>
-<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+<summary>LEVEL 1 · Beginner — 목적과 동작부터</summary>
 
 <a id="reading-level-1"></a>
 
@@ -52,7 +52,7 @@
 | 그림 입력 | 그림 객체를 탐지하고 결과를 텍스트로 요약하는 경로를 설명합니다. |
 | 대화 생성 | YOLO 요약을 GPT-4o-mini 요청의 문맥으로 이용합니다. |
 
-그림을 올려 객체가 탐지됐는지 확인하고, 그 요약을 바탕으로 공감형 메시지와 PDF 보고서를 만드는 연구입니다. 여기서 PDF 보고서는 앱의 출력이며 논문 파일과 다릅니다. **현재 게재 논문은 공식 DOI로 읽고 GitHub에 게재 PDF를 다시 올리지 않습니다.**
+그림을 올려 객체가 탐지됐는지 확인하고, 그 요약을 바탕으로 공감형 메시지와 PDF 보고서를 만드는 연구입니다. 여기서 PDF 보고서는 앱의 출력이며 논문 파일과 다릅니다. 현재 게재 논문은 공식 DOI로 읽고 GitHub에 게재 PDF를 다시 올리지 않습니다.
 
 ### LEVEL 1 · 달라진 내용과 차수 관계
 
@@ -103,7 +103,7 @@
 | 구현과 원고 | 공개 앱의 그림 분석과 텍스트 질문은 별도 호출이며 원고의 통합 대화 설계와 구분합니다. |
 | 효과 평가 | 점수·시뮬레이션 평가를 실제 임상 치료 효과로 확대하지 않습니다. |
 
-문장이 친절해도 진단이나 치료 효과가 확인된 것은 아닙니다. 실제 사용자 원그림과 의료 원데이터는 공개하지 않습니다. **점수 그림·탐지 지표·임상 효과를 구분합니다.**
+문장이 친절해도 진단이나 치료 효과가 확인된 것은 아닙니다. 실제 사용자 원그림과 의료 원데이터는 공개하지 않습니다. 점수 그림·탐지 지표·임상 효과를 구분합니다.
 
 [표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
 
@@ -111,7 +111,7 @@
 </details>
 
 <details>
-<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+<summary>LEVEL 2 · Explorer — 구성과 연결 원리</summary>
 
 <a id="reading-level-2"></a>
 
@@ -200,7 +200,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 </details>
 
 <details>
-<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
+<summary>LEVEL 3 · Practitioner — 준비·실행·결과 확인</summary>
 
 <a id="reading-level-3"></a>
 
@@ -289,7 +289,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 </details>
 
 <details>
-<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+<summary>LEVEL 4 · Advanced — 구현·설계·실패 처리</summary>
 
 <a id="reading-level-4"></a>
 
@@ -378,7 +378,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 </details>
 
 <details>
-<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
+<summary>LEVEL 5 · Expert — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 

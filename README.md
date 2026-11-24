@@ -10,11 +10,11 @@
 <!-- reading-levels17:start -->
 | 읽기 수준 | 안내 내용 |
 | --- | --- |
-| [**LEVEL 1 - Beginner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
-| [**LEVEL 2 - Explorer**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
-| [**LEVEL 3 - Practitioner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
-| [**LEVEL 4 - Advanced**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
-| [**LEVEL 5 - Expert**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
+| [LEVEL 1 - Beginner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
+| [LEVEL 2 - Explorer](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
+| [LEVEL 3 - Practitioner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
+| [LEVEL 4 - Advanced](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
+| [LEVEL 5 - Expert](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
 
 **논문 읽기:** 곽윤석·김남기의 논문은 Journal of KIIT 24(10), 77 –84 쪽, 2026-10-31에 게재되었습니다.
 
@@ -273,7 +273,7 @@ python -m jupyter lab
 <a id="️-1차-원고--그림-탐지와-상담형-대화의-설계"></a>
 
 <details>
-<summary><strong>1차 원고·그림 탐지와 상담형 대화의 설계</strong></summary>
+<summary>1차 원고·그림 탐지와 상담형 대화의 설계</summary>
 
 <a id="1차-원고그림-탐지와-상담형-대화의-설계"></a>
 
@@ -310,7 +310,7 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary><strong>2차 원고·대화 평가 항목과 결과 표 정리</strong></summary>
+<summary>2차 원고·대화 평가 항목과 결과 표 정리</summary>
 
 <a id="2차-원고대화-평가-항목과-결과-표-정리"></a>
 
@@ -347,7 +347,7 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary><strong>3차 원고·객체 검출 기반 그림 심리 분석 시스템</strong></summary>
+<summary>3차 원고·객체 검출 기반 그림 심리 분석 시스템</summary>
 
 <a id="3차-원고객체-검출-기반-그림-심리-분석-시스템"></a>
 
@@ -384,7 +384,7 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary><strong>4차·평가 점수와 그림 5 시각화</strong></summary>
+<summary>4차·평가 점수와 그림 5 시각화</summary>
 
 <a id="4차평가-점수와-그림-5-시각화"></a>
 
@@ -425,7 +425,7 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary><strong>5차·연구 본문과 서지 표기를 마무리한 최종 원고</strong></summary>
+<summary>5차·연구 본문과 서지 표기를 마무리한 최종 원고</summary>
 
 <a id="5차연구-본문과-서지-표기를-마무리한-최종-원고"></a>
 
@@ -463,7 +463,7 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary><strong>그림 자료·대화와 PDF를 연결하는 기본 앱</strong></summary>
+<summary>그림 자료·대화와 PDF를 연결하는 기본 앱</summary>
 
 <a id="그림-자료대화와-pdf를-연결하는-기본-앱"></a>
 
