@@ -10,11 +10,11 @@
 <!-- reading-levels17:start -->
 | 읽기 수준 | 안내 내용 |
 | --- | --- |
-| [LEVEL 1 - Beginner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
-| [LEVEL 2 - Explorer](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
-| [LEVEL 3 - Practitioner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
-| [LEVEL 4 - Advanced](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
-| [LEVEL 5 - Expert](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
+| [**LEVEL 1 - Beginner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
+| [**LEVEL 2 - Explorer**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
+| [**LEVEL 3 - Practitioner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
+| [**LEVEL 4 - Advanced**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
+| [**LEVEL 5 - Expert**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
 
 **논문 읽기:** 곽윤석·김남기의 논문은 Journal of KIIT 24(10), 77 –84 쪽, 2026-10-31에 게재되었습니다.
 
@@ -87,14 +87,14 @@
 
 ## 전체 차수
 
-| 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
-| --- | --- | --- | --- |
-| [1차 원고](docs/revisions/paper-1.md) | <a id="layout18-table-4-row-1-field-1"></a>우울증 환자 대상 미술 치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4 쪽 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/1%EC%B0%A8) | [전체 비교](docs/revision-diffs/paper-1.diff) |
-| [2차 원고](docs/revisions/paper-2.md) | <a id="layout18-table-4-row-2-field-1"></a>1차의 시스템 구조를 유지하면서 초록·기여·각 모듈 설명을 다듬고 평가 항목과 결과 표를 구체화한 4 쪽 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/2%EC%B0%A8) | [전체 비교](docs/revision-diffs/paper-2.diff) |
-| [3차 원고](docs/revisions/paper-3.md) | <a id="layout18-table-4-row-3-field-1"></a>제목을 객체 검출·생성형 언어 모델 기반 그림 심리 분석 시스템으로 바꾸고 데이터·대화·보고서 구조를 확장한 6 쪽 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/3%EC%B0%A8) | [전체 비교](docs/revision-diffs/paper-3.diff) |
-| [4차](docs/revisions/paper-4.md) | <a id="layout18-table-4-row-4-field-1"></a>정서적 적절성·언어 자연스러움·공감의 32개 점수 배열을 기술 통계와 박스 플롯으로 정리한 평가 시각화 단계입니다. 8 쪽 원고의 탐지 지표 해석과 구현 경로도 구체화합니다. | [폴더](4%EC%B0%A8) | [전체 비교](docs/revision-diffs/paper-4.diff) |
-| [5차 · 최종 수정 원고](docs/revisions/paper-5.md) | <a id="layout18-table-4-row-5-field-1"></a>객체 검출·생성형 언어 모델 기반 그림 심리 분석의 연구 본문을 유지하면서 소속·서지·저자 소개를 정리한 8 쪽 최종 수정 원고입니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-5.diff) |
-| [그림 자료 · 기본 앱](docs/revisions/app.md) | <a id="layout18-table-4-row-6-field-1"></a>그림 업로드 →YOLO 탐지 여부 →상담형 메시지 →PDF를 Gradio 화면에서 연결하는 노트북 앱입니다.<br>텍스트 질문 버튼은 별도 요청을 처리합니다. | [폴더](%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C) | [전체 비교](docs/revision-diffs/app.diff) |
+| 차수·단계 | 주요 내용 | 자료 · 직전 비교 |
+| --- | --- | --- |
+| [1차 원고](docs/revisions/paper-1.md) | <a id="layout18-table-4-row-1-field-1"></a>우울증 환자 대상 미술 치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4 쪽 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/1%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/paper-1.diff) |
+| [2차 원고](docs/revisions/paper-2.md) | <a id="layout18-table-4-row-2-field-1"></a>1차의 시스템 구조를 유지하면서 초록·기여·각 모듈 설명을 다듬고 평가 항목과 결과 표를 구체화한 4 쪽 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/2%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/paper-2.diff) |
+| [3차 원고](docs/revisions/paper-3.md) | <a id="layout18-table-4-row-3-field-1"></a>제목을 객체 검출·생성형 언어 모델 기반 그림 심리 분석 시스템으로 바꾸고 데이터·대화·보고서 구조를 확장한 6 쪽 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/3%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/paper-3.diff) |
+| [4차](docs/revisions/paper-4.md) | <a id="layout18-table-4-row-4-field-1"></a>정서적 적절성·언어 자연스러움·공감의 32개 점수 배열을 기술 통계와 박스 플롯으로 정리한 평가 시각화 단계입니다. 8 쪽 원고의 탐지 지표 해석과 구현 경로도 구체화합니다. | [폴더](4%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/paper-4.diff) |
+| [5차 · 최종 수정 원고](docs/revisions/paper-5.md) | <a id="layout18-table-4-row-5-field-1"></a>객체 검출·생성형 언어 모델 기반 그림 심리 분석의 연구 본문을 유지하면서 소속·서지·저자 소개를 정리한 8 쪽 최종 수정 원고입니다. | [폴더](%EB%85%BC%EB%AC%B8)<br>[전체 비교](docs/revision-diffs/paper-5.diff) |
+| [그림 자료 · 기본 앱](docs/revisions/app.md) | <a id="layout18-table-4-row-6-field-1"></a>그림 업로드 →YOLO 탐지 여부 →상담형 메시지 →PDF를 Gradio 화면에서 연결하는 노트북 앱입니다.<br>텍스트 질문 버튼은 별도 요청을 처리합니다. | [폴더](%EA%B7%B8%EB%A6%BC%20%EC%9E%90%EB%A3%8C)<br>[전체 비교](docs/revision-diffs/app.diff) |
 
 
 <a name="introduction"></a>
@@ -256,9 +256,9 @@ python -m jupyter lab
 
 현재 제공하는 원문과 직전 공개본의 비교입니다. 이전 원고·발표와 코드는 전체 차수 표에서 확인할 수 있습니다.
 
-| 문서 | 자료 폴더 | 상세 | 직전 공개본 전체 비교 |
-| --- | --- | --- | --- |
-| 최종 논문 · 그림 심리분석 | [폴더](%EB%85%BC%EB%AC%B8) | [설명](docs/latest/art-interactive-drawing-system.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+| 문서 | 자료 폴더 | 상세 · 직전 공개본 전체 비교 |
+| --- | --- | --- |
+| 최종 논문 · 그림 심리분석 | [폴더](%EB%85%BC%EB%AC%B8) | [설명](docs/latest/art-interactive-drawing-system.md)<br>[전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
 
 [최신 문서 구성 변경](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C.md)
 
@@ -273,9 +273,9 @@ python -m jupyter lab
 <a id="️-1차-원고--그림-탐지와-상담형-대화의-설계"></a>
 
 <details>
-<summary>1차 원고·그림 탐지와 상담형 대화의 설계</summary>
+<summary><strong>1차 원고·그림 탐지와 상담형 대화의 설계</strong></summary>
 
-### 1차 원고·그림 탐지와 상담형 대화의 설계
+<a id="1차-원고그림-탐지와-상담형-대화의-설계"></a>
 
 우울증 환자 대상 미술 치료라는 초기 연구 질문에서 그림 입력·객체 탐지·언어 모델·PDF의 네 모듈을 연결한 4 쪽 원고 단계입니다.
 
@@ -310,9 +310,9 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary>2차 원고·대화 평가 항목과 결과 표 정리</summary>
+<summary><strong>2차 원고·대화 평가 항목과 결과 표 정리</strong></summary>
 
-### 2차 원고·대화 평가 항목과 결과 표 정리
+<a id="2차-원고대화-평가-항목과-결과-표-정리"></a>
 
 1차의 시스템 구조를 유지하면서 초록·기여·각 모듈 설명을 다듬고 평가 항목과 결과 표를 구체화한 4 쪽 원고 단계입니다.
 
@@ -347,9 +347,9 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary>3차 원고·객체 검출 기반 그림 심리 분석 시스템</summary>
+<summary><strong>3차 원고·객체 검출 기반 그림 심리 분석 시스템</strong></summary>
 
-### 3차 원고·객체 검출 기반 그림 심리 분석 시스템
+<a id="3차-원고객체-검출-기반-그림-심리-분석-시스템"></a>
 
 제목을 객체 검출·생성형 언어 모델 기반 그림 심리 분석 시스템으로 바꾸고 데이터·대화·보고서 구조를 확장한 6 쪽 원고 단계입니다.
 
@@ -384,9 +384,9 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary>4차·평가 점수와 그림 5 시각화</summary>
+<summary><strong>4차·평가 점수와 그림 5 시각화</strong></summary>
 
-### 4차·평가 점수와 그림 5 시각화
+<a id="4차평가-점수와-그림-5-시각화"></a>
 
 정서적 적절성·언어 자연스러움·공감의 32개 점수 배열을 기술 통계와 박스 플롯으로 정리한 평가 시각화 단계입니다.
 
@@ -425,9 +425,9 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary>5차·연구 본문과 서지 표기를 마무리한 최종 원고</summary>
+<summary><strong>5차·연구 본문과 서지 표기를 마무리한 최종 원고</strong></summary>
 
-### 5차·연구 본문과 서지 표기를 마무리한 최종 원고
+<a id="5차연구-본문과-서지-표기를-마무리한-최종-원고"></a>
 
 객체 검출·생성형 언어 모델 기반 그림 심리 분석의 연구 본문을 유지하면서 소속·서지·저자 소개를 정리한 8 쪽 최종 수정 원고입니다.
 
@@ -463,9 +463,9 @@ python -m jupyter lab
 </details>
 
 <details>
-<summary>그림 자료·대화와 PDF를 연결하는 기본 앱</summary>
+<summary><strong>그림 자료·대화와 PDF를 연결하는 기본 앱</strong></summary>
 
-### 그림 자료·대화와 PDF를 연결하는 기본 앱
+<a id="그림-자료대화와-pdf를-연결하는-기본-앱"></a>
 
 그림 업로드 →YOLO 탐지 여부 →상담형 메시지 →PDF를 Gradio 화면에서 연결하는 노트북 앱입니다. 텍스트 질문 버튼은 별도 요청을 처리합니다.
 

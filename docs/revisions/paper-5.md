@@ -3,7 +3,13 @@
 # 5차·연구 본문과 서지 표기를 마무리한 최종 원고
 
 <!-- reading-levels17:start -->
-**읽기 수준 선택** · [LEVEL 1 - Beginner](#reading-level-1) · [LEVEL 2 - Explorer](#reading-level-2) · [LEVEL 3 - Practitioner](#reading-level-3) · [LEVEL 4 - Advanced](#reading-level-4) · [LEVEL 5 - Expert](#reading-level-5)
+| 읽기 수준 | 설명의 초점 |
+| --- | --- |
+| [LEVEL 1 · Beginner](#reading-level-1) | 목적과 동작부터 |
+| [LEVEL 2 · Explorer](#reading-level-2) | 구성과 연결 원리 |
+| [LEVEL 3 · Practitioner](#reading-level-3) | 준비·실행·결과 확인 |
+| [LEVEL 4 · Advanced](#reading-level-4) | 구현·설계·실패 처리 |
+| [LEVEL 5 · Expert](#reading-level-5) | 근거·프로토콜·한계 검토 |
 
 **논문 읽기:** 곽윤석·김남기의 논문은 Journal of KIIT 24(10), 77 –84 쪽, 2026-10-31에 게재되었습니다.
 
@@ -14,6 +20,9 @@
 게재본 PDF는 저장소에 첨부하지 않습니다.
 
 과거 차수의 파일 구성도·해시·쪽 수는 해당 투고 자료의 이력으로 읽어 주세요.
+
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
 
 <a id="reading-level-1"></a>
 
@@ -99,6 +108,12 @@
 
 [표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+
 <a id="reading-level-2"></a>
 
 ## LEVEL 2 - Explorer
@@ -182,6 +197,12 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 언어 모델의 입력 정보가 제한적이고 이전 대화가 자동으로 이어지지 않습니다. 탐지 지표는 같은 학습 자료 기준이며 점수 배열은 원응답과 연결되지 않습니다. 별도 실증이 필요한 상태를 유지합니다.
 
 [표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
 
 <a id="reading-level-3"></a>
 
@@ -267,6 +288,12 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 [표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+
 <a id="reading-level-4"></a>
 
 ## LEVEL 4 - Advanced
@@ -350,6 +377,12 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 정보 요약 손실·자료 재사용·점수 출처·동시 저장·API 오류가 설계와 평가의 제약입니다. 독립 사용자·임상 검증 없이 치료 효능을 추정하지 않습니다. 출판 여부와 이런 방법론적 제한은 별개입니다.
 
 [표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -497,3 +530,6 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 ---
 
 [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md) · [자료 폴더](../../%EB%85%BC%EB%AC%B8) · [4차](paper-4.md)
+
+</details>
+
