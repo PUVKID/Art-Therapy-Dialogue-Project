@@ -5,11 +5,11 @@
 <!-- reading-levels17:start -->
 | 읽기 수준 | 설명의 초점 |
 | --- | --- |
-| [LEVEL 1 · Beginner](#reading-level-1) | 목적과 동작부터 |
-| [LEVEL 2 · Explorer](#reading-level-2) | 구성과 연결 원리 |
-| [LEVEL 3 · Practitioner](#reading-level-3) | 준비·실행·결과 확인 |
-| [LEVEL 4 · Advanced](#reading-level-4) | 구현·설계·실패 처리 |
-| [LEVEL 5 · Expert](#reading-level-5) | 근거·프로토콜·한계 검토 |
+| [LEVEL 1 · Beginner](#user-content-reading-level-1) | 목적과 동작부터 |
+| [LEVEL 2 · Explorer](#user-content-reading-level-2) | 구성과 연결 원리 |
+| [LEVEL 3 · Practitioner](#user-content-reading-level-3) | 준비·실행·결과 확인 |
+| [LEVEL 4 · Advanced](#user-content-reading-level-4) | 구현·설계·실패 처리 |
+| [LEVEL 5 · Expert](#user-content-reading-level-5) | 근거·프로토콜·한계 검토 |
 
 **논문 읽기:** 곽윤석·김남기의 논문은 Journal of KIIT 24(10), 77 –84 쪽, 2026-10-31에 게재되었습니다.
 
@@ -107,7 +107,7 @@
 
 문장이 친절해도 진단이나 치료 효과가 확인된 것은 아닙니다. 실제 사용자 원그림과 의료 원데이터는 공개하지 않습니다. 점수 그림·탐지 지표·임상 효과를 구분합니다.
 
-[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
+[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#user-content-reading-level-5)
 
 
 </details>
@@ -198,7 +198,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 언어 모델의 입력 정보가 제한적이고 이전 대화가 자동으로 이어지지 않습니다. 탐지 지표는 같은 학습 자료 기준이며 점수 배열은 원응답과 연결되지 않습니다. 별도 실증이 필요한 상태를 유지합니다.
 
-[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
+[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#user-content-reading-level-5)
 
 
 </details>
@@ -289,7 +289,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 독립 그림 검증·원응답 대응·임상 평가가 없는 점을 결과 옆에서 확인합니다. 현재 공식 게재본과 과거 투고 원고를 구분하고 없는 외부 평가 성능을 채워 넣지 않습니다.
 
-[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
+[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#user-content-reading-level-5)
 
 
 </details>
@@ -380,7 +380,7 @@ analyze_and_suggest는 그림 저장·YOLO·요약·생성을 연결합니다. a
 
 정보 요약 손실·자료 재사용·점수 출처·동시 저장·API 오류가 설계와 평가의 제약입니다. 독립 사용자·임상 검증 없이 치료 효능을 추정하지 않습니다. 출판 여부와 이런 방법론적 제한은 별개입니다.
 
-[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#reading-level-5)
+[표·코드·실행 설정·파일 전체 비교를 포함한 공통 상세](#user-content-reading-level-5)
 
 
 </details>
