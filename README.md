@@ -24,7 +24,7 @@
   <source media="(max-width: 600px)" srcset="assets/readme/flow-ko-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/readme/flow-ko-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/flow-ko-light.svg" />
-  <img src="assets/readme/flow-ko-light.svg" alt="Art Therapy Dialogue Project: 그림 · 텍스트 → YOLO 탐지 · 텍스트 대화 → PDF · 평가 자료" width="100%" />
+  <img src="assets/readme/flow-ko-light.svg" alt="그림 · 텍스트: 그림 이미지와 텍스트 질문 → YOLO 탐지 · 텍스트 대화: 탐지 요약으로 대화 메시지 구성 → PDF · 평가 자료: PDF 리포트와 점수 통계" width="100%" />
 </picture>
 <!-- readme-header32:end -->
 

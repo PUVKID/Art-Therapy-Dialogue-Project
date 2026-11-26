@@ -25,7 +25,7 @@
   <source media="(max-width: 600px)" srcset="../assets/readme/flow-en-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="../assets/readme/flow-en-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="../assets/readme/flow-en-light.svg" />
-  <img src="../assets/readme/flow-en-light.svg" alt="Art Therapy Dialogue Project: Drawings · text → YOLO detection · dialogue → PDF · evaluation data" width="100%" />
+  <img src="../assets/readme/flow-en-light.svg" alt="Drawings · text: Drawing images and text questions → YOLO detection · dialogue: Build dialogue from detection summaries → PDF · evaluation data: PDF reports and score statistics" width="100%" />
 </picture>
 <!-- readme-header32:end -->
 
