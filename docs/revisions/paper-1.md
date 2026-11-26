@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="️-1차-원고--그림-탐지와-상담형-대화의-설계"></a>
 
 # 1차 원고·그림 탐지와 상담형 대화의 설계

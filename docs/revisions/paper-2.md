@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="️-2차-원고--대화-평가-항목과-결과표-정리"></a>
 
 # 2차 원고·대화 평가 항목과 결과 표 정리

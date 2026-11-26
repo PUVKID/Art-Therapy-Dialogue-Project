@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-그림-자료--대화와-pdf를-연결하는-기본-앱"></a>
 
 # 그림 자료·대화와 PDF를 연결하는 기본 앱

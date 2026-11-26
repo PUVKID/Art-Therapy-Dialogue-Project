@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="️-5차--연구-본문과-서지-표기를-마무리한-최종-원고"></a>
 
 # 5차·연구 본문과 서지 표기를 마무리한 최종 원고

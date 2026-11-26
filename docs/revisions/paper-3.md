@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="️-3차-원고--객체-검출-기반-그림-심리분석-시스템"></a>
 
 # 3차 원고·객체 검출 기반 그림 심리 분석 시스템

@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-4차--평가-점수와-그림-5-시각화"></a>
 
 # 4차·평가 점수와 그림 5 시각화
